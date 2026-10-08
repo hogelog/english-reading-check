@@ -116,6 +116,20 @@ describe("storage", () => {
     );
     assert.equal(storage.entryWpm({ durationSeconds: 0, words: 240 }, lookup), 0);
   });
+
+  it("prefers readingSeconds for time and wpm", () => {
+    const entry = { durationSeconds: 300, readingSeconds: 120, words: 240 };
+    assert.equal(storage.entrySeconds(entry), 120);
+    assert.equal(storage.entryWpm(entry), 120);
+    // Legacy entries without readingSeconds fall back to total.
+    assert.equal(storage.entrySeconds({ durationSeconds: 300 }), 300);
+    const stats = storage.computeStats([
+      { score: 4, total: 5, durationSeconds: 300, readingSeconds: 120 },
+      { score: 4, total: 5, durationSeconds: 300, readingSeconds: 180 },
+    ]);
+    assert.equal(stats.avgSeconds, 150);
+  });
+
   it("reading time is recorded in saved entry", () => {
     storage.saveResult({
       date: "2026-10-08",

@@ -86,8 +86,13 @@ export function computeStreak(history, now = new Date()) {
   return streak;
 }
 
+export function entrySeconds(entry) {
+  if (Number.isFinite(entry.readingSeconds)) return entry.readingSeconds;
+  return entry.durationSeconds || 0;
+}
+
 export function entryWpm(entry, articlesById) {
-  const mins = (entry.durationSeconds || 0) / 60;
+  const mins = entrySeconds(entry) / 60;
   return mins > 0 ? Math.round(entryWords(entry, articlesById) / mins) : 0;
 }
 
@@ -115,7 +120,7 @@ export function computeStats(history) {
   let secSum = 0;
   for (const h of history) {
     accSum += h.total > 0 ? h.score / h.total : 0;
-    secSum += h.durationSeconds || 0;
+    secSum += entrySeconds(h);
   }
   return {
     count: n,

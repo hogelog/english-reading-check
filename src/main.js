@@ -14,6 +14,7 @@ import {
   lastNDaysLabel,
   entryWords,
   entryWpm,
+  entrySeconds,
   buildShareText,
   computeStreak,
 } from "./storage.js";
@@ -98,7 +99,7 @@ function applyTheme(theme) {
 // ---------- Home ----------
 function rowValue(h, lookup) {
   const pct = Math.round(accuracyOf(h));
-  return `${h.score}/${h.total} ${pct}% ${formatDuration(h.durationSeconds)} ${entryWords(h, lookup)}w ${h.difficulty}`;
+  return `${h.score}/${h.total} ${pct}% ${formatDuration(entrySeconds(h))} ${entryWords(h, lookup)}w ${h.difficulty}`;
 }
 
 function accuracyOf(h) {
@@ -117,7 +118,7 @@ function shareTextFor(h, lookup) {
     difficulty: h.difficulty,
     score: h.score,
     total: h.total,
-    durationSeconds: h.durationSeconds || 0,
+    durationSeconds: entrySeconds(h),
     words: entryWords(h, lookup),
     wpm: entryWpm(h, lookup),
     marks,
@@ -282,6 +283,7 @@ function nextQuestion() {
 function finishSession() {
   const article = state.article;
   const durationSeconds = Math.round((Date.now() - state.startTime) / 1000);
+  const readingSeconds = Math.round(((state.readingEnd || Date.now()) - state.startTime) / 1000);
   let score = 0;
   article.questions.forEach((q, i) => {
     if (state.answers[i] === q.answer) score += 1;
@@ -298,6 +300,8 @@ function finishSession() {
     difficulty: article.difficulty,
     articleId: article.id,
     words: wordCount(article.text),
+    readingSeconds,
+    quizSeconds: Math.max(0, durationSeconds - readingSeconds),
     answers: [...state.answers],
   };
   saveResult(entry);
@@ -310,7 +314,7 @@ function finishSession() {
   const recordBadge = $("result-record");
   const accRatio = article.questions.length > 0 ? score / article.questions.length : 0;
   const prevBestAcc = Math.max(-1, ...prevSameLevel.map((h) => (h.total > 0 ? h.score / h.total : 0)));
-  $("result-time").textContent = formatDuration(durationSeconds);
+  $("result-time").textContent = formatDuration(readingSeconds);
   $("result-diff").textContent = article.difficulty;
   $("result-prev").textContent = prevAvg;
   $("result-prev-label").textContent = `Previous avg (${article.difficulty})`;
@@ -463,6 +467,7 @@ async function init() {
   });
   $("start-btn").addEventListener("click", startSession);
   $("to-questions-btn").addEventListener("click", () => {
+    state.readingEnd = Date.now();
     state.qIndex = 0;
     renderQuiz();
   });
