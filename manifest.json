@@ -1,7 +1,7 @@
 {
   "name": "Daily English Reading Check",
   "short_name": "ReadingCheck",
-  "description": "毎日5分の英語リーディングチェック",
+  "description": "A 5-minute daily English reading check",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
