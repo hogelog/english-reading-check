@@ -1,0 +1,268 @@
+[
+  {
+    "id": "a1-001",
+    "difficulty": "A1",
+    "title": "My Family",
+    "text": "I live with four people. They are my father, my mother, my sister, and me. Our house is small but clean. We eat dinner together every night.\n\nMy father works in a shop. He sells bread and milk. He gets up at six every morning. He comes home at six in the evening.\n\nMy mother cooks for us. She makes soup and rice. My sister is ten years old. She likes to draw dogs and cats. She draws every day after school.\n\nI am twelve years old. I help my mother after school. I wash the cups and plates. On Sundays we go for a walk. We talk and laugh together. In the evening we watch TV. My sister sits next to me. My father drinks tea. My mother eats fruit. Our cat sleeps on the chair. We are happy at home. On Saturdays my father plays ball with me. My sister sings songs with my mother. We have a good time. I love my family very much.",
+    "questions": [
+      {
+        "question": "How many people live together?",
+        "choices": ["Three people.", "Four people.", "Five people.", "Six people."],
+        "answer": 1,
+        "explanation": "最初に4人と書いてあります。"
+      },
+      {
+        "question": "What does the father sell?",
+        "choices": ["Fish and meat.", "Bread and milk.", "Apples and eggs.", "Books and pens."],
+        "answer": 1,
+        "explanation": "お父さんはパンと牛乳を売ると書いてあります。"
+      },
+      {
+        "question": "What does the sister like to draw?",
+        "choices": ["Dogs and cats.", "Trees and flowers.", "Cars and trains.", "Fish and birds."],
+        "answer": 0,
+        "explanation": "妹は犬と猫を描くのが好きと書いてあります。"
+      },
+      {
+        "question": "What do they do on Sundays?",
+        "choices": ["They clean the house.", "They go for a walk.", "They visit a shop.", "They watch a game."],
+        "answer": 1,
+        "explanation": "日曜日に散歩に行くと書いてあります。"
+      },
+      {
+        "question": "How does the family feel at home?",
+        "choices": ["Tired and quiet.", "Busy and late.", "Happy together.", "Sad and cold."],
+        "answer": 2,
+        "explanation": "家で幸せだと読み取れます。"
+      }
+    ]
+  },
+  {
+    "id": "a1-002",
+    "difficulty": "A1",
+    "title": "A Sunny Sunday",
+    "text": "It is Sunday morning. The sun is bright in the sky. I get up at eight. I open the window. Birds sing in the tree.\n\nMy brother and I eat bread and eggs. We drink hot milk. Mother smiles at us. Father reads a book. After food we wash our hands. We put on red hats. We take water and apples.\n\nIn the afternoon we go to the river. We walk and run. My brother plays with a red ball. I sit on the grass. We see white clouds. We meet an old friend. We say hello and laugh a lot.\n\nIn the evening we go home. We eat noodles for dinner. Father tells a funny story. We all laugh. I go to bed at nine. I dream of the sun. I want many sunny Sundays. They make me smile. Mother takes photos of us. We look at them after dinner. We all say nice.",
+    "questions": [
+      {
+        "question": "What time does the child get up?",
+        "choices": ["At six.", "At seven.", "At eight.", "At nine."],
+        "answer": 2,
+        "explanation": "8時に起きると書いてあります。"
+      },
+      {
+        "question": "What do they eat in the morning?",
+        "choices": ["Bread and eggs.", "Rice and fish.", "Noodles and soup.", "Cake and fruit."],
+        "answer": 0,
+        "explanation": "朝はパンと卵と書いてあります。"
+      },
+      {
+        "question": "Where do they go in the afternoon?",
+        "choices": ["To the shop.", "To the school.", "To the river.", "To the zoo."],
+        "answer": 2,
+        "explanation": "午後に川へ行くと書いてあります。"
+      },
+      {
+        "question": "What does the brother play with?",
+        "choices": ["A blue box.", "A red ball.", "A green book.", "A white dog."],
+        "answer": 1,
+        "explanation": "赤いボールで遊ぶと書いてあります。"
+      },
+      {
+        "question": "How was the Sunday?",
+        "choices": ["A sad day.", "A happy day.", "A cold day.", "A busy school day."],
+        "answer": 1,
+        "explanation": "笑顔や笑いから楽しい日と分かります。"
+      }
+    ]
+  },
+  {
+    "id": "a1-003",
+    "difficulty": "A1",
+    "title": "Breakfast Time",
+    "text": "I get up at seven. I wash my face and hands. I brush my teeth. Then I go to the table. Breakfast is ready.\n\nMother gives me rice and eggs. Father eats bread and soup. My sister drinks milk. She eats a red apple. We talk together.\n\nI like eggs best. They are hot and soft. My sister likes milk best. She drinks two cups. Father likes soup best. It has green leaves.\n\nAfter breakfast I help Mother. I wash the cups. I clean the table. Then I put on my shoes. I go to school with a smile. Breakfast helps me work and play. On Saturdays we have slow breakfast. We eat pancakes with honey. Mother makes them in a big pan. We all say yum. I eat all my food. I do not leave rice. A good breakfast makes a good morning. It is warm and nice. I thank Mother every day.",
+    "questions": [
+      {
+        "question": "What time does the child get up?",
+        "choices": ["At six.", "At seven.", "At eight.", "At ten."],
+        "answer": 1,
+        "explanation": "7時に起きると書いてあります。"
+      },
+      {
+        "question": "What does the sister drink?",
+        "choices": ["Tea.", "Juice.", "Milk.", "Water."],
+        "answer": 2,
+        "explanation": "妹は牛乳を飲むと書いてあります。"
+      },
+      {
+        "question": "How many cups of milk does the sister drink?",
+        "choices": ["One cup.", "Two cups.", "Three cups.", "Four cups."],
+        "answer": 1,
+        "explanation": "2杯飲むと書いてあります。"
+      },
+      {
+        "question": "What do they eat on Saturdays?",
+        "choices": ["Pancakes with honey.", "Rice with fish.", "Bread with eggs.", "Noodles with soup."],
+        "answer": 0,
+        "explanation": "土曜ははちみつ付きパンケーキと書いてあります。"
+      },
+      {
+        "question": "How does breakfast help the child?",
+        "choices": ["It helps work and play.", "It helps sleep long.", "It helps buy books.", "It helps wash hands."],
+        "answer": 0,
+        "explanation": "働くことと遊ぶことの助けになると書いてあります。"
+      }
+    ]
+  },
+  {
+    "id": "a1-004",
+    "difficulty": "A1",
+    "title": "My Favorite Shop",
+    "text": "There is a small shop near my house. It is five minutes on foot. The shop sells bread, milk, and fruit. The man in the shop is kind.\n\nI go to the shop with my mother. We buy fresh bread every morning. We buy milk in red boxes. Apples are sweet and cheap. Bananas are soft and sweet.\n\nThe man knows my name. He says hello with a smile. He gives me a small candy. I say thank you. My mother pays money. We put the food in a big bag.\n\nI like the shop very much. The bread smells good. The fruit looks fresh. The people are nice. I go there three times a week. I want to work in the shop one day. It is my favorite place in town. The shop opens at seven. It closes at eight. I say bye to the man. I walk home happy.",
+    "questions": [
+      {
+        "question": "Where is the shop?",
+        "choices": ["Near my house.", "Near my school.", "Near the river.", "Near the park."],
+        "answer": 0,
+        "explanation": "家の近くと書いてあります。"
+      },
+      {
+        "question": "What does the shop sell?",
+        "choices": ["Books and pens.", "Bread, milk, and fruit.", "Fish and meat.", "Shoes and hats."],
+        "answer": 1,
+        "explanation": "パンと牛乳と果物を売ると書いてあります。"
+      },
+      {
+        "question": "Who goes to the shop with the child?",
+        "choices": ["Father.", "Sister.", "Mother.", "Brother."],
+        "answer": 2,
+        "explanation": "お母さんと行くと書いてあります。"
+      },
+      {
+        "question": "What does the man give to the child?",
+        "choices": ["A red apple.", "A small candy.", "A cold drink.", "A white flower."],
+        "answer": 1,
+        "explanation": "小さな飴をくれると書いてあります。"
+      },
+      {
+        "question": "What does the child want to do one day?",
+        "choices": ["To buy a shop.", "To work in the shop.", "To make bread at home.", "To eat candy every day."],
+        "answer": 1,
+        "explanation": "店で働きたいという気持ちが書いてあります。"
+      }
+    ]
+  },
+  {
+    "id": "a1-005",
+    "difficulty": "A1",
+    "title": "A Walk in the Park",
+    "text": "On Saturday morning I go to the park. The park is big and clean. The air is fresh. Many trees stand in a row. Flowers are red, yellow, and pink.\n\nI walk with my friend Tom. We see a black dog. It runs after a ball. We see an old woman. She feeds white birds. We say good morning to her. She smiles at us.\n\nWe sit under a big tree. We drink water and eat bananas. We listen to the birds. The birds sing sweet songs. The wind is soft and cool. We feel good.\n\nWe walk home at noon. We pick up our bags. We say bye to Tom. I tell Mother about the park. The dog, the birds, and the flowers were fun. I want to go again next week. Mother gives me tea. I drink it and smile. It was a nice Saturday. I sleep well at night.",
+    "questions": [
+      {
+        "question": "When does the child go to the park?",
+        "choices": ["On Sunday evening.", "On Saturday morning.", "On Monday night.", "On Friday noon."],
+        "answer": 1,
+        "explanation": "土曜の朝と書いてあります。"
+      },
+      {
+        "question": "Who walks with the child?",
+        "choices": ["Sister.", "Mother.", "Tom.", "Father."],
+        "answer": 2,
+        "explanation": "友だちのトムと歩くと書いてあります。"
+      },
+      {
+        "question": "What does the old woman feed?",
+        "choices": ["Black dogs.", "White birds.", "Red fish.", "Brown cats."],
+        "answer": 1,
+        "explanation": "白い鳥にえさをやると書いてあります。"
+      },
+      {
+        "question": "What do they eat in the park?",
+        "choices": ["Apples.", "Bread.", "Candy.", "Bananas."],
+        "answer": 3,
+        "explanation": "バナナを食べると書いてあります。"
+      },
+      {
+        "question": "How does the child feel about the park?",
+        "choices": ["He wants to go again.", "He does not like it.", "He feels tired and sad.", "He feels cold and sick."],
+        "answer": 0,
+        "explanation": "また行きたい気持ちから楽しかったと分かります。"
+      }
+    ]
+  },
+  {
+    "id": "a1-006",
+    "difficulty": "A1",
+    "title": "Cooking Rice",
+    "text": "Every day my mother cooks rice. Rice is our main food. We eat it in the morning and evening. I help my mother today.\n\nFirst we wash the rice. We put the rice in a big bowl. We add clean water. We wash it two times. The water is white. Then we put the rice in a pot.\n\nNext we add water to the pot. We put the pot on the fire. Mother closes the lid. We wait for twenty minutes. The kitchen smells good. Steam comes up from the pot.\n\nLast we open the lid. The rice is white and soft. We put it in big bowls. We eat it with eggs and soup. It is very good. Father comes home soon. He eats a big bowl. He says very good. We all smile. I wash the bowls. I feel good. I am happy to help. Mother says thank you to me.",
+    "questions": [
+      {
+        "question": "When do they eat rice?",
+        "choices": ["Morning and evening.", "Only at noon.", "Only on Sundays.", "Night and midnight."],
+        "answer": 0,
+        "explanation": "朝と夜に食べると書いてあります。"
+      },
+      {
+        "question": "How many times do they wash the rice?",
+        "choices": ["One time.", "Two times.", "Three times.", "Four times."],
+        "answer": 1,
+        "explanation": "2回洗うと書いてあります。"
+      },
+      {
+        "question": "How long do they wait?",
+        "choices": ["Ten minutes.", "Twenty minutes.", "Thirty minutes.", "Forty minutes."],
+        "answer": 1,
+        "explanation": "20分待つと書いてあります。"
+      },
+      {
+        "question": "What do they eat with rice?",
+        "choices": ["Eggs and soup.", "Meat and cake.", "Fruit and milk.", "Bread and jam."],
+        "answer": 0,
+        "explanation": "卵とスープと食べると書いてあります。"
+      },
+      {
+        "question": "How does Mother feel?",
+        "choices": ["She feels angry.", "She feels sad.", "She feels thankful.", "She feels tired."],
+        "answer": 2,
+        "explanation": "ありがとうと言うので感謝していると分かります。"
+      }
+    ]
+  },
+  {
+    "id": "a1-007",
+    "difficulty": "A1",
+    "title": "A Birthday Party",
+    "text": "Today is my sister's birthday. She is nine years old. Our house is full of smiles. Mother makes a big cake. The cake has pink flowers and red hearts.\n\nFive friends come to our house. They bring small gifts. One gift is a blue pen. One gift is a storybook. My sister opens them with happy hands. She says thank you many times.\n\nWe play games together. We sing songs and dance. We blow up red balloons. My father takes photos of us. We laugh and laugh. The room is loud but fun.\n\nWe eat cake and drink juice. The cake is sweet and soft. Everyone wants more. We say happy birthday to my sister. She blows out the candles. She has a big smile. It is a happy day for all of us. Mother says thank you to all. Friends go home at five. My sister hugs me. We are happy.",
+    "questions": [
+      {
+        "question": "How old is the sister?",
+        "choices": ["Seven years old.", "Eight years old.", "Nine years old.", "Ten years old."],
+        "answer": 2,
+        "explanation": "9歳と書いてあります。"
+      },
+      {
+        "question": "What is on the cake?",
+        "choices": ["Pink flowers and red hearts.", "Blue stars and white clouds.", "Green trees and black birds.", "Yellow fish and brown dogs."],
+        "answer": 0,
+        "explanation": "ピンクの花と赤いハートと書いてあります。"
+      },
+      {
+        "question": "How many friends come?",
+        "choices": ["Three friends.", "Four friends.", "Five friends.", "Six friends."],
+        "answer": 2,
+        "explanation": "5人の友だちと書いてあります。"
+      },
+      {
+        "question": "What do they do at the party?",
+        "choices": ["They read and sleep.", "They sing and dance.", "They run and swim.", "They cook and clean."],
+        "answer": 1,
+        "explanation": "歌って踊ると書いてあります。"
+      },
+      {
+        "question": "How does the sister feel?",
+        "choices": ["Sad and tired.", "Angry and loud.", "Happy with a big smile.", "Cold and hungry."],
+        "answer": 2,
+        "explanation": "大きな笑顔から幸せと分かります。"
+      }
+    ]
+  }
+]

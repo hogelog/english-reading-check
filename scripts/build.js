@@ -10,7 +10,7 @@ const repoRoot = path.dirname(root);
 const dist = path.join(repoRoot, "dist");
 
 const ALL_ARTICLES = [];
-for (const level of ["a2", "b1", "b2", "c1"]) {
+for (const level of ["a1", "a2", "b1", "b2", "c1"]) {
   const raw = await readFile(path.join(repoRoot, "data", `${level}.json`), "utf8");
   ALL_ARTICLES.push(...JSON.parse(raw));
 }
@@ -20,10 +20,11 @@ const ids = new Set();
 for (const a of ALL_ARTICLES) {
   if (!a.id || ids.has(a.id)) errors.push(`duplicate/missing id: ${a.id}`);
   ids.add(a.id);
-  if (!["A2", "B1", "B2", "C1"].includes(a.difficulty)) errors.push(`${a.id}: bad difficulty`);
+  if (!["A1", "A2", "B1", "B2", "C1"].includes(a.difficulty)) errors.push(`${a.id}: bad difficulty`);
   if (!a.title || !a.text) errors.push(`${a.id}: missing title/text`);
   const words = a.text.split(/\s+/).filter(Boolean).length;
-  if (words < 250 || words > 600) errors.push(`${a.id}: ${words} words (want 300-500)`);
+  const minWords = a.difficulty === "A1" ? 120 : 250;
+  if (words < minWords || words > 600) errors.push(`${a.id}: ${words} words`);
   if (!Array.isArray(a.questions) || a.questions.length !== 5) {
     errors.push(`${a.id}: want exactly 5 questions`);
   } else {
@@ -40,7 +41,7 @@ for (const a of ALL_ARTICLES) {
 }
 const byDiff = {};
 for (const a of ALL_ARTICLES) byDiff[a.difficulty] = (byDiff[a.difficulty] || 0) + 1;
-for (const d of ["A2", "B1", "B2", "C1"]) {
+for (const d of ["A1", "A2", "B1", "B2", "C1"]) {
   if (!byDiff[d]) errors.push(`no articles for ${d}`);
 }
 if (ALL_ARTICLES.length < 30) errors.push(`only ${ALL_ARTICLES.length} articles (need >= 30)`);
@@ -63,6 +64,7 @@ const files = [
   "manifest.json",
   "icon.svg",
   "sw.js",
+  "data/a1.json",
   "data/a2.json",
   "data/b1.json",
   "data/b2.json",

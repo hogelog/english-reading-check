@@ -6,7 +6,7 @@ Read a passage (300–500 words) → answer 5 questions → compare with past re
 
 🌐 https://hogelog.github.io/english-reading-check/
 
-Zero dependencies, no backend, no tracking. History lives in the browser's LocalStorage only. PWA-ready, works offline. 30 passages included (A2×7 / B1×8 / B2×8 / C1×7).
+Zero dependencies, no backend, no tracking. History lives in the browser's LocalStorage only. PWA-ready, works offline. 37 passages included (A1×7 / A2×7 / B1×8 / B2×8 / C1×7).
 
 ## Dev
 
@@ -20,7 +20,7 @@ Push to `main` to deploy to GitHub Pages (source: GitHub Actions — enable it i
 
 ## Add a passage
 
-Append an object to `data/a2.json` / `data/b1.json` / `data/b2.json` / `data/c1.json` (plain JSON arrays):
+Append an object to `data/a1.json` / `data/a2.json` / `data/b1.json` / `data/b2.json` / `data/c1.json` (plain JSON arrays):
 
 ```js
 {

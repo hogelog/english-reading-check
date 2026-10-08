@@ -20,7 +20,7 @@ const views = ["view-home", "view-reading", "view-quiz", "view-result", "view-hi
 let ALL_ARTICLES = [];
 
 async function loadArticles() {
-  const levels = ["a2", "b1", "b2", "c1"];
+  const levels = ["a1", "a2", "b1", "b2", "c1"];
   const parts = await Promise.all(
     levels.map(async (level) => {
       const res = await fetch(`./data/${level}.json`);
