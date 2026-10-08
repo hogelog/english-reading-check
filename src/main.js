@@ -14,6 +14,7 @@ import {
   lastNDaysLabel,
   entryWords,
   entryWpm,
+  buildShareText,
 } from "./storage.js";
 import { buildLineChart } from "./chart.js";
 
@@ -21,6 +22,30 @@ const $ = (id) => document.getElementById(id);
 const views = ["view-home", "view-reading", "view-quiz", "view-result", "view-history"];
 
 let ALL_ARTICLES = [];
+let lastShareText = "";
+
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    // Fallback for non-secure contexts / older browsers.
+    try {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      const ok = document.execCommand("copy");
+      ta.remove();
+      return ok;
+    } catch {
+      return false;
+    }
+  }
+}
 
 async function loadArticles() {
   const levels = ["a1", "a2", "b1", "b2", "c1"];
@@ -230,6 +255,19 @@ function finishSession() {
   $("result-prev").textContent = prevAvg;
   $("result-words").textContent = `${entry.words} words`;
   $("result-wpm").textContent = `${entryWpm(entry)} wpm`;
+  lastShareText = buildShareText({
+    date: entry.date,
+    title: article.title,
+    difficulty: article.difficulty,
+    score,
+    total: article.questions.length,
+    durationSeconds,
+    words: entry.words,
+    wpm: entryWpm(entry),
+    marks: article.questions.map((q, i) => state.answers[i] === q.answer),
+    url: "https://hogelog.github.io/english-reading-check/",
+  });
+  $("result-copy-btn").textContent = "結果をコピー";
 
   const list = $("result-list");
   list.innerHTML = "";
@@ -339,6 +377,15 @@ async function init() {
     showView("view-history");
   });
   $("result-retry-btn").addEventListener("click", startSession);
+  $("result-copy-btn").addEventListener("click", async () => {
+    const btn = $("result-copy-btn");
+    if (await copyText(lastShareText)) {
+      btn.textContent = "コピー済み ✓";
+      setTimeout(() => (btn.textContent = "結果をコピー"), 2000);
+    } else {
+      window.alert(lastShareText);
+    }
+  });
   $("theme-btn").addEventListener("click", () => {
     const cur = loadTheme();
     const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;

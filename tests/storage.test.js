@@ -103,4 +103,25 @@ describe("storage", () => {
     assert.equal(entry.score, 5);
     assert.equal(entry.difficulty, "B2");
   });
+
+  it("builds share text", () => {
+    const text = storage.buildShareText({
+      date: "2026-10-08",
+      title: "My Family",
+      difficulty: "A1",
+      score: 4,
+      total: 5,
+      durationSeconds: 272,
+      words: 168,
+      wpm: 37,
+      marks: [true, true, false, true, true],
+      url: "https://example.test/",
+    });
+    assert.ok(text.includes("My Family [A1]"));
+    assert.ok(text.includes("4/5 (80%)"));
+    assert.ok(text.includes("4:32"));
+    assert.ok(text.includes("168 words"));
+    assert.ok(text.includes("Q3 ✕"));
+    assert.ok(text.endsWith("https://example.test/"));
+  });
 });

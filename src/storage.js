@@ -60,6 +60,18 @@ export function entryWords(entry, articlesById) {
   return a ? a.text.split(/\s+/).filter(Boolean).length : 0;
 }
 
+export function buildShareText({ date, title, difficulty, score, total, durationSeconds, words, wpm, marks, url }) {
+  const pct = total > 0 ? Math.round((score / total) * 100) : 0;
+  const lines = [
+    `📖 Daily English Reading Check (${date})`,
+    `${title} [${difficulty}]`,
+    `${score}/${total} (${pct}%) · ${formatDuration(durationSeconds)} · ${words} words · ${wpm} wpm`,
+    marks.map((ok, i) => `Q${i + 1} ${ok ? "✓" : "✕"}`).join(" "),
+  ];
+  if (url) lines.push(url);
+  return lines.join("\n");
+}
+
 export function entryWpm(entry, articlesById) {
   const mins = (entry.durationSeconds || 0) / 60;
   return mins > 0 ? Math.round(entryWords(entry, articlesById) / mins) : 0;
