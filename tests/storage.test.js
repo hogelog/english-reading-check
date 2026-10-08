@@ -62,6 +62,33 @@ describe("storage", () => {
     assert.equal(storage.loadDifficulty(), "B2");
   });
 
+  it("records words read in saved entry", () => {
+    storage.saveResult({
+      date: "2026-10-08",
+      score: 4,
+      total: 5,
+      durationSeconds: 272,
+      difficulty: "B1",
+      articleId: "b1-001",
+      words: 331,
+    });
+    const [entry] = storage.loadHistory();
+    assert.equal(entry.words, 331);
+  });
+
+  it("derives words and wpm, backfilling legacy entries", () => {
+    const lookup = { "b1-001": { text: "one two three four" } };
+    assert.equal(storage.entryWords({ words: 331 }, lookup), 331);
+    assert.equal(storage.entryWords({ articleId: "b1-001" }, lookup), 4);
+    assert.equal(storage.entryWords({ articleId: "unknown" }, lookup), 0);
+    // 4 words in 60s -> 4 wpm; 240 words in 120s -> 120 wpm
+    assert.equal(storage.entryWpm({ durationSeconds: 60, articleId: "b1-001" }, lookup), 4);
+    assert.equal(
+      storage.entryWpm({ durationSeconds: 120, words: 240 }, lookup),
+      120,
+    );
+    assert.equal(storage.entryWpm({ durationSeconds: 0, words: 240 }, lookup), 0);
+  });
   it("reading time is recorded in saved entry", () => {
     storage.saveResult({
       date: "2026-10-08",

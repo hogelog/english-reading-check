@@ -1,5 +1,5 @@
 import "./styles.css";
-import { pickArticle } from "./articles.js";
+import { pickArticle, wordCount } from "./articles.js";
 import {
   loadHistory,
   saveResult,
@@ -12,6 +12,8 @@ import {
   todayKey,
   computeStats,
   lastNDaysLabel,
+  entryWords,
+  entryWpm,
 } from "./storage.js";
 import { buildLineChart } from "./chart.js";
 
@@ -40,6 +42,11 @@ let state = {
   answers: [], // chosen index per question
 };
 
+function articlesById() {
+  const map = {};
+  for (const a of ALL_ARTICLES) map[a.id] = a;
+  return map;
+}
 function showView(id) {
   for (const v of views) $(v).hidden = v !== id;
   const h1 = document.querySelector(`#${id} h1`);
@@ -63,6 +70,11 @@ function applyTheme(theme) {
 }
 
 // ---------- Home ----------
+function rowValue(h, lookup) {
+  const pct = Math.round(accuracyOf(h));
+  return `${h.score}/${h.total} ${pct}% ${formatDuration(h.durationSeconds)} ${entryWords(h, lookup)}w ${h.difficulty}`;
+}
+
 function accuracyOf(h) {
   return h.total > 0 ? (h.score / h.total) * 100 : 0;
 }
@@ -102,7 +114,7 @@ function renderHome() {
     const label = document.createElement("span");
     label.textContent = lastNDaysLabel(h.date);
     const val = document.createElement("span");
-    val.textContent = `${h.score} / ${h.total}　${Math.round(accuracyOf(h))}%　${formatDuration(h.durationSeconds)}`;
+    val.textContent = rowValue(h, articlesById());
     li.append(label, val);
     ul.appendChild(li);
   }
@@ -207,6 +219,7 @@ function finishSession() {
     durationSeconds,
     difficulty: article.difficulty,
     articleId: article.id,
+    words: wordCount(article.text),
   };
   saveResult(entry);
 
@@ -215,6 +228,8 @@ function finishSession() {
   $("result-time").textContent = formatDuration(durationSeconds);
   $("result-diff").textContent = article.difficulty;
   $("result-prev").textContent = prevAvg;
+  $("result-words").textContent = `${entry.words} words`;
+  $("result-wpm").textContent = `${entryWpm(entry)} wpm`;
 
   const list = $("result-list");
   list.innerHTML = "";
@@ -254,6 +269,9 @@ function renderHistory() {
   $("hist-acc").textContent = history.length ? `${Math.round(stats.avgAccuracy)}%` : "—";
   $("hist-time").textContent = history.length ? formatDuration(stats.avgSeconds) : "—";
   $("hist-count").textContent = String(history.length);
+  const lookup = articlesById();
+  const totalWords = history.reduce((sum, h) => sum + entryWords(h, lookup), 0);
+  $("hist-words").textContent = history.length ? totalWords.toLocaleString("en-US") : "—";
 
   const last30 = history.slice(-30);
   const card = $("hist-chart-card");
@@ -278,7 +296,7 @@ function renderHistory() {
       const label = document.createElement("span");
       label.textContent = `${lastNDaysLabel(h.date)} (${h.date})`;
       const val = document.createElement("span");
-      val.textContent = `${h.score}/${h.total} ${Math.round(accuracyOf(h))}% ${formatDuration(h.durationSeconds)} ${h.difficulty}`;
+      val.textContent = rowValue(h, lookup);
       li.append(label, val);
       ul.appendChild(li);
     }

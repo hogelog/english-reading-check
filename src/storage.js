@@ -54,6 +54,17 @@ export function saveTheme(theme) {
   localStorage.setItem(THEME_KEY, theme);
 }
 
+export function entryWords(entry, articlesById) {
+  if (Number.isFinite(entry.words)) return entry.words;
+  const a = articlesById ? articlesById[entry.articleId] : null;
+  return a ? a.text.split(/\s+/).filter(Boolean).length : 0;
+}
+
+export function entryWpm(entry, articlesById) {
+  const mins = (entry.durationSeconds || 0) / 60;
+  return mins > 0 ? Math.round(entryWords(entry, articlesById) / mins) : 0;
+}
+
 export function formatDuration(totalSeconds) {
   const s = Math.max(0, Math.round(totalSeconds));
   const m = Math.floor(s / 60);

@@ -158,9 +158,10 @@ main {
   background: var(--accent);
   color: var(--accent-fg);
 }
-.stats-grid { display: flex; gap: 8px; margin: 12px 0; }
+.stats-grid { display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap; }
 .stat {
-  flex: 1;
+  flex: 1 1 0;
+  min-width: 70px;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
