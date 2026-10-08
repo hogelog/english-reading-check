@@ -215,6 +215,8 @@ main {
 .result-hero { text-align: center; }
 .result-score { font-size: 2rem; font-weight: 800; margin: 0; }
 .result-pct { font-size: 1.2rem; color: var(--muted); margin: 0 0 8px; }
+.result-msg { font-size: 1.05rem; font-weight: 700; margin: 0 0 4px; }
+.result-record { font-size: 1rem; font-weight: 800; margin: 0 0 8px; }
 .result-meta { display: flex; justify-content: center; gap: 24px; margin: 0; flex-wrap: wrap; }
 .result-meta dt { font-size: 0.75rem; color: var(--muted); }
 .result-meta dd { margin: 0; font-weight: 700; font-size: 1.05rem; }

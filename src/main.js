@@ -15,6 +15,7 @@ import {
   entryWords,
   entryWpm,
   buildShareText,
+  computeStreak,
 } from "./storage.js";
 import { buildLineChart } from "./chart.js";
 
@@ -148,6 +149,8 @@ function renderHome() {
     chip.setAttribute("aria-checked", String(active));
   });
   $("home-count").textContent = `${ALL_ARTICLES.length} articles`;
+  const streak = computeStreak(history);
+  $("streak-line").textContent = streak > 0 ? `🔥 ${streak}日連続記録中！` : "今日から記録スタート！";
   $("est-time").textContent = `推定所要時間: ${state.difficulty === "Pre-A1" || state.difficulty === "A1" ? 3 : 5} min`;
   $("stat-acc-label").textContent = `${state.difficulty} · 7-day accuracy`;
   $("stat-time-label").textContent = `${state.difficulty} · avg time`;
@@ -300,7 +303,13 @@ function finishSession() {
   saveResult(entry);
 
   $("result-score").textContent = `${score} / ${article.questions.length}`;
-  $("result-pct").textContent = `${Math.round((score / article.questions.length) * 100)}%`;
+  const pct = Math.round((score / article.questions.length) * 100);
+  $("result-pct").textContent = `${pct}%`;
+  $("result-msg").textContent =
+    pct === 100 ? "Perfect! 🎉" : pct >= 80 ? "Great!" : pct >= 60 ? "Good progress!" : "Keep going!";
+  const recordBadge = $("result-record");
+  const accRatio = article.questions.length > 0 ? score / article.questions.length : 0;
+  const prevBestAcc = Math.max(-1, ...prevSameLevel.map((h) => (h.total > 0 ? h.score / h.total : 0)));
   $("result-time").textContent = formatDuration(durationSeconds);
   $("result-diff").textContent = article.difficulty;
   $("result-prev").textContent = prevAvg;
@@ -316,6 +325,18 @@ function finishSession() {
     wpmText += ` (${dw >= 0 ? "+" : ""}${dw} vs avg)`;
   }
   $("result-wpm").textContent = wpmText;
+  const prevBestWpm = Math.max(-1, ...prevSameLevel.map((h) => entryWpm(h)));
+  const newAccRecord = prevSameLevel.length > 0 && accRatio > prevBestAcc;
+  const newWpmRecord = prevSameLevel.length > 0 && wpm > prevBestWpm;
+  if (newAccRecord || newWpmRecord) {
+    recordBadge.hidden = false;
+    const parts = [];
+    if (newAccRecord) parts.push("正答率");
+    if (newWpmRecord) parts.push("スピード");
+    recordBadge.textContent = `🎉 自己ベスト更新！（${parts.join("・")}）`;
+  } else {
+    recordBadge.hidden = true;
+  }
   lastShareText = shareTextFor(entry, articlesById());
   $("result-copy-btn").textContent = "結果をコピー";
 

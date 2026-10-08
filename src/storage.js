@@ -72,6 +72,20 @@ export function buildShareText({ date, title, difficulty, score, total, duration
   return lines.join("\n");
 }
 
+export function computeStreak(history, now = new Date()) {
+  const days = new Set(history.map((h) => h.date));
+  const fmt = (d) =>
+    `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+  let streak = 0;
+  const cursor = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  if (!days.has(fmt(cursor))) cursor.setDate(cursor.getDate() - 1);
+  while (days.has(fmt(cursor))) {
+    streak += 1;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+  return streak;
+}
+
 export function entryWpm(entry, articlesById) {
   const mins = (entry.durationSeconds || 0) / 60;
   return mins > 0 ? Math.round(entryWords(entry, articlesById) / mins) : 0;

@@ -27,6 +27,7 @@
   <!-- Home -->
   <section id="view-home" class="view" aria-labelledby="home-title">
     <h1 id="home-title">Today's Reading</h1>
+    <p class="meta-row"><span id="streak-line" aria-live="polite"></span></p>
     <p class="meta-row"><span id="est-time">推定所要時間: 5 min</span><span id="home-count" class="muted"></span></p>
 
     <div class="card" role="group" aria-labelledby="diff-label">
@@ -83,6 +84,8 @@
     <div class="card result-hero">
       <p class="result-score"><span id="result-score">0 / 5</span></p>
       <p class="result-pct" id="result-pct">0%</p>
+      <p class="result-msg" id="result-msg" aria-live="polite"></p>
+      <p class="result-record" id="result-record" hidden></p>
       <dl class="result-meta">
         <div><dt>Reading time</dt><dd id="result-time">—</dd></div>
         <div><dt>Words</dt><dd id="result-words">—</dd></div>

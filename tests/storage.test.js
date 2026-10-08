@@ -46,6 +46,20 @@ describe("storage", () => {
     assert.equal(a1.count, 2);
   });
 
+  it("counts consecutive-day streaks", () => {
+    const now = new Date(2026, 9, 8); // Oct 8
+    const h = (date) => ({ date, score: 4, total: 5 });
+    assert.equal(storage.computeStreak([], now), 0);
+    assert.equal(storage.computeStreak([h("2026-10-08")], now), 1);
+    assert.equal(storage.computeStreak([h("2026-10-07"), h("2026-10-06")], now), 2);
+    assert.equal(
+      storage.computeStreak([h("2026-10-08"), h("2026-10-07"), h("2026-10-05")], now),
+      2,
+    );
+    // Multiple entries on one day count once.
+    assert.equal(storage.computeStreak([h("2026-10-08"), h("2026-10-08")], now), 1);
+  });
+
   it("computes accuracy correctly", () => {
     const stats = storage.computeStats([
       { score: 4, total: 5, durationSeconds: 272 },
