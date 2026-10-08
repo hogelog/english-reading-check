@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { pickArticle, wordCount } from "../src/articles.js";
 
-const ALL_ARTICLES = ["a1", "a2", "b1", "b2", "c1"].flatMap((level) =>
+const ALL_ARTICLES = ["pre", "a1", "a2", "b1", "b2", "c1"].flatMap((level) =>
   JSON.parse(readFileSync(new URL(`../public/data/${level}.json`, import.meta.url))),
 );
 
@@ -12,9 +12,9 @@ describe("article dataset", () => {
     assert.ok(ALL_ARTICLES.length >= 30, `got ${ALL_ARTICLES.length}`);
   });
 
-  it("covers A1/A2/B1/B2/C1", () => {
+  it("covers Pre-A1/A1/A2/B1/B2/C1", () => {
     const diffs = new Set(ALL_ARTICLES.map((a) => a.difficulty));
-    for (const d of ["A1", "A2", "B1", "B2", "C1"]) assert.ok(diffs.has(d), `missing ${d}`);
+    for (const d of ["Pre-A1", "A1", "A2", "B1", "B2", "C1"]) assert.ok(diffs.has(d), `missing ${d}`);
   });
 
   it("has unique ids", () => {
@@ -42,7 +42,7 @@ describe("article dataset", () => {
   it("texts have level-appropriate length", () => {
     for (const a of ALL_ARTICLES) {
       const n = wordCount(a.text);
-      const min = a.difficulty === "A1" ? 120 : 250;
+      const min = a.difficulty === "Pre-A1" ? 60 : a.difficulty === "A1" ? 120 : 250;
       assert.ok(n >= min && n <= 600, `${a.id}: ${n} words`);
     }
   });

@@ -38,7 +38,7 @@ export function clearHistory() {
 
 export function loadDifficulty() {
   const v = localStorage.getItem(DIFFICULTY_KEY);
-  return ["A1", "A2", "B1", "B2", "C1"].includes(v) ? v : "B1";
+  return ["Pre-A1", "A1", "A2", "B1", "B2", "C1"].includes(v) ? v : "B1";
 }
 
 export function saveDifficulty(level) {

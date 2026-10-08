@@ -8,7 +8,7 @@ const repoRoot = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 
 export async function validateData() {
   const ALL_ARTICLES = [];
-  for (const level of ["a1", "a2", "b1", "b2", "c1"]) {
+  for (const level of ["pre", "a1", "a2", "b1", "b2", "c1"]) {
     const raw = await readFile(path.join(repoRoot, "public", "data", `${level}.json`), "utf8");
     ALL_ARTICLES.push(...JSON.parse(raw));
   }
@@ -18,12 +18,12 @@ export async function validateData() {
   for (const a of ALL_ARTICLES) {
     if (!a.id || ids.has(a.id)) errors.push(`duplicate/missing id: ${a.id}`);
     ids.add(a.id);
-    if (!["A1", "A2", "B1", "B2", "C1"].includes(a.difficulty)) {
+    if (!["Pre-A1", "A1", "A2", "B1", "B2", "C1"].includes(a.difficulty)) {
       errors.push(`${a.id}: bad difficulty`);
     }
     if (!a.title || !a.text) errors.push(`${a.id}: missing title/text`);
     const words = wordCount(a.text);
-    const minWords = a.difficulty === "A1" ? 120 : 250;
+    const minWords = a.difficulty === "Pre-A1" ? 60 : a.difficulty === "A1" ? 120 : 250;
     if (words < minWords || words > 600) errors.push(`${a.id}: ${words} words`);
     if (!Array.isArray(a.questions) || a.questions.length !== 5) {
       errors.push(`${a.id}: want exactly 5 questions`);
@@ -41,7 +41,7 @@ export async function validateData() {
   }
   const byDiff = {};
   for (const a of ALL_ARTICLES) byDiff[a.difficulty] = (byDiff[a.difficulty] || 0) + 1;
-  for (const d of ["A1", "A2", "B1", "B2", "C1"]) {
+  for (const d of ["Pre-A1", "A1", "A2", "B1", "B2", "C1"]) {
     if (!byDiff[d]) errors.push(`no articles for ${d}`);
   }
   if (ALL_ARTICLES.length < 30) errors.push(`only ${ALL_ARTICLES.length} articles (need >= 30)`);

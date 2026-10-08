@@ -1,0 +1,268 @@
+[
+  {
+    "id": "pre-001",
+    "difficulty": "Pre-A1",
+    "title": "My Cat",
+    "text": "I have a cat. Her name is Mimi. She is white. She is very small. She has big eyes. Her eyes are blue. She lives with me. She likes milk. She drinks milk every day. She likes fish too.\n\nShe eats fish with me. She sleeps on my bed. She sleeps near me. She plays with a ball. The ball is red. She runs fast. She jumps high. I like Mimi. Mimi likes me. We are good friends. We play every day. She is cute. I love her.",
+    "questions": [
+      {
+        "question": "What is the cat's name?",
+        "choices": ["Mimi", "Toto", "Pochi", "Kiki"],
+        "answer": 0,
+        "explanation": "本文に Her name is Mimi とあります。"
+      },
+      {
+        "question": "What color is Mimi?",
+        "choices": ["Black", "Brown", "White", "Gray"],
+        "answer": 2,
+        "explanation": "本文に She is white とあります。"
+      },
+      {
+        "question": "What color are her eyes?",
+        "choices": ["Blue", "Red", "Black", "Green"],
+        "answer": 0,
+        "explanation": "本文に Her eyes are blue とあります。"
+      },
+      {
+        "question": "What does Mimi drink?",
+        "choices": ["Juice", "Tea", "Water", "Milk"],
+        "answer": 3,
+        "explanation": "本文に She drinks milk とあります。"
+      },
+      {
+        "question": "What is red?",
+        "choices": ["The bed", "The ball", "The fish", "The cat"],
+        "answer": 1,
+        "explanation": "本文に The ball is red とあります。"
+      }
+    ]
+  },
+  {
+    "id": "pre-002",
+    "difficulty": "Pre-A1",
+    "title": "Red Apples",
+    "text": "I like apples. They are red. They are sweet. I eat one every day. My mother buys apples. She buys five apples. We put them in a box. The box is on the table.\n\nMy sister likes apples too. She eats two apples. My brother likes bananas. He does not like apples. Today is Sunday. We eat apples together. We drink water too. Apples are good. Apples are sweet. I love red apples. They make me happy. We eat fruit every morning.",
+    "questions": [
+      {
+        "question": "What color are the apples?",
+        "choices": ["Yellow", "Red", "Green", "Pink"],
+        "answer": 1,
+        "explanation": "本文に They are red とあります。"
+      },
+      {
+        "question": "How many apples does Mother buy?",
+        "choices": ["Five apples", "Two apples", "One apple", "Three apples"],
+        "answer": 0,
+        "explanation": "本文に She buys five apples とあります。"
+      },
+      {
+        "question": "Where is the box?",
+        "choices": ["On the chair", "On the bed", "Under the table", "On the table"],
+        "answer": 3,
+        "explanation": "本文に The box is on the table とあります。"
+      },
+      {
+        "question": "How many apples does Sister eat?",
+        "choices": ["One apple", "Two apples", "Five apples", "Four apples"],
+        "answer": 1,
+        "explanation": "本文に She eats two apples とあります。"
+      },
+      {
+        "question": "What does Brother like?",
+        "choices": ["Apples", "Oranges", "Bananas", "Grapes"],
+        "answer": 2,
+        "explanation": "本文に My brother likes bananas とあります。"
+      }
+    ]
+  },
+  {
+    "id": "pre-003",
+    "difficulty": "Pre-A1",
+    "title": "My School Bag",
+    "text": "I have a school bag. It is blue. It is new. I take it to school. It has two books. It has three pencils. It has one pen. It has a red box. The box is small.\n\nI put lunch in it. My lunch is rice. I love my bag. It is big and strong. My friend has a bag too. Her bag is pink. My bag is blue. We go to school. We walk together. We sing songs. School is fun. I like my bag.",
+    "questions": [
+      {
+        "question": "What color is my bag?",
+        "choices": ["Pink", "Red", "Blue", "Black"],
+        "answer": 2,
+        "explanation": "本文に It is blue とあります。"
+      },
+      {
+        "question": "How many books are in the bag?",
+        "choices": ["Two books", "Three books", "One book", "Four books"],
+        "answer": 0,
+        "explanation": "本文に It has two books とあります。"
+      },
+      {
+        "question": "How many pencils are in the bag?",
+        "choices": ["One pencil", "Two pencils", "Three pencils", "Five pencils"],
+        "answer": 2,
+        "explanation": "本文に It has three pencils とあります。"
+      },
+      {
+        "question": "What color is my friend's bag?",
+        "choices": ["Blue", "Pink", "Red", "Yellow"],
+        "answer": 1,
+        "explanation": "本文に Her bag is pink とあります。"
+      },
+      {
+        "question": "What is my lunch?",
+        "choices": ["Bread", "Fish", "Egg", "Rice"],
+        "answer": 3,
+        "explanation": "本文に My lunch is rice とあります。"
+      }
+    ]
+  },
+  {
+    "id": "pre-004",
+    "difficulty": "Pre-A1",
+    "title": "A Sunny Day",
+    "text": "Today is sunny. The sky is blue. The sun is big. I go to the park. I go with my dad. We walk to the park. Birds sing in the trees. Flowers are pink and yellow.\n\nWe sit on the grass. We drink cold water. I run in the park. I play with a ball. My dad smiles at me. We see a white dog. The dog runs fast. We eat ice cream. It is sweet and cold. I love sunny days. They make me happy.",
+    "questions": [
+      {
+        "question": "What color is the sky?",
+        "choices": ["Gray", "Blue", "Black", "White"],
+        "answer": 1,
+        "explanation": "本文に The sky is blue とあります。"
+      },
+      {
+        "question": "Who goes with me?",
+        "choices": ["My dad", "My mom", "My sister", "My teacher"],
+        "answer": 0,
+        "explanation": "本文に I go with my dad とあります。"
+      },
+      {
+        "question": "Where do we sit?",
+        "choices": ["On the chair", "On the grass", "On the bed", "On the bus"],
+        "answer": 1,
+        "explanation": "本文に We sit on the grass とあります。"
+      },
+      {
+        "question": "What color is the dog?",
+        "choices": ["Black", "Brown", "Yellow", "White"],
+        "answer": 3,
+        "explanation": "本文に We see a white dog とあります。"
+      },
+      {
+        "question": "What do we eat?",
+        "choices": ["Cake", "Bread", "Ice cream", "Rice"],
+        "answer": 2,
+        "explanation": "本文に We eat ice cream とあります。"
+      }
+    ]
+  },
+  {
+    "id": "pre-005",
+    "difficulty": "Pre-A1",
+    "title": "My Lunch",
+    "text": "It is twelve o'clock. I eat lunch. I eat with my mom. We sit at the table. I eat rice. I eat eggs. I eat carrots. Carrots are orange. Eggs are yellow and white. I drink hot soup. The soup is good.\n\nMy mom eats bread. She eats cheese. She drinks milk. I love lunch time. Lunch is yummy. We talk and smile. We wash our hands. We clean the table. The room is clean. I am happy. Mom is happy too.",
+    "questions": [
+      {
+        "question": "Who eats with me?",
+        "choices": ["My dad", "My mom", "My brother", "My dog"],
+        "answer": 1,
+        "explanation": "本文に I eat with my mom とあります。"
+      },
+      {
+        "question": "What color are carrots?",
+        "choices": ["Orange", "Red", "Green", "Pink"],
+        "answer": 0,
+        "explanation": "本文に Carrots are orange とあります。"
+      },
+      {
+        "question": "What do I drink?",
+        "choices": ["Cold juice", "Hot soup", "Sweet milk", "Black tea"],
+        "answer": 1,
+        "explanation": "本文に I drink hot soup とあります。"
+      },
+      {
+        "question": "What does Mom eat?",
+        "choices": ["Rice", "Bread", "Fish", "Apples"],
+        "answer": 1,
+        "explanation": "本文に My mom eats bread とあります。"
+      },
+      {
+        "question": "What does Mom drink?",
+        "choices": ["Water", "Juice", "Soup", "Milk"],
+        "answer": 3,
+        "explanation": "本文に She drinks milk とあります。"
+      }
+    ]
+  },
+  {
+    "id": "pre-006",
+    "difficulty": "Pre-A1",
+    "title": "Two Dogs",
+    "text": "I have two dogs. One dog is big. One dog is small. The big dog is black. The small dog is brown. Their names are Coco and Pipi. Coco is big. Pipi is small. They live with me.\n\nThey like bones. They eat bones every day. They drink water. They run in the garden. They play with me. Coco runs fast. Pipi walks slow. They sleep in a small house. The house is red. I wash them on Sunday. I love Coco and Pipi.",
+    "questions": [
+      {
+        "question": "How many dogs do I have?",
+        "choices": ["One dog", "Two dogs", "Three dogs", "Four dogs"],
+        "answer": 1,
+        "explanation": "本文に I have two dogs とあります。"
+      },
+      {
+        "question": "What color is the big dog?",
+        "choices": ["Black", "White", "Brown", "Yellow"],
+        "answer": 0,
+        "explanation": "本文に The big dog is black とあります。"
+      },
+      {
+        "question": "What color is the small dog?",
+        "choices": ["Black", "White", "Brown", "Pink"],
+        "answer": 2,
+        "explanation": "本文に The small dog is brown とあります。"
+      },
+      {
+        "question": "What do the dogs like?",
+        "choices": ["Fish", "Rice", "Bones", "Apples"],
+        "answer": 2,
+        "explanation": "本文に They like bones とあります。"
+      },
+      {
+        "question": "What color is their house?",
+        "choices": ["Blue", "Green", "Yellow", "Red"],
+        "answer": 3,
+        "explanation": "本文に The house is red とあります。"
+      }
+    ]
+  },
+  {
+    "id": "pre-007",
+    "difficulty": "Pre-A1",
+    "title": "Happy Birthday",
+    "text": "Today is my birthday. I am seven years old. My family sings a song. Happy birthday to me. I have a big cake. The cake is pink. It has six red candles. I blow the candles. We clap our hands.\n\nI open my gifts. One gift is a book. One gift is a blue pen. My dad gives me a ball. The ball is green. We eat cake together. The cake is sweet. I drink apple juice. My friends smile. I smile too. I am very happy.",
+    "questions": [
+      {
+        "question": "How old am I?",
+        "choices": ["Six years old", "Seven years old", "Eight years old", "Five years old"],
+        "answer": 1,
+        "explanation": "本文に I am seven years old とあります。"
+      },
+      {
+        "question": "What color is the cake?",
+        "choices": ["Pink", "Blue", "Green", "Yellow"],
+        "answer": 0,
+        "explanation": "本文に The cake is pink とあります。"
+      },
+      {
+        "question": "How many candles are on the cake?",
+        "choices": ["Five candles", "Seven candles", "Six candles", "Three candles"],
+        "answer": 2,
+        "explanation": "本文に It has six red candles とあります。"
+      },
+      {
+        "question": "What does Dad give me?",
+        "choices": ["A book", "A pen", "A cake", "A ball"],
+        "answer": 3,
+        "explanation": "本文に My dad gives me a ball とあります。"
+      },
+      {
+        "question": "What do I drink?",
+        "choices": ["Apple juice", "Orange tea", "Cold milk", "Hot soup"],
+        "answer": 0,
+        "explanation": "本文に I drink apple juice とあります。"
+      }
+    ]
+  }
+]

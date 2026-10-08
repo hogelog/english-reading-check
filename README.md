@@ -6,7 +6,7 @@ Read a passage (300–500 words) → answer 5 questions → compare with past re
 
 🌐 https://hogelog.github.io/english-reading-check/
 
-Zero dependencies, no backend, no tracking. History lives in the browser's LocalStorage only. PWA-ready, works offline. 37 passages included (A1×7 / A2×7 / B1×8 / B2×8 / C1×7).
+Zero dependencies, no backend, no tracking. History lives in the browser's LocalStorage only. PWA-ready, works offline. 44 passages included (Pre-A1×7 / A1×7 / A2×7 / B1×8 / B2×8 / C1×7).
 
 ## Dev
 

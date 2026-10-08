@@ -48,7 +48,7 @@ async function copyText(text) {
 }
 
 async function loadArticles() {
-  const levels = ["a1", "a2", "b1", "b2", "c1"];
+  const levels = ["pre", "a1", "a2", "b1", "b2", "c1"];
   const parts = await Promise.all(
     levels.map(async (level) => {
       const res = await fetch(`./data/${level}.json?v=${__DATA_VERSION__}`);
@@ -148,6 +148,7 @@ function renderHome() {
     chip.setAttribute("aria-checked", String(active));
   });
   $("home-count").textContent = `${ALL_ARTICLES.length} articles`;
+  $("est-time").textContent = `推定所要時間: ${state.difficulty === "Pre-A1" || state.difficulty === "A1" ? 3 : 5} min`;
   const last7 = history.slice(-7);
   const stats7 = computeStats(last7);
   $("stat-acc").textContent = last7.length ? `${Math.round(stats7.avgAccuracy)}%` : "—";
