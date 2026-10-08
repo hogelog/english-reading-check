@@ -110,6 +110,13 @@ function renderHome() {
 // ---------- Reading / Quiz ----------
 function startSession() {
   const history = loadHistory();
+  // Guard against stale cached files: if the chosen difficulty has no loaded
+  // data (e.g. old JS mixed with new HTML), reload to fetch the latest files
+  // instead of silently serving a wrong difficulty.
+  if (!ALL_ARTICLES.some((a) => a.difficulty === state.difficulty)) {
+    location.reload();
+    return;
+  }
   const article = pickArticle(ALL_ARTICLES, history, state.difficulty);
   if (!article) return;
   state.article = article;

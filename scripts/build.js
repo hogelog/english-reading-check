@@ -81,4 +81,13 @@ for (const f of files) {
 // GitHub Pages: serve index.html for unknown paths (SPA fallback is not needed,
 // but .nojekyll avoids Jekyll processing of underscore files).
 await writeFile(path.join(dist, ".nojekyll"), "");
+// Bust the service-worker cache on every deploy so updates replace the whole
+// app shell instead of mixing old and new files.
+const buildId = (process.env.GITHUB_SHA || Date.now().toString(36)).slice(0, 8);
+const swPath = path.join(dist, "sw.js");
+const sw = (await readFile(swPath, "utf8")).replace(
+  /const CACHE = "derc-[^"]*";/,
+  `const CACHE = "derc-${buildId}";`,
+);
+await writeFile(swPath, sw);
 console.log(`Built ${ALL_ARTICLES.length} articles ${JSON.stringify(byDiff)} -> dist/`);
