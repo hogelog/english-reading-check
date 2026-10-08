@@ -1,0 +1,15 @@
+{
+  "name": "english-reading-check",
+  "version": "1.0.0",
+  "description": "Daily English Reading Check - 5-minute daily reading comprehension check (static site for GitHub Pages)",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "build": "node scripts/build.js",
+    "preview": "node scripts/dev.js --dist",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

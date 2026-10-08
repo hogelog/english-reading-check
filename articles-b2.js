@@ -1,0 +1,306 @@
+export const ARTICLES_B2 = [
+  {
+    "id": "b2-001",
+    "difficulty": "B2",
+    "title": "The Attention Economy",
+    "text": "In the modern digital marketplace, human attention has become one of the most valuable commodities. Technology companies compete fiercely to capture and retain the focus of users, because the longer people remain engaged with an app or platform, the more advertisements they can be shown. This business model, often called the attention economy, rewards content that provokes strong emotional reactions rather than content that informs or enriches. As a result, sensational headlines and controversial posts tend to spread far more rapidly than balanced analysis.\n\nThe mechanisms behind this system are highly sophisticated. Designers employ insights from behavioral psychology, such as variable rewards and social validation, to encourage habitual use. Notifications, autoplay features, and infinite scrolling reduce natural stopping points, making it difficult for users to disengage. While these techniques increase engagement metrics, they may also contribute to anxiety, reduced concentration, and a sense of lost time among users who originally intended only a brief visit.\n\nSupporters of the current model argue that free services funded by advertising have democratized access to information and entertainment. Without advertising revenue, they contend, many platforms would require paid subscriptions that exclude lower-income users. From this perspective, the trade of attention for access is presented as a reasonable exchange that benefits both businesses and consumers.\n\nCritics, however, point to significant social costs. When algorithms prioritize outrage and novelty, public discussion becomes polarized and misinformation can flourish. Furthermore, constant competition for attention places particular pressure on young people, whose self-esteem becomes linked to likes and followers. Researchers have found correlations between heavy social media use and sleep disruption, although establishing direct causation remains difficult.\n\nIn response, a growing movement advocates for more conscious technology use. Some experts propose redesigning platforms to optimize for user well-being rather than time spent online, for example by displaying chronological feeds or limiting recommendation systems. Others emphasize digital literacy, encouraging individuals to manage notifications and reflect on their habits. Whether market incentives alone can produce such changes remains uncertain, but the debate suggests that attention, once treated as unlimited, is now widely recognized as a finite and valuable resource worth protecting.",
+    "questions": [
+      {
+        "question": "According to the text, why do technology companies try to keep users engaged for as long as possible?",
+        "choices": ["To improve the educational quality of online content", "To show more advertisements and increase revenue", "To reduce the cost of developing new features", "To comply with government regulations on media"],
+        "answer": 1,
+        "explanation": "広告を見せる時間を増やして収益を上げるためだと本文にあるから。正解は2番目。"
+      },
+      {
+        "question": "What can be inferred about sensational or controversial content in the attention economy?",
+        "choices": ["It is carefully reviewed by experts before publication", "It is less profitable than balanced analysis", "It is mainly preferred by older users", "It spreads quickly because it triggers strong emotions"],
+        "answer": 3,
+        "explanation": "感情的な反応を引き起こすため拡散しやすいと推論できる。本文の記述からの推論問題。"
+      },
+      {
+        "question": "What does the word commodities in the first paragraph most nearly mean?",
+        "choices": ["Widely traded valuable resources", "Freely shared ideas", "Strict government rules", "Temporary emotional states"],
+        "answer": 0,
+        "explanation": "commodities はここでは取引される価値ある資源という意味。語彙問題。"
+      },
+      {
+        "question": "What does they in the sentence they may also contribute to anxiety refer to?",
+        "choices": ["Lower-income users", "Paid subscriptions", "These techniques such as notifications and infinite scrolling", "Engagement metrics"],
+        "answer": 2,
+        "explanation": "they は前文の通知や自動再生などの手法を指す。指示語問題。"
+      },
+      {
+        "question": "What is the author's stance toward the attention economy?",
+        "choices": ["Fully supportive of the current advertising model", "Neutral and balanced, presenting both benefits and concerns while noting reform efforts", "Dismissive of any criticism as unscientific", "Advocating a complete ban on social media"],
+        "answer": 1,
+        "explanation": "筆者は利点と批判の両方を紹介し、改善の動きにも触れる中立的な立場。要旨・立場問題。"
+      }
+    ]
+  },
+  {
+    "id": "b2-002",
+    "difficulty": "B2",
+    "title": "Testing the Four-Day Workweek",
+    "text": "The idea of a four-day workweek, with no reduction in pay, has moved from a radical proposal to a serious policy experiment. In several countries, companies have participated in large-scale trials in which employees work 32 hours over four days instead of the traditional 40 hours over five days. The underlying principle is often described as the 100-80-100 model: 100 percent of pay for 80 percent of time in exchange for 100 percent of productivity. Advocates argue that long hours do not necessarily produce better results, since fatigued workers make more errors and struggle to concentrate.\n\nResults from recent trials have attracted considerable attention. Many participating firms reported stable or even increased revenue, alongside substantial declines in absenteeism and resignations. Employees frequently reported lower stress, better sleep, and greater satisfaction with work-life balance. These improvements were attributed not to working less intensively, but to working more efficiently, with fewer unnecessary meetings and less time spent on low-priority tasks.\n\nNevertheless, critics caution against overgeneralization. The trials so far have largely involved companies that volunteered to participate, which may already have progressive cultures and motivated staff. Furthermore, the model appears easier to implement in office-based or knowledge work than in sectors such as healthcare, education, or manufacturing, where continuous coverage is essential. In hospitals, for instance, reducing working days without hiring additional staff could increase pressure on remaining shifts.\n\nAnother concern involves the intensification of work. Some employees reported that although they appreciated an extra day off, their four working days became more demanding, with shorter breaks and tighter deadlines. Researchers warn that if workloads are simply compressed rather than redesigned, the benefits for mental health may diminish over time. Sustainable implementation, they argue, requires careful reorganization of processes rather than merely eliminating one day.\n\nDespite these challenges, interest in shorter working weeks continues to grow. Governments facing labor shortages and burnout see potential benefits, while younger workers increasingly prioritize flexibility when choosing employers. Future research will need to examine long-term effects and applicability across different industries. For now, the experiments suggest that productivity depends less on hours spent at work than on how that time is structured and supported.",
+    "questions": [
+      {
+        "question": "What is the 100-80-100 model described in the text?",
+        "choices": ["100 workers sharing 80 tasks to achieve 100 percent safety", "Full pay for 80 percent of time in exchange for full productivity", "A 100-day trial followed by 80 days of evaluation", "Working 100 hours per month for 80 percent of salary"],
+        "answer": 1,
+        "explanation": "100%の給与・80%の時間・100%の生産性という定義が本文にある。事実問題。"
+      },
+      {
+        "question": "Why did productivity remain stable in many trial companies?",
+        "choices": ["Because employees worked overtime on weekends", "Because firms hired twice as many workers", "Because inefficient meetings and low-priority tasks were reduced", "Because salaries were cut to fund new technology"],
+        "answer": 2,
+        "explanation": "無駄な会議などを減らし効率化したことが原因。本文の因果関係問題。"
+      },
+      {
+        "question": "What does the word intensification in the fourth paragraph most nearly mean?",
+        "choices": ["The act of making work more concentrated and demanding", "The process of hiring additional staff", "A reduction in working speed", "A government approval procedure"],
+        "answer": 0,
+        "explanation": "intensification は仕事が密で負荷が高まることという意味。語彙問題。"
+      },
+      {
+        "question": "What can be inferred about the trial results?",
+        "choices": ["They prove the model will succeed in every industry", "They show employees disliked having extra time off", "They were conducted without measuring revenue", "They may be biased because participating firms volunteered"],
+        "answer": 3,
+        "explanation": "参加企業が自発的で文化が進歩的かもしれないため一般化に注意とある。推論問題。"
+      },
+      {
+        "question": "What is the author's overall conclusion?",
+        "choices": ["The four-day week is a complete failure", "The experiments are promising but require redesign and further study across industries", "Hospitals should immediately adopt the model", "Long hours are the only way to increase productivity"],
+        "answer": 1,
+        "explanation": "筆者は可能性を認めつつ再設計と長期研究が必要とする。要旨問題。"
+      }
+    ]
+  },
+  {
+    "id": "b2-003",
+    "difficulty": "B2",
+    "title": "Microplastics and Human Health",
+    "text": "Plastic pollution is no longer limited to visible litter on beaches or in rivers. Over time, larger plastic items break down into fragments smaller than five millimeters, known as microplastics, and even tinier particles called nanoplastics. These particles have been detected in oceans, soil, drinking water, and the air, making human exposure virtually unavoidable. Recent studies have reported microplastics in human blood, lungs, and digestive systems, raising urgent questions about potential health consequences.\n\nThe pathways of exposure are diverse. People may ingest microplastics through seafood, table salt, bottled water, and even fruits and vegetables, as particles from soil and water enter agricultural systems. Inhalation is another significant route, particularly in urban environments where synthetic textiles shed fibers and vehicle tires release particles through wear. Once inside the body, smaller particles may cross biological barriers, although scientists are still investigating how extensively this occurs.\n\nLaboratory experiments suggest several plausible mechanisms of harm. Microplastics can cause physical irritation to tissues and may carry chemical additives, such as plasticizers and flame retardants, that interfere with hormonal systems. In animal studies, high doses have been linked to inflammation and changes in gut bacteria. However, translating these findings to humans is challenging, because laboratory conditions often involve concentrations far higher than those encountered in daily life.\n\nThis uncertainty has led to differing interpretations. Some public health experts advocate a precautionary approach, arguing that production of single-use plastics should be reduced even before definitive evidence of harm is established. Others caution that alarmist reporting may distract from better-established health risks, such as air pollution from fossil fuels. They emphasize the need for standardized measurement methods, since current studies use different techniques that make comparison difficult.\n\nDespite the gaps in knowledge, most researchers agree on practical steps. Improved waste management, reduced consumption of disposable plastics, and development of safer materials could lower environmental levels regardless of the precise degree of toxicity. Continued monitoring and long-term epidemiological studies will be essential. Until clearer evidence emerges, microplastics illustrate a broader dilemma of modern technology: innovations that offer convenience may produce subtle, widespread effects that take decades to fully understand.",
+    "questions": [
+      {
+        "question": "According to the text, what are microplastics?",
+        "choices": ["Large plastic bottles collected on beaches", "Plastic fragments smaller than five millimeters", "Chemical fuels used to make plastic", "Natural fibers found in soil"],
+        "answer": 1,
+        "explanation": "5ミリより小さい断片と定義されている。事実問題。"
+      },
+      {
+        "question": "Why is it difficult to apply laboratory findings to humans?",
+        "choices": ["Because animals and humans share no biological similarities", "Because scientists refuse to publish their methods", "Because microplastics dissolve immediately in the body", "Because lab studies often use much higher concentrations than real life"],
+        "answer": 3,
+        "explanation": "実験室の濃度が日常生活よりはるかに高いためとある。因果関係問題。"
+      },
+      {
+        "question": "What does the word pathways in the second paragraph most nearly mean?",
+        "choices": ["Forest trails", "Medical treatments", "Routes by which exposure occurs", "Legal regulations"],
+        "answer": 2,
+        "explanation": "pathways は曝露の経路という意味。語彙問題。"
+      },
+      {
+        "question": "What does this uncertainty in the fourth paragraph refer to?",
+        "choices": ["Uncertainty about whether lab results prove harm to humans at real-life levels", "Uncertainty about the definition of plastic", "Uncertainty about how to recycle bottles", "Uncertainty about urban population growth"],
+        "answer": 0,
+        "explanation": "this uncertainty は人体への影響の不確実さを指す。指示語問題。"
+      },
+      {
+        "question": "What can be inferred about the author's view on reducing single-use plastics?",
+        "choices": ["It is unnecessary under any circumstances", "It will completely eliminate all health risks", "It should wait until all plastic is banned globally", "It is a sensible step even while research continues"],
+        "answer": 3,
+        "explanation": "証拠が不十分でも削減は実用的と述べる立場が読み取れる。推論・立場問題。"
+      }
+    ]
+  },
+  {
+    "id": "b2-004",
+    "difficulty": "B2",
+    "title": "How Smart Cities Learn",
+    "text": "Cities around the world are increasingly described as smart, a term that generally refers to the use of sensors, data analysis, and automated systems to manage urban life more efficiently. Traffic lights adjust their timing based on real-time congestion, energy grids balance supply and demand, and waste bins signal when they need collection. The promise is that by collecting vast quantities of information, cities can reduce costs, lower emissions, and improve services for residents.\n\nThe technical foundation of this vision is the network of connected devices known as the Internet of Things. Sensors embedded in roads, buildings, and public transport continuously generate data, which is then processed by algorithms to detect patterns and predict future needs. For example, analysis of commuting data may reveal that modest changes to bus schedules could significantly reduce overcrowding. In some cities, predictive models help allocate emergency services more rapidly to areas where incidents are statistically more likely.\n\nHowever, the extensive collection of urban data raises important concerns about privacy and equity. Cameras equipped with facial recognition and location tracking from mobile phones can create detailed records of individual movements. While city authorities argue that such data is anonymized and used solely for planning, critics warn that anonymized datasets can sometimes be re-identified. There is also a risk that investment concentrates in affluent neighborhoods, where returns appear higher, leaving disadvantaged areas underserved.\n\nAnother challenge is the complexity of urban systems themselves. A solution that improves one metric may worsen another. Widening roads to reduce congestion, for instance, can encourage more driving and ultimately increase pollution. Effective smart city strategies therefore require not only engineering expertise, but also input from sociologists, environmental scientists, and local communities who understand daily realities that data alone may miss.\n\nThe most successful examples tend to treat technology as a tool for collaboration rather than centralized control. In Barcelona and Seoul, open data platforms allow citizens to propose solutions and monitor government performance. Such participatory approaches suggest that smart cities learn most effectively when residents are active contributors rather than passive subjects of observation. The future of urban intelligence, in other words, may depend as much on democratic engagement as on computational power.",
+    "questions": [
+      {
+        "question": "Which of the following is given as an example of a smart city technology?",
+        "choices": ["Traffic lights that adjust timing based on congestion", "Banning all cars from city centers", "Replacing public transport with private helicopters", "Printing all government documents on paper"],
+        "answer": 0,
+        "explanation": "渋滞に応じて信号のタイミングを変える例が挙げられている。事実問題。"
+      },
+      {
+        "question": "What risk is mentioned regarding anonymized urban data?",
+        "choices": ["It is too expensive to store", "It cannot be used for planning", "It automatically deletes itself", "It can sometimes be re-identified to reveal individuals"],
+        "answer": 3,
+        "explanation": "匿名化データでも個人が再特定されうるとある。事実・詳細問題。"
+      },
+      {
+        "question": "What does the word allocate in the second paragraph most nearly mean?",
+        "choices": ["To ignore emergency calls", "To increase taxes", "To distribute resources for a purpose", "To hide information"],
+        "answer": 2,
+        "explanation": "allocate は資源を配分するという意味。語彙問題。"
+      },
+      {
+        "question": "Why might widening roads fail to solve traffic problems?",
+        "choices": ["Because drivers dislike wide roads", "Because sensors stop working on wide roads", "Because buses cannot use wide roads", "Because it encourages more driving and increases pollution"],
+        "answer": 3,
+        "explanation": "道路拡幅が運転を促し汚染を増やすという因果が述べられている。因果関係問題。"
+      },
+      {
+        "question": "What is the author's main argument about successful smart cities?",
+        "choices": ["They should rely only on engineers", "They work best when citizens participate and technology supports collaboration", "They should collect data secretly", "They must focus investment only on wealthy areas"],
+        "answer": 1,
+        "explanation": "市民参加と協働の道具としての技術が重要という主張。要旨問題。"
+      }
+    ]
+  },
+  {
+    "id": "b2-005",
+    "difficulty": "B2",
+    "title": "The Science of Sleep",
+    "text": "Sleep is often treated as lost time, an interruption to productive life. Yet research increasingly shows that sleep plays an essential role in memory, emotional regulation, and physical health. During the night, the brain cycles through distinct stages, including deep slow-wave sleep and rapid eye movement sleep, each associated with different restorative processes. Cutting sleep short, even voluntarily, therefore has consequences that extend well beyond next-day fatigue.\n\nOne of the most important functions of sleep is memory consolidation. While we are awake, experiences are initially stored in a fragile form. During deep sleep, these memories are gradually transferred and integrated into long-term networks, making them more stable and accessible. Studies have demonstrated that students who sleep adequately after learning retain information more effectively than those who remain awake, even when total study time is identical. Sleep, in this sense, is not the absence of learning but a continuation of it.\n\nSleep deprivation also affects decision-making and emotional control. After insufficient sleep, the amygdala, a brain region involved in threat detection, becomes overly reactive, while connections to the prefrontal cortex, which supports rational judgment, weaken. As a result, tired individuals are more likely to respond impulsively, misinterpret neutral expressions as hostile, and take unnecessary risks. These effects help explain why drowsy driving is as dangerous as drunk driving.\n\nDespite this evidence, modern lifestyles often undermine healthy sleep. Exposure to bright screens late at night suppresses melatonin, a hormone that signals darkness to the body, thereby delaying sleep onset. Irregular schedules, caffeine consumption, and work-related stress further fragment rest. Adolescents are particularly vulnerable, because biological changes during puberty naturally shift their internal clocks later, conflicting with early school start times.\n\nEncouragingly, relatively modest adjustments can yield significant benefits. Maintaining consistent bedtimes, limiting screen use before bed, and obtaining morning daylight help stabilize circadian rhythms. Some schools and companies have responded by delaying start times or providing education on sleep hygiene. Although individual needs vary, most adults require seven to nine hours. Recognizing sleep as a biological necessity rather than a luxury may be one of the simplest ways to improve both performance and well-being.",
+    "questions": [
+      {
+        "question": "According to the text, what happens during deep sleep?",
+        "choices": ["The body stops producing all hormones", "Learning becomes impossible", "Memories are transferred and integrated into long-term networks", "The brain remains completely inactive"],
+        "answer": 2,
+        "explanation": "深い睡眠中に記憶が長期ネットワークに移され統合されるとある。事実問題。"
+      },
+      {
+        "question": "Why are tired people more likely to act impulsively?",
+        "choices": ["Because the amygdala becomes overreactive and rational control weakens", "Because they have more energy than rested people", "Because caffeine improves their judgment", "Because the prefrontal cortex becomes larger overnight"],
+        "answer": 0,
+        "explanation": "扁桃体が過敏になり前頭前野との連携が弱まるため。因果関係問題。"
+      },
+      {
+        "question": "What does the word consolidation in the second paragraph most nearly mean?",
+        "choices": ["A method of staying awake", "A type of dream", "A medical disorder", "The process of strengthening and stabilizing memories"],
+        "answer": 3,
+        "explanation": "consolidation は記憶を定着・安定化させる過程という意味。語彙問題。"
+      },
+      {
+        "question": "What can be inferred about adolescents and school start times?",
+        "choices": ["Early start times match their biological clocks perfectly", "Late internal clocks make early starts particularly difficult for them", "Adolescents need less sleep than adults", "Screens have no effect on their melatonin"],
+        "answer": 1,
+        "explanation": "思春期で体内時計が後ろにずれるため早い始業と矛盾するとある。推論問題。"
+      },
+      {
+        "question": "What is the author's purpose in the final paragraph?",
+        "choices": ["To argue that sleep problems cannot be solved", "To promote sales of sleeping pills", "To suggest practical measures and emphasize sleep as a necessity", "To criticize all schools and companies"],
+        "answer": 2,
+        "explanation": "筆者は具体策を示し睡眠を必需品と捉えることを提案する。目的問題。"
+      }
+    ]
+  },
+  {
+    "id": "b2-006",
+    "difficulty": "B2",
+    "title": "The Hidden Cost of Food Delivery",
+    "text": "Food delivery applications have transformed how many people eat, offering restaurant meals at the tap of a screen. The convenience is undeniable, especially for busy workers and for customers during periods of restricted movement. Yet beneath the seamless interface lies a complex economic and environmental system whose costs are often invisible to consumers. Understanding these hidden costs is essential for evaluating whether the current model is sustainable.\n\nFrom an economic perspective, the commissions charged to restaurants can be substantial, sometimes reaching 30 percent of each order. For small establishments operating on narrow profit margins, such fees may erase profitability entirely. Some restaurants report raising menu prices for delivery orders or reducing portion sizes to compensate, passing the burden indirectly to customers. Delivery riders, meanwhile, frequently work under precarious conditions, paid per delivery without guaranteed minimum wages, sick leave, or protection against accidents.\n\nThe environmental footprint is equally significant. Single orders often involve multiple layers of packaging, including plastic containers, cutlery, and bags, much of which is difficult to recycle because of food contamination. Delivery vehicles, particularly gasoline-powered motorbikes and cars idling while waiting for orders, contribute to urban emissions and congestion. Although some platforms have introduced bundled orders and bicycle delivery, these measures remain limited in scale and have not yet offset the overall growth in delivery traffic.\n\nConsumer behavior is also reshaped in subtle ways. The ease of ordering encourages impulse purchases and larger orders than originally intended, potentially contributing to food waste and unhealthy eating habits. Because customers cannot see kitchens or portion sizes directly, they rely on photographs and ratings that may be misleading. Paradoxically, an abundance of choice can lead to decision fatigue, with users spending considerable time browsing rather than enjoying meals.\n\nNone of this suggests that food delivery should disappear. Rather, analysts propose reforms such as transparent fee structures, fairer labor protections, and incentives for reusable packaging. Some cities have already capped commissions or required minimum pay standards for riders. As with many platform economies, the challenge is to preserve convenience while distributing its costs more equitably among customers, restaurants, workers, and the environment.",
+    "questions": [
+      {
+        "question": "According to the text, how do high commissions affect small restaurants?",
+        "choices": ["They guarantee large profits for all owners", "They may erase profitability because margins are narrow", "They reduce the need for kitchen staff", "They improve food quality automatically"],
+        "answer": 1,
+        "explanation": "利益率が低いため手数料で収益が消えるとある。事実問題。"
+      },
+      {
+        "question": "Why is much delivery packaging difficult to recycle?",
+        "choices": ["Because customers reuse it too often", "Because it is made of glass", "Because recycling centers refuse all plastic", "Because of food contamination"],
+        "answer": 3,
+        "explanation": "食品汚染のためリサイクルが難しいとある。因果関係問題。"
+      },
+      {
+        "question": "What does the word precarious in the second paragraph most nearly mean?",
+        "choices": ["Stable and well-paid", "Highly skilled", "Uncertain and insecure", "Legally prohibited"],
+        "answer": 2,
+        "explanation": "precarious は不安定で保障がないという意味。語彙問題。"
+      },
+      {
+        "question": "What does None of this in the final paragraph refer to?",
+        "choices": ["The convenience of tap screens", "The photographs on delivery apps", "The bundled orders in rural areas", "The economic, environmental, and behavioral problems just described"],
+        "answer": 3,
+        "explanation": "None of this は前述の問題点を指す。指示語問題。"
+      },
+      {
+        "question": "What is the author's stance toward food delivery services?",
+        "choices": ["They should be abolished immediately", "They are convenient but need reforms to share costs fairly", "They have no environmental impact", "Small restaurants benefit most from current fees"],
+        "answer": 1,
+        "explanation": "筆者は利便性を認めつつ公正な改革が必要とする立場。要旨・立場問題。"
+      }
+    ]
+  },
+  {
+    "id": "b2-007",
+    "difficulty": "B2",
+    "title": "Myths About Language Learning",
+    "text": "Popular beliefs about language learning are widespread, yet many are misleading. One common myth is that children learn languages effortlessly while adults are incapable of reaching high proficiency. Research paints a more nuanced picture. Young children do have advantages in acquiring native-like pronunciation, partly because their brains remain highly adaptable to new sound systems. Adults, however, often progress faster in grammar and vocabulary due to developed analytical skills, greater motivation, and existing knowledge of how languages work.\n\nA second misconception is that immersion alone guarantees fluency. Moving to another country can certainly provide rich input and motivation, but exposure by itself does not ensure progress. Learners who remain within communities of fellow native speakers, avoid interaction, or rely on translation may stagnate despite years abroad. Studies show that the quality of engagement matters more than sheer quantity of time. Learners who seek meaningful conversations, receive feedback, and reflect on errors improve far more rapidly.\n\nAnother persistent belief is that mistakes should be avoided at all costs. In reality, errors are an inevitable and valuable part of development. When learners experiment with new structures, they test hypotheses about the language and receive information about what works. Classrooms that tolerate risk-taking tend to produce more confident speakers, whereas excessive correction can increase anxiety and discourage participation. The key distinction is between systematic errors that reveal misunderstanding and occasional slips that even native speakers make.\n\nTechnology has given rise to additional myths, notably the idea that applications alone can replace human interaction. Language apps are useful for building vocabulary and maintaining daily habits, but they rarely provide the unpredictability of real conversation, where speakers must negotiate meaning, interpret tone, and respond under time pressure. Effective learners therefore combine digital tools with authentic communication, such as language exchanges or collaborative projects.\n\nUltimately, successful language learning depends less on talent or age than on sustained, strategic effort. Setting specific goals, varying input sources, and reviewing material at spaced intervals have been shown to enhance retention. Rather than searching for shortcuts, learners benefit from understanding how acquisition actually works and adopting practices supported by evidence rather than folklore.",
+    "questions": [
+      {
+        "question": "According to the text, what advantage do adults have over young children?",
+        "choices": ["They always achieve better pronunciation", "They do not need motivation", "They progress faster in grammar and vocabulary due to analytical skills", "They never make mistakes"],
+        "answer": 2,
+        "explanation": "大人は分析力などで文法や語彙の習得が速いとある。事実問題。"
+      },
+      {
+        "question": "Why might learners abroad fail to improve?",
+        "choices": ["Because foreign countries have no native speakers", "Because immersion always guarantees fluency", "Because feedback harms their progress", "Because they avoid interaction and stay within native-speaker communities"],
+        "answer": 3,
+        "explanation": "交流を避けると stagnate するとある。因果関係問題。"
+      },
+      {
+        "question": "What does the word stagnate in the second paragraph most nearly mean?",
+        "choices": ["To stop progressing", "To travel rapidly", "To speak fluently", "To graduate early"],
+        "answer": 0,
+        "explanation": "stagnate は停滞するという意味。語彙問題。"
+      },
+      {
+        "question": "What can be inferred about language apps?",
+        "choices": ["They are useless for any learner", "They are helpful supplements but insufficient for conversational skills alone", "They can fully replace human conversation", "They increase anxiety more than classrooms"],
+        "answer": 1,
+        "explanation": "アプリは有用だが本物の会話の代わりにならないと読み取れる。推論問題。"
+      },
+      {
+        "question": "Which best summarizes the author's main message?",
+        "choices": ["Only talented children can learn languages", "Mistakes must always be punished", "Moving abroad is the only effective method", "Success depends on sustained strategic effort based on evidence, not myths"],
+        "answer": 3,
+        "explanation": "才能や年齢より継続的で戦略的な努力が重要という要旨。要約問題。"
+      }
+    ]
+  },
+  {
+    "id": "b2-008",
+    "difficulty": "B2",
+    "title": "The True Price of Fast Fashion",
+    "text": "Fast fashion refers to the rapid production of inexpensive clothing that follows the latest trends. New collections arrive in stores every few weeks, encouraging consumers to buy frequently and discard items after only a few uses. This model has made fashionable clothing accessible to broader populations, but its low prices conceal substantial environmental and social costs that are increasingly difficult to ignore.\n\nThe environmental impact begins with production. Cotton cultivation requires enormous quantities of water and pesticides, while synthetic fibers such as polyester are derived from fossil fuels and release microfibers during washing. Dyeing and finishing processes consume additional water and often discharge chemicals into rivers in manufacturing regions. Moreover, the emphasis on speed favors global supply chains in which garments travel thousands of kilometers from factory to consumer, generating significant carbon emissions.\n\nWaste presents another major problem. Because garments are designed for short lifespans, large volumes end up in landfills or are incinerated within a year of purchase. Low quality makes reuse difficult, and blended fabrics are technically challenging to recycle. Even donated clothing may not find secondhand buyers, as the sheer quantity overwhelms sorting facilities. As a result, textile waste has grown disproportionately compared to other categories of municipal waste.\n\nLabor conditions further complicate the picture. To maintain low prices, brands often outsource production to countries with lower wages and weaker regulations. While these jobs provide income for millions of workers, reports of excessive hours, unsafe buildings, and suppression of unions persist. Voluntary corporate audits have had limited effectiveness, partly because subcontracting obscures responsibility. Advocates argue that genuine improvement requires binding agreements and greater transparency throughout the supply chain.\n\nConsumers are not powerless, however. Buying fewer but higher-quality items, repairing clothes, and supporting secondhand markets can extend garment lifespans considerably. Some companies now offer rental services and take-back programs, although critics caution that such initiatives may serve primarily as marketing unless accompanied by reduced production volumes and transparent reporting on actual reuse rates. Ultimately, addressing fast fashion will require coordinated changes in business models, stronger regulation, and gradual cultural shifts in attitudes toward what it means to dress well.",
+    "questions": [
+      {
+        "question": "According to the text, what characterizes fast fashion?",
+        "choices": ["Handmade luxury garments produced slowly", "Clothing designed to last for decades", "Uniforms supplied by governments", "Rapid production of cheap trend-following clothing"],
+        "answer": 3,
+        "explanation": "流行に沿った安い服の急速生産と定義されている。事実問題。"
+      },
+      {
+        "question": "Why is textile waste hard to recycle?",
+        "choices": ["Because consumers never throw away clothes", "Because landfills refuse all textiles", "Because low quality and blended fabrics make recycling technically difficult", "Because synthetic fibers dissolve in water"],
+        "answer": 2,
+        "explanation": "低品質と混紡素材がリサイクルを難しくするとある。因果関係問題。"
+      },
+      {
+        "question": "What does the word obscure in the fourth paragraph most nearly mean?",
+        "choices": ["To make unclear or hide responsibility", "To improve working conditions", "To increase wages", "To publish reports openly"],
+        "answer": 0,
+        "explanation": "obscure は不明瞭にする・隠すという意味。語彙問題。"
+      },
+      {
+        "question": "What does such initiatives in the final paragraph refer to?",
+        "choices": ["Excessive working hours and unsafe buildings", "Rental services and take-back programs", "Pesticide use in cotton fields", "Global supply chains"],
+        "answer": 1,
+        "explanation": "such initiatives はレンタルや回収プログラムを指す。指示語問題。"
+      },
+      {
+        "question": "What is the author's view on solving the fast fashion problem?",
+        "choices": ["Marketing alone is sufficient", "Consumers have no influence", "Coordinated changes in business, regulation, and culture are needed", "Production volumes should be increased"],
+        "answer": 2,
+        "explanation": "ビジネス・規制・文化の協調的変化が必要という立場。要旨・立場問題。"
+      }
+    ]
+  }
+];

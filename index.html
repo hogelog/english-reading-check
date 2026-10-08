@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Daily English Reading Check</title>
+<meta name="description" content="毎日5分の英語リーディングチェック。英文を読んで5問解いて記録するだけ。">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icon.svg">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">メインコンテンツへ移動</a>
+<header class="site-header">
+  <div class="header-inner">
+    <button id="home-btn" class="brand" aria-label="トップへ戻る">📖 Daily English Reading Check</button>
+    <nav class="header-actions" aria-label="メインナビゲーション">
+      <button id="history-btn" class="btn btn-ghost" type="button">履歴</button>
+      <button id="theme-btn" class="btn btn-ghost" type="button" aria-label="ダークモード切替">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Home -->
+  <section id="view-home" class="view" aria-labelledby="home-title">
+    <h1 id="home-title">Today's Reading</h1>
+    <p class="meta-row"><span>推定所要時間: 5 min</span><span id="home-count" class="muted"></span></p>
+
+    <div class="card" role="group" aria-labelledby="diff-label">
+      <p id="diff-label" class="card-label">Difficulty</p>
+      <div class="diff-row" role="radiogroup" aria-label="難易度を選択">
+        <button type="button" class="chip" data-diff="A2" role="radio" aria-checked="false">A2</button>
+        <button type="button" class="chip" data-diff="B1" role="radio" aria-checked="false">B1</button>
+        <button type="button" class="chip" data-diff="B2" role="radio" aria-checked="false">B2</button>
+        <button type="button" class="chip" data-diff="C1" role="radio" aria-checked="false">C1</button>
+      </div>
+      <button id="start-btn" class="btn btn-primary btn-large" type="button">Start</button>
+    </div>
+
+    <div class="stats-grid" aria-label="学習統計">
+      <div class="stat"><span class="stat-value" id="stat-acc">—</span><span class="stat-label">7-day accuracy</span></div>
+      <div class="stat"><span class="stat-value" id="stat-time">—</span><span class="stat-label">Avg reading time</span></div>
+      <div class="stat"><span class="stat-value" id="stat-count">0</span><span class="stat-label">Tests completed</span></div>
+    </div>
+
+    <div id="chart-card" class="card" hidden>
+      <p class="card-label">Accuracy（直近7回）</p>
+      <div id="mini-chart" role="img" aria-label="直近7回の正答率グラフ"></div>
+    </div>
+
+    <div class="card">
+      <p class="card-label">Your recent results</p>
+      <ul id="recent-list" class="result-list"></ul>
+    </div>
+  </section>
+
+  <!-- Reading -->
+  <section id="view-reading" class="view" hidden aria-labelledby="article-title">
+    <p class="meta-row"><span id="article-diff" class="badge"></span><span id="article-words" class="muted"></span></p>
+    <h1 id="article-title"></h1>
+    <div id="article-body" class="article"></div>
+    <button id="to-questions-btn" class="btn btn-primary btn-large btn-sticky" type="button">問題へ進む（5問）</button>
+  </section>
+
+  <!-- Quiz -->
+  <section id="view-quiz" class="view" hidden aria-labelledby="quiz-progress">
+    <p id="quiz-progress" class="meta-row" aria-live="polite"></p>
+    <div class="progress" aria-hidden="true"><div id="quiz-bar" class="progress-bar"></div></div>
+    <h1 id="quiz-question" class="quiz-q"></h1>
+    <div id="quiz-choices" role="radiogroup" aria-label="選択肢"></div>
+    <button id="quiz-next-btn" class="btn btn-primary btn-large" type="button" disabled>Next</button>
+  </section>
+
+  <!-- Result -->
+  <section id="view-result" class="view" hidden aria-labelledby="result-title" aria-live="polite">
+    <h1 id="result-title">Today's Result</h1>
+    <div class="card result-hero">
+      <p class="result-score"><span id="result-score">0 / 5</span></p>
+      <p class="result-pct" id="result-pct">0%</p>
+      <dl class="result-meta">
+        <div><dt>Reading time</dt><dd id="result-time">—</dd></div>
+        <div><dt>Difficulty</dt><dd id="result-diff">—</dd></div>
+        <div><dt>Previous average</dt><dd id="result-prev">—</dd></div>
+      </dl>
+    </div>
+    <div class="card">
+      <p class="card-label">問題ごとの結果</p>
+      <ol id="result-list" class="review-list"></ol>
+    </div>
+    <div class="btn-row">
+      <button id="result-home-btn" class="btn btn-ghost" type="button">ホーム</button>
+      <button id="result-history-btn" class="btn btn-ghost" type="button">履歴を見る</button>
+      <button id="result-retry-btn" class="btn btn-primary" type="button">もう一度</button>
+    </div>
+  </section>
+
+  <!-- History -->
+  <section id="view-history" class="view" hidden aria-labelledby="history-title">
+    <h1 id="history-title">履歴</h1>
+    <div class="stats-grid" aria-label="全体統計">
+      <div class="stat"><span class="stat-value" id="hist-acc">—</span><span class="stat-label">平均正答率</span></div>
+      <div class="stat"><span class="stat-value" id="hist-time">—</span><span class="stat-label">平均読了時間</span></div>
+      <div class="stat"><span class="stat-value" id="hist-count">0</span><span class="stat-label">実施回数</span></div>
+    </div>
+    <div class="card" id="hist-chart-card" hidden>
+      <p class="card-label">正答率の推移（直近30回）</p>
+      <div id="hist-chart" role="img" aria-label="直近30回の正答率グラフ"></div>
+    </div>
+    <div class="card">
+      <p class="card-label">直近7回</p>
+      <ul id="hist-list-7" class="result-list"></ul>
+    </div>
+    <div class="card">
+      <p class="card-label">直近30回</p>
+      <ul id="hist-list-30" class="result-list"></ul>
+    </div>
+    <div class="btn-row">
+      <button id="export-btn" class="btn btn-ghost" type="button">JSON出力</button>
+      <button id="clear-btn" class="btn btn-danger-ghost" type="button">履歴を消去</button>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>データはこのブラウザのLocalStorageにのみ保存されます。サーバー送信なし。</p>
+</footer>
+
+<script type="module" src="./app.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
