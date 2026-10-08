@@ -1,4 +1,4 @@
-export const ARTICLES_B1 = [
+[
   {
     "id": "b1-001",
     "difficulty": "B1",
@@ -7,31 +7,56 @@ export const ARTICLES_B1 = [
     "questions": [
       {
         "question": "When did remote work become common for many office workers?",
-        "choices": ["After companies tried it during the pandemic", "Before the internet was widely used", "After offices became larger and cheaper", "When commuting became faster and easier"],
+        "choices": [
+          "After companies tried it during the pandemic",
+          "Before the internet was widely used",
+          "After offices became larger and cheaper",
+          "When commuting became faster and easier"
+        ],
         "answer": 0,
         "explanation": "本文でパンデミック中に試した後に広まったと説明されているため。"
       },
       {
         "question": "Why do many workers like remote work?",
-        "choices": ["Because they can work fewer hours than before", "Because they can save commuting time and adjust their schedule", "Because they never need to communicate with colleagues", "Because they can avoid all difficult tasks"],
+        "choices": [
+          "Because they can work fewer hours than before",
+          "Because they can save commuting time and adjust their schedule",
+          "Because they never need to communicate with colleagues",
+          "Because they can avoid all difficult tasks"
+        ],
         "answer": 1,
         "explanation": "通勤時間の節約と家族に合わせた柔軟な働き方が理由として述べられているため。"
       },
       {
         "question": "What does the word flexible mean in the second paragraph?",
-        "choices": ["Strict and difficult to change", "Able to be easily adjusted to fit needs", "Expensive and hard to continue", "Boring and without interest"],
+        "choices": [
+          "Strict and difficult to change",
+          "Able to be easily adjusted to fit needs",
+          "Expensive and hard to continue",
+          "Boring and without interest"
+        ],
         "answer": 1,
         "explanation": "flexible は文脈から schedule を柔軟に調整できるという意味で使われているため。"
       },
       {
         "question": "In the third paragraph, what does They refer to?",
-        "choices": ["Young workers in the office", "Workers who live far away", "Some managers worried about teamwork", "Experienced colleagues"],
+        "choices": [
+          "Young workers in the office",
+          "Workers who live far away",
+          "Some managers worried about teamwork",
+          "Experienced colleagues"
+        ],
         "answer": 2,
         "explanation": "They は直前の some managers を指し、チームワークを心配していると続くため。"
       },
       {
         "question": "What is the author's view on the future of remote work?",
-        "choices": ["Everyone will soon return to full-time office work", "Remote work will disappear within a few years", "People will move to offices in other countries", "A balanced mix of home and office work will likely continue"],
+        "choices": [
+          "Everyone will soon return to full-time office work",
+          "Remote work will disappear within a few years",
+          "People will move to offices in other countries",
+          "A balanced mix of home and office work will likely continue"
+        ],
         "answer": 3,
         "explanation": "最終段落で両方の世界を組み合わせた形が続くと筆者がまとめているため。"
       }
@@ -45,31 +70,56 @@ export const ARTICLES_B1 = [
     "questions": [
       {
         "question": "How does plastic waste reach the ocean?",
-        "choices": ["It is carried by rivers and wind from cities", "It is produced naturally under the sea", "It is thrown directly by ships only", "It falls from airplanes into the water"],
+        "choices": [
+          "It is carried by rivers and wind from cities",
+          "It is produced naturally under the sea",
+          "It is thrown directly by ships only",
+          "It falls from airplanes into the water"
+        ],
         "answer": 0,
         "explanation": "川や風によって都市から海へ運ばれると本文に明記されているため。"
       },
       {
         "question": "Why do coastal towns suffer from plastic pollution?",
-        "choices": ["Because tourists and fish decrease due to dirty beaches and water", "Because plastic makes the sea warmer and deeper", "Because volunteers stop cleaning the beaches", "Because engineers build too many recycling plants"],
+        "choices": [
+          "Because tourists and fish decrease due to dirty beaches and water",
+          "Because plastic makes the sea warmer and deeper",
+          "Because volunteers stop cleaning the beaches",
+          "Because engineers build too many recycling plants"
+        ],
         "answer": 0,
         "explanation": "汚れた海岸には観光客が来ず、汚染で魚が減ると説明されているため。"
       },
       {
         "question": "What does the word digest mean in the second paragraph?",
-        "choices": ["To break down food in the body", "To collect rubbish on the beach", "To swim quickly in the ocean", "To mistake plastic for food"],
+        "choices": [
+          "To break down food in the body",
+          "To collect rubbish on the beach",
+          "To swim quickly in the ocean",
+          "To mistake plastic for food"
+        ],
         "answer": 0,
         "explanation": "digest は食べた物を体内で消化するという意味で使われているため。"
       },
       {
         "question": "In the third paragraph, what does this refer to in how this affects our health?",
-        "choices": ["Finding microplastics in drinking water, salt, and seafood", "Cleaning beaches every weekend", "Banning plastic bags in cities", "Developing better recycling methods"],
+        "choices": [
+          "Finding microplastics in drinking water, salt, and seafood",
+          "Cleaning beaches every weekend",
+          "Banning plastic bags in cities",
+          "Developing better recycling methods"
+        ],
         "answer": 0,
         "explanation": "this は直前の飲料水や塩や魚介類に含まれるマイクロプラスチックの影響を指すため。"
       },
       {
         "question": "What is the main idea of the last paragraph?",
-        "choices": ["Plastic pollution cannot be solved at all", "Cooperation can greatly reduce ocean plastic within ten years", "Only engineers are responsible for cleaning the ocean", "Volunteers should stop cleaning beaches"],
+        "choices": [
+          "Plastic pollution cannot be solved at all",
+          "Cooperation can greatly reduce ocean plastic within ten years",
+          "Only engineers are responsible for cleaning the ocean",
+          "Volunteers should stop cleaning beaches"
+        ],
         "answer": 1,
         "explanation": "協力すれば10年以内に大幅に減らせると希望を述べる段落の要旨に合うため。"
       }
@@ -83,31 +133,56 @@ export const ARTICLES_B1 = [
     "questions": [
       {
         "question": "What problem do experts point out about big life changes?",
-        "choices": ["People try to do too much at once and soon give up", "People do not have enough money to start", "People read too many books in a year", "People exercise too little in the morning"],
+        "choices": [
+          "People try to do too much at once and soon give up",
+          "People do not have enough money to start",
+          "People read too many books in a year",
+          "People exercise too little in the morning"
+        ],
         "answer": 0,
         "explanation": "一度に多くをやろうとして疲れてやめることが問題だと指摘されているため。"
       },
       {
         "question": "Why do very small actions work well?",
-        "choices": ["Because they are simple and easy to repeat every day", "Because they show immediate big results", "Because they require strong willpower", "Because they take several hours to complete"],
+        "choices": [
+          "Because they are simple and easy to repeat every day",
+          "Because they show immediate big results",
+          "Because they require strong willpower",
+          "Because they take several hours to complete"
+        ],
         "answer": 1,
         "explanation": "簡単だから忙しい日でも続けやすいと本文で説明されているため。"
       },
       {
         "question": "What does the word routine mean in the third paragraph?",
-        "choices": ["A regular pattern of actions done often", "A rare and surprising event", "A difficult test at school", "A large amount of money"],
+        "choices": [
+          "A regular pattern of actions done often",
+          "A rare and surprising event",
+          "A difficult test at school",
+          "A large amount of money"
+        ],
         "answer": 0,
         "explanation": "routine は繰り返して習慣化された日常の行動パターンという意味で使われているため。"
       },
       {
         "question": "In the fourth paragraph, what does This new self-image refer to?",
-        "choices": ["Thinking of yourself as a person who does the habit", "Saving a small coin each day", "Appearing perfect every day", "Reading fifty books in a year"],
+        "choices": [
+          "Thinking of yourself as a person who does the habit",
+          "Saving a small coin each day",
+          "Appearing perfect every day",
+          "Reading fifty books in a year"
+        ],
         "answer": 0,
         "explanation": "This new self-image は自分をその習慣を行う人だと捉えることを指すため。"
       },
       {
         "question": "What can be inferred about lasting change from the passage?",
-        "choices": ["It requires daily small steps rather than short intense effort", "It happens without any effort or patience", "It depends only on buying expensive equipment", "It is impossible for busy people"],
+        "choices": [
+          "It requires daily small steps rather than short intense effort",
+          "It happens without any effort or patience",
+          "It depends only on buying expensive equipment",
+          "It is impossible for busy people"
+        ],
         "answer": 0,
         "explanation": "毎日現れて時間を味方につけることが持続的変化の道だと推論できるため。"
       }
@@ -121,31 +196,56 @@ export const ARTICLES_B1 = [
     "questions": [
       {
         "question": "According to the passage, what do parks offer in crowded cities?",
-        "choices": ["More space for cars and concrete buildings", "A place to relax, exercise, and meet nature", "A place to build factories and shops", "Higher rent for nearby offices"],
+        "choices": [
+          "More space for cars and concrete buildings",
+          "A place to relax, exercise, and meet nature",
+          "A place to build factories and shops",
+          "Higher rent for nearby offices"
+        ],
         "answer": 1,
         "explanation": "公園はリラックスや運動や自然との触れ合いの場だと最初に述べられているため。"
       },
       {
         "question": "Why do trees in parks reduce the need for air conditioning?",
-        "choices": ["Because their shade lowers summer temperatures nearby", "Because they produce strong winds all year", "Because they absorb all the rain in winter", "Because they block people from going outside"],
+        "choices": [
+          "Because their shade lowers summer temperatures nearby",
+          "Because they produce strong winds all year",
+          "Because they absorb all the rain in winter",
+          "Because they block people from going outside"
+        ],
         "answer": 0,
         "explanation": "木陰が気温を下げて冷房の必要を減らすという因果関係が説明されているため。"
       },
       {
         "question": "What does the word absorb mean in the third paragraph?",
-        "choices": ["To take in water, gas, or heat", "To build houses and roads", "To enjoy music and festivals", "To prevent people from meeting"],
+        "choices": [
+          "To take in water, gas, or heat",
+          "To build houses and roads",
+          "To enjoy music and festivals",
+          "To prevent people from meeting"
+        ],
         "answer": 0,
         "explanation": "absorb は水や有害ガスを取り込むという意味で文脈に合うため。"
       },
       {
         "question": "In the fourth paragraph, what does These shared experiences refer to?",
-        "choices": ["Sitting alone in small apartments", "Picnics, sports, festivals, and concerts in parks", "Building factories and empty lots", "Driving cars through heavy traffic"],
+        "choices": [
+          "Sitting alone in small apartments",
+          "Picnics, sports, festivals, and concerts in parks",
+          "Building factories and empty lots",
+          "Driving cars through heavy traffic"
+        ],
         "answer": 1,
         "explanation": "These shared experiences は前文のピクニックやスポーツや祭りなどの共同体験を指すため。"
       },
       {
         "question": "What is the author's attitude toward building parks?",
-        "choices": ["Negative, because parks cost too much money", "Neutral, with no clear opinion", "Positive, because benefits are greater than costs", "Worried, because parks attract too many visitors"],
+        "choices": [
+          "Negative, because parks cost too much money",
+          "Neutral, with no clear opinion",
+          "Positive, because benefits are greater than costs",
+          "Worried, because parks attract too many visitors"
+        ],
         "answer": 2,
         "explanation": "筆者は費用より利益が大きいとして公園整備に肯定的な立場を示しているため。"
       }
@@ -159,31 +259,56 @@ export const ARTICLES_B1 = [
     "questions": [
       {
         "question": "What is the main reason online shopping continues to grow?",
-        "choices": ["Strict rules in local shops", "Convenience of ordering without leaving home", "Higher prices on the internet", "Difficulty of returning goods"],
+        "choices": [
+          "Strict rules in local shops",
+          "Convenience of ordering without leaving home",
+          "Higher prices on the internet",
+          "Difficulty of returning goods"
+        ],
         "answer": 1,
         "explanation": "家を出ずに買える便利さが主な理由だと本文に書かれているため。"
       },
       {
         "question": "Why can online stores often offer lower prices?",
-        "choices": ["Because they do not pay rent for large city shops", "Because they sell only used goods", "Because they employ more shop staff", "Because they refuse to hold sales"],
+        "choices": [
+          "Because they do not pay rent for large city shops",
+          "Because they sell only used goods",
+          "Because they employ more shop staff",
+          "Because they refuse to hold sales"
+        ],
         "answer": 0,
         "explanation": "中心地の店舗賃料が不要だから価格を下げられると説明されているため。"
       },
       {
         "question": "What does the word review mean in the second paragraph?",
-        "choices": ["Opinions and comments from other buyers", "A truck that delivers packages", "A discount coupon for holidays", "A large shop in the city center"],
+        "choices": [
+          "Opinions and comments from other buyers",
+          "A truck that delivers packages",
+          "A discount coupon for holidays",
+          "A large shop in the city center"
+        ],
         "answer": 0,
         "explanation": "review は他の購入者による意見や評価という意味で使われているため。"
       },
       {
         "question": "What can be inferred about people who struggle to control spending online?",
-        "choices": ["The easy click-to-buy system encourages them to buy too much", "They prefer to visit local shops every day", "They never read prices or reviews", "They enjoy waiting for delivery"],
+        "choices": [
+          "The easy click-to-buy system encourages them to buy too much",
+          "They prefer to visit local shops every day",
+          "They never read prices or reviews",
+          "They enjoy waiting for delivery"
+        ],
         "answer": 0,
         "explanation": "簡単に買える仕組みが使いすぎを招くという文脈から推論できるため。"
       },
       {
         "question": "What is the author's intention in the last paragraph?",
-        "choices": ["To suggest balancing convenience with effects on towns and the planet", "To ask everyone to stop using smartphones", "To praise packaging waste as helpful", "To claim delivery trucks cause no pollution"],
+        "choices": [
+          "To suggest balancing convenience with effects on towns and the planet",
+          "To ask everyone to stop using smartphones",
+          "To praise packaging waste as helpful",
+          "To claim delivery trucks cause no pollution"
+        ],
         "answer": 0,
         "explanation": "筆者は便利さと地域や環境への影響のバランスを考えるよう促しているため。"
       }
@@ -197,31 +322,56 @@ export const ARTICLES_B1 = [
     "questions": [
       {
         "question": "What belief do many adults have about music lessons?",
-        "choices": ["That they are only for children with time and flexible fingers", "That they are too cheap to be useful", "That they require no practice at all", "That they are only for professional musicians"],
+        "choices": [
+          "That they are only for children with time and flexible fingers",
+          "That they are too cheap to be useful",
+          "That they require no practice at all",
+          "That they are only for professional musicians"
+        ],
         "answer": 0,
         "explanation": "音楽は時間のある子供だけのものという思い込みが最初に紹介されているため。"
       },
       {
         "question": "Why is adult motivation often stronger than children's?",
-        "choices": ["Because adults choose to learn by themselves for music they love", "Because adults have more free time than children", "Because adults never make mistakes", "Because adults are forced by their parents"],
+        "choices": [
+          "Because adults choose to learn by themselves for music they love",
+          "Because adults have more free time than children",
+          "Because adults never make mistakes",
+          "Because adults are forced by their parents"
+        ],
         "answer": 0,
         "explanation": "大人自身が好きで選ぶから意欲が強いと本文で比較されているため。"
       },
       {
         "question": "What does the word steady mean in the first paragraph?",
-        "choices": ["Continuing regularly without stopping", "Stopping quickly after starting", "Playing very loudly on stage", "Learning only difficult songs"],
+        "choices": [
+          "Continuing regularly without stopping",
+          "Stopping quickly after starting",
+          "Playing very loudly on stage",
+          "Learning only difficult songs"
+        ],
         "answer": 0,
         "explanation": "steady practice は定期的で継続的な練習という意味で使われているため。"
       },
       {
         "question": "In the fourth paragraph, what does these problems refer to?",
-        "choices": ["Little practice time, slow progress, stiffness, and embarrassment", "Loving jazz and favorite songs", "Understanding instructions clearly", "Meeting new people and reducing stress"],
+        "choices": [
+          "Little practice time, slow progress, stiffness, and embarrassment",
+          "Loving jazz and favorite songs",
+          "Understanding instructions clearly",
+          "Meeting new people and reducing stress"
+        ],
         "answer": 0,
         "explanation": "these problems は前段落の時間不足や上達の遅さなどの課題を指すため。"
       },
       {
         "question": "What is the main idea of the passage?",
-        "choices": ["Adults cannot learn music because of age", "Children learn music without any support", "Adults can succeed at music with steady practice and enjoy many benefits", "Only long weekend practice leads to success"],
+        "choices": [
+          "Adults cannot learn music because of age",
+          "Children learn music without any support",
+          "Adults can succeed at music with steady practice and enjoy many benefits",
+          "Only long weekend practice leads to success"
+        ],
         "answer": 2,
         "explanation": "継続的練習で大人が成功し多くの利益を得ることが全体の要旨であるため。"
       }
@@ -235,31 +385,56 @@ export const ARTICLES_B1 = [
     "questions": [
       {
         "question": "What happened to night trains in Europe for many years?",
-        "choices": ["They seemed to be disappearing as flights took passengers", "They became faster than all high-speed trains", "They connected only small villages", "They were always fully booked every night"],
+        "choices": [
+          "They seemed to be disappearing as flights took passengers",
+          "They became faster than all high-speed trains",
+          "They connected only small villages",
+          "They were always fully booked every night"
+        ],
         "answer": 0,
         "explanation": "安い飛行機などに客を奪われて消えつつあったと説明されているため。"
       },
       {
         "question": "Why do young travelers choose night trains instead of short flights?",
-        "choices": ["Because they want to reduce environmental damage", "Because trains are always much faster than planes", "Because they dislike sleeping in beds", "Because airports are closer to city centers"],
+        "choices": [
+          "Because they want to reduce environmental damage",
+          "Because trains are always much faster than planes",
+          "Because they dislike sleeping in beds",
+          "Because airports are closer to city centers"
+        ],
         "answer": 0,
         "explanation": "環境負荷を減らしたい思いから夜行列車を選ぶと述べられているため。"
       },
       {
         "question": "What does the word compartment mean in the third paragraph?",
-        "choices": ["A small separate room or section in a train", "A large airport waiting hall", "A rule about liquids and luggage", "A ticket sold during holidays"],
+        "choices": [
+          "A small separate room or section in a train",
+          "A large airport waiting hall",
+          "A rule about liquids and luggage",
+          "A ticket sold during holidays"
+        ],
         "answer": 0,
         "explanation": "compartment は列車内の個室や仕切られた小部屋という意味で使われているため。"
       },
       {
         "question": "In the fourth paragraph, what does it refer to in Running sleeper services is expensive?",
-        "choices": ["Operating night trains with special cars and staff", "Charging higher fees for short flights", "Watching the landscape through the window", "Arriving hours early at an airport"],
+        "choices": [
+          "Operating night trains with special cars and staff",
+          "Charging higher fees for short flights",
+          "Watching the landscape through the window",
+          "Arriving hours early at an airport"
+        ],
         "answer": 0,
         "explanation": "it に相当する running sleeper services は寝台列車の運行を指すため。"
       },
       {
         "question": "What does the author suggest about night trains in the last paragraph?",
-        "choices": ["They are an old idea that can be a modern solution", "They will soon disappear again completely", "They cause more pollution than flights", "They are only for families with children"],
+        "choices": [
+          "They are an old idea that can be a modern solution",
+          "They will soon disappear again completely",
+          "They cause more pollution than flights",
+          "They are only for families with children"
+        ],
         "answer": 0,
         "explanation": "古い発想が時代の変化で現代的解決策になると筆者がまとめているため。"
       }
@@ -273,34 +448,59 @@ export const ARTICLES_B1 = [
     "questions": [
       {
         "question": "What do people on balconies grow in the first paragraph?",
-        "choices": ["Tomatoes, peppers, herbs, and strawberries", "Rice, wheat, and large fruit trees", "Only flowers for decoration", "Fish and other seafood"],
+        "choices": [
+          "Tomatoes, peppers, herbs, and strawberries",
+          "Rice, wheat, and large fruit trees",
+          "Only flowers for decoration",
+          "Fish and other seafood"
+        ],
         "answer": 0,
         "explanation": "トマトやハーブやイチゴなどが例として挙げられているため。"
       },
       {
         "question": "Why should balcony farmers check building rules first?",
-        "choices": ["Because some apartments limit weight or container types", "Because sunlight is forbidden on balconies", "Because seeds cannot be bought nearby", "Because watering plants is always illegal"],
+        "choices": [
+          "Because some apartments limit weight or container types",
+          "Because sunlight is forbidden on balconies",
+          "Because seeds cannot be bought nearby",
+          "Because watering plants is always illegal"
+        ],
         "answer": 0,
         "explanation": "重量や容器の種類に制限がある場合があると注意されているため。"
       },
       {
         "question": "What does the word overwhelmed mean in the third paragraph?",
-        "choices": ["Feeling unable to manage due to too much to do", "Feeling happy about quick success", "Growing plants without water", "Placing pots in sunlight"],
+        "choices": [
+          "Feeling unable to manage due to too much to do",
+          "Feeling happy about quick success",
+          "Growing plants without water",
+          "Placing pots in sunlight"
+        ],
         "answer": 0,
         "explanation": "overwhelmed は量が多すぎて対処できないと感じるという意味で使われているため。"
       },
       {
         "question": "In the fourth paragraph, what does them refer to in helps them grow?",
-        "choices": ["Neighbors on high floors", "Building rules and fences", "Plants grown in pots", "Insects and sick leaves"],
+        "choices": [
+          "Neighbors on high floors",
+          "Building rules and fences",
+          "Plants grown in pots",
+          "Insects and sick leaves"
+        ],
         "answer": 2,
         "explanation": "them は鉢で育てている植物を指し、肥料が成長を助けると続くため。"
       },
       {
         "question": "What is the main idea of the last paragraph?",
-        "choices": ["Balcony farming brings stress relief, friendships, and fresher cooking", "Balcony farming requires a large garden and heavy machines", "Balcony farming always fails without chemicals", "Balcony farming is illegal in most apartments"],
+        "choices": [
+          "Balcony farming brings stress relief, friendships, and fresher cooking",
+          "Balcony farming requires a large garden and heavy machines",
+          "Balcony farming always fails without chemicals",
+          "Balcony farming is illegal in most apartments"
+        ],
         "answer": 0,
         "explanation": "ストレス軽減や交流や新鮮な料理など喜びがまとめられているため。"
       }
     ]
   }
-];
+]

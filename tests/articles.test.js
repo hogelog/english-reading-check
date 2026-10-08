@@ -1,7 +1,11 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { ALL_ARTICLES } from "../articles-all.js";
+import { readFileSync } from "node:fs";
 import { pickArticle, wordCount } from "../articles.js";
+
+const ALL_ARTICLES = ["a2", "b1", "b2", "c1"].flatMap((level) =>
+  JSON.parse(readFileSync(new URL(`../data/${level}.json`, import.meta.url))),
+);
 
 describe("article dataset", () => {
   it("has at least 30 sets", () => {

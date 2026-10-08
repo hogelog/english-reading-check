@@ -9,7 +9,11 @@ const root = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.dirname(root);
 const dist = path.join(repoRoot, "dist");
 
-const { ALL_ARTICLES } = await import("../articles-all.js");
+const ALL_ARTICLES = [];
+for (const level of ["a2", "b1", "b2", "c1"]) {
+  const raw = await readFile(path.join(repoRoot, "data", `${level}.json`), "utf8");
+  ALL_ARTICLES.push(...JSON.parse(raw));
+}
 
 const errors = [];
 const ids = new Set();
@@ -54,20 +58,23 @@ const files = [
   "styles.css",
   "app.js",
   "articles.js",
-  "articles-all.js",
-  "articles-a2.js",
-  "articles-b1.js",
-  "articles-b2.js",
-  "articles-c1.js",
   "storage.js",
   "chart.js",
   "manifest.json",
   "icon.svg",
   "sw.js",
+  "data/a2.json",
+  "data/b1.json",
+  "data/b2.json",
+  "data/c1.json",
 ];
 for (const f of files) {
   const src = path.join(repoRoot, f);
-  if (existsSync(src)) await cp(src, path.join(dist, f));
+  if (existsSync(src)) {
+    const dest = path.join(dist, f);
+    await mkdir(path.dirname(dest), { recursive: true });
+    await cp(src, dest);
+  }
 }
 // GitHub Pages: serve index.html for unknown paths (SPA fallback is not needed,
 // but .nojekyll avoids Jekyll processing of underscore files).

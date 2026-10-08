@@ -1,4 +1,3 @@
-import { ALL_ARTICLES } from "./articles-all.js";
 import { pickArticle } from "./articles.js";
 import {
   loadHistory,
@@ -17,6 +16,20 @@ import { buildLineChart } from "./chart.js";
 
 const $ = (id) => document.getElementById(id);
 const views = ["view-home", "view-reading", "view-quiz", "view-result", "view-history"];
+
+let ALL_ARTICLES = [];
+
+async function loadArticles() {
+  const levels = ["a2", "b1", "b2", "c1"];
+  const parts = await Promise.all(
+    levels.map(async (level) => {
+      const res = await fetch(`./data/${level}.json`);
+      if (!res.ok) throw new Error(`failed to load ${level}.json`);
+      return res.json();
+    }),
+  );
+  return parts.flat();
+}
 
 let state = {
   difficulty: loadDifficulty(),
@@ -267,9 +280,8 @@ function renderHistory() {
 }
 
 // ---------- Events ----------
-function init() {
+async function init() {
   applyTheme(loadTheme());
-  renderHome();
 
   document.querySelectorAll(".chip").forEach((chip) => {
     chip.addEventListener("click", () => {
@@ -340,6 +352,20 @@ function init() {
       nextQuestion();
     }
   });
+
+  // Data (JSON) loads async; UI is wired first so history stays usable on failure.
+  const startBtn = $("start-btn");
+  startBtn.disabled = true;
+  startBtn.textContent = "読み込み中…";
+  try {
+    ALL_ARTICLES = await loadArticles();
+  } catch {
+    startBtn.textContent = "読み込みに失敗しました";
+    return;
+  }
+  startBtn.disabled = false;
+  startBtn.textContent = "Start";
+  renderHome();
 }
 
 init();

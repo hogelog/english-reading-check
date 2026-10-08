@@ -1,4 +1,4 @@
-export const ARTICLES_B2 = [
+[
   {
     "id": "b2-001",
     "difficulty": "B2",
@@ -7,31 +7,56 @@ export const ARTICLES_B2 = [
     "questions": [
       {
         "question": "According to the text, why do technology companies try to keep users engaged for as long as possible?",
-        "choices": ["To improve the educational quality of online content", "To show more advertisements and increase revenue", "To reduce the cost of developing new features", "To comply with government regulations on media"],
+        "choices": [
+          "To improve the educational quality of online content",
+          "To show more advertisements and increase revenue",
+          "To reduce the cost of developing new features",
+          "To comply with government regulations on media"
+        ],
         "answer": 1,
         "explanation": "広告を見せる時間を増やして収益を上げるためだと本文にあるから。正解は2番目。"
       },
       {
         "question": "What can be inferred about sensational or controversial content in the attention economy?",
-        "choices": ["It is carefully reviewed by experts before publication", "It is less profitable than balanced analysis", "It is mainly preferred by older users", "It spreads quickly because it triggers strong emotions"],
+        "choices": [
+          "It is carefully reviewed by experts before publication",
+          "It is less profitable than balanced analysis",
+          "It is mainly preferred by older users",
+          "It spreads quickly because it triggers strong emotions"
+        ],
         "answer": 3,
         "explanation": "感情的な反応を引き起こすため拡散しやすいと推論できる。本文の記述からの推論問題。"
       },
       {
         "question": "What does the word commodities in the first paragraph most nearly mean?",
-        "choices": ["Widely traded valuable resources", "Freely shared ideas", "Strict government rules", "Temporary emotional states"],
+        "choices": [
+          "Widely traded valuable resources",
+          "Freely shared ideas",
+          "Strict government rules",
+          "Temporary emotional states"
+        ],
         "answer": 0,
         "explanation": "commodities はここでは取引される価値ある資源という意味。語彙問題。"
       },
       {
         "question": "What does they in the sentence they may also contribute to anxiety refer to?",
-        "choices": ["Lower-income users", "Paid subscriptions", "These techniques such as notifications and infinite scrolling", "Engagement metrics"],
+        "choices": [
+          "Lower-income users",
+          "Paid subscriptions",
+          "These techniques such as notifications and infinite scrolling",
+          "Engagement metrics"
+        ],
         "answer": 2,
         "explanation": "they は前文の通知や自動再生などの手法を指す。指示語問題。"
       },
       {
         "question": "What is the author's stance toward the attention economy?",
-        "choices": ["Fully supportive of the current advertising model", "Neutral and balanced, presenting both benefits and concerns while noting reform efforts", "Dismissive of any criticism as unscientific", "Advocating a complete ban on social media"],
+        "choices": [
+          "Fully supportive of the current advertising model",
+          "Neutral and balanced, presenting both benefits and concerns while noting reform efforts",
+          "Dismissive of any criticism as unscientific",
+          "Advocating a complete ban on social media"
+        ],
         "answer": 1,
         "explanation": "筆者は利点と批判の両方を紹介し、改善の動きにも触れる中立的な立場。要旨・立場問題。"
       }
@@ -45,31 +70,56 @@ export const ARTICLES_B2 = [
     "questions": [
       {
         "question": "What is the 100-80-100 model described in the text?",
-        "choices": ["100 workers sharing 80 tasks to achieve 100 percent safety", "Full pay for 80 percent of time in exchange for full productivity", "A 100-day trial followed by 80 days of evaluation", "Working 100 hours per month for 80 percent of salary"],
+        "choices": [
+          "100 workers sharing 80 tasks to achieve 100 percent safety",
+          "Full pay for 80 percent of time in exchange for full productivity",
+          "A 100-day trial followed by 80 days of evaluation",
+          "Working 100 hours per month for 80 percent of salary"
+        ],
         "answer": 1,
         "explanation": "100%の給与・80%の時間・100%の生産性という定義が本文にある。事実問題。"
       },
       {
         "question": "Why did productivity remain stable in many trial companies?",
-        "choices": ["Because employees worked overtime on weekends", "Because firms hired twice as many workers", "Because inefficient meetings and low-priority tasks were reduced", "Because salaries were cut to fund new technology"],
+        "choices": [
+          "Because employees worked overtime on weekends",
+          "Because firms hired twice as many workers",
+          "Because inefficient meetings and low-priority tasks were reduced",
+          "Because salaries were cut to fund new technology"
+        ],
         "answer": 2,
         "explanation": "無駄な会議などを減らし効率化したことが原因。本文の因果関係問題。"
       },
       {
         "question": "What does the word intensification in the fourth paragraph most nearly mean?",
-        "choices": ["The act of making work more concentrated and demanding", "The process of hiring additional staff", "A reduction in working speed", "A government approval procedure"],
+        "choices": [
+          "The act of making work more concentrated and demanding",
+          "The process of hiring additional staff",
+          "A reduction in working speed",
+          "A government approval procedure"
+        ],
         "answer": 0,
         "explanation": "intensification は仕事が密で負荷が高まることという意味。語彙問題。"
       },
       {
         "question": "What can be inferred about the trial results?",
-        "choices": ["They prove the model will succeed in every industry", "They show employees disliked having extra time off", "They were conducted without measuring revenue", "They may be biased because participating firms volunteered"],
+        "choices": [
+          "They prove the model will succeed in every industry",
+          "They show employees disliked having extra time off",
+          "They were conducted without measuring revenue",
+          "They may be biased because participating firms volunteered"
+        ],
         "answer": 3,
         "explanation": "参加企業が自発的で文化が進歩的かもしれないため一般化に注意とある。推論問題。"
       },
       {
         "question": "What is the author's overall conclusion?",
-        "choices": ["The four-day week is a complete failure", "The experiments are promising but require redesign and further study across industries", "Hospitals should immediately adopt the model", "Long hours are the only way to increase productivity"],
+        "choices": [
+          "The four-day week is a complete failure",
+          "The experiments are promising but require redesign and further study across industries",
+          "Hospitals should immediately adopt the model",
+          "Long hours are the only way to increase productivity"
+        ],
         "answer": 1,
         "explanation": "筆者は可能性を認めつつ再設計と長期研究が必要とする。要旨問題。"
       }
@@ -83,31 +133,56 @@ export const ARTICLES_B2 = [
     "questions": [
       {
         "question": "According to the text, what are microplastics?",
-        "choices": ["Large plastic bottles collected on beaches", "Plastic fragments smaller than five millimeters", "Chemical fuels used to make plastic", "Natural fibers found in soil"],
+        "choices": [
+          "Large plastic bottles collected on beaches",
+          "Plastic fragments smaller than five millimeters",
+          "Chemical fuels used to make plastic",
+          "Natural fibers found in soil"
+        ],
         "answer": 1,
         "explanation": "5ミリより小さい断片と定義されている。事実問題。"
       },
       {
         "question": "Why is it difficult to apply laboratory findings to humans?",
-        "choices": ["Because animals and humans share no biological similarities", "Because scientists refuse to publish their methods", "Because microplastics dissolve immediately in the body", "Because lab studies often use much higher concentrations than real life"],
+        "choices": [
+          "Because animals and humans share no biological similarities",
+          "Because scientists refuse to publish their methods",
+          "Because microplastics dissolve immediately in the body",
+          "Because lab studies often use much higher concentrations than real life"
+        ],
         "answer": 3,
         "explanation": "実験室の濃度が日常生活よりはるかに高いためとある。因果関係問題。"
       },
       {
         "question": "What does the word pathways in the second paragraph most nearly mean?",
-        "choices": ["Forest trails", "Medical treatments", "Routes by which exposure occurs", "Legal regulations"],
+        "choices": [
+          "Forest trails",
+          "Medical treatments",
+          "Routes by which exposure occurs",
+          "Legal regulations"
+        ],
         "answer": 2,
         "explanation": "pathways は曝露の経路という意味。語彙問題。"
       },
       {
         "question": "What does this uncertainty in the fourth paragraph refer to?",
-        "choices": ["Uncertainty about whether lab results prove harm to humans at real-life levels", "Uncertainty about the definition of plastic", "Uncertainty about how to recycle bottles", "Uncertainty about urban population growth"],
+        "choices": [
+          "Uncertainty about whether lab results prove harm to humans at real-life levels",
+          "Uncertainty about the definition of plastic",
+          "Uncertainty about how to recycle bottles",
+          "Uncertainty about urban population growth"
+        ],
         "answer": 0,
         "explanation": "this uncertainty は人体への影響の不確実さを指す。指示語問題。"
       },
       {
         "question": "What can be inferred about the author's view on reducing single-use plastics?",
-        "choices": ["It is unnecessary under any circumstances", "It will completely eliminate all health risks", "It should wait until all plastic is banned globally", "It is a sensible step even while research continues"],
+        "choices": [
+          "It is unnecessary under any circumstances",
+          "It will completely eliminate all health risks",
+          "It should wait until all plastic is banned globally",
+          "It is a sensible step even while research continues"
+        ],
         "answer": 3,
         "explanation": "証拠が不十分でも削減は実用的と述べる立場が読み取れる。推論・立場問題。"
       }
@@ -121,31 +196,56 @@ export const ARTICLES_B2 = [
     "questions": [
       {
         "question": "Which of the following is given as an example of a smart city technology?",
-        "choices": ["Traffic lights that adjust timing based on congestion", "Banning all cars from city centers", "Replacing public transport with private helicopters", "Printing all government documents on paper"],
+        "choices": [
+          "Traffic lights that adjust timing based on congestion",
+          "Banning all cars from city centers",
+          "Replacing public transport with private helicopters",
+          "Printing all government documents on paper"
+        ],
         "answer": 0,
         "explanation": "渋滞に応じて信号のタイミングを変える例が挙げられている。事実問題。"
       },
       {
         "question": "What risk is mentioned regarding anonymized urban data?",
-        "choices": ["It is too expensive to store", "It cannot be used for planning", "It automatically deletes itself", "It can sometimes be re-identified to reveal individuals"],
+        "choices": [
+          "It is too expensive to store",
+          "It cannot be used for planning",
+          "It automatically deletes itself",
+          "It can sometimes be re-identified to reveal individuals"
+        ],
         "answer": 3,
         "explanation": "匿名化データでも個人が再特定されうるとある。事実・詳細問題。"
       },
       {
         "question": "What does the word allocate in the second paragraph most nearly mean?",
-        "choices": ["To ignore emergency calls", "To increase taxes", "To distribute resources for a purpose", "To hide information"],
+        "choices": [
+          "To ignore emergency calls",
+          "To increase taxes",
+          "To distribute resources for a purpose",
+          "To hide information"
+        ],
         "answer": 2,
         "explanation": "allocate は資源を配分するという意味。語彙問題。"
       },
       {
         "question": "Why might widening roads fail to solve traffic problems?",
-        "choices": ["Because drivers dislike wide roads", "Because sensors stop working on wide roads", "Because buses cannot use wide roads", "Because it encourages more driving and increases pollution"],
+        "choices": [
+          "Because drivers dislike wide roads",
+          "Because sensors stop working on wide roads",
+          "Because buses cannot use wide roads",
+          "Because it encourages more driving and increases pollution"
+        ],
         "answer": 3,
         "explanation": "道路拡幅が運転を促し汚染を増やすという因果が述べられている。因果関係問題。"
       },
       {
         "question": "What is the author's main argument about successful smart cities?",
-        "choices": ["They should rely only on engineers", "They work best when citizens participate and technology supports collaboration", "They should collect data secretly", "They must focus investment only on wealthy areas"],
+        "choices": [
+          "They should rely only on engineers",
+          "They work best when citizens participate and technology supports collaboration",
+          "They should collect data secretly",
+          "They must focus investment only on wealthy areas"
+        ],
         "answer": 1,
         "explanation": "市民参加と協働の道具としての技術が重要という主張。要旨問題。"
       }
@@ -159,31 +259,56 @@ export const ARTICLES_B2 = [
     "questions": [
       {
         "question": "According to the text, what happens during deep sleep?",
-        "choices": ["The body stops producing all hormones", "Learning becomes impossible", "Memories are transferred and integrated into long-term networks", "The brain remains completely inactive"],
+        "choices": [
+          "The body stops producing all hormones",
+          "Learning becomes impossible",
+          "Memories are transferred and integrated into long-term networks",
+          "The brain remains completely inactive"
+        ],
         "answer": 2,
         "explanation": "深い睡眠中に記憶が長期ネットワークに移され統合されるとある。事実問題。"
       },
       {
         "question": "Why are tired people more likely to act impulsively?",
-        "choices": ["Because the amygdala becomes overreactive and rational control weakens", "Because they have more energy than rested people", "Because caffeine improves their judgment", "Because the prefrontal cortex becomes larger overnight"],
+        "choices": [
+          "Because the amygdala becomes overreactive and rational control weakens",
+          "Because they have more energy than rested people",
+          "Because caffeine improves their judgment",
+          "Because the prefrontal cortex becomes larger overnight"
+        ],
         "answer": 0,
         "explanation": "扁桃体が過敏になり前頭前野との連携が弱まるため。因果関係問題。"
       },
       {
         "question": "What does the word consolidation in the second paragraph most nearly mean?",
-        "choices": ["A method of staying awake", "A type of dream", "A medical disorder", "The process of strengthening and stabilizing memories"],
+        "choices": [
+          "A method of staying awake",
+          "A type of dream",
+          "A medical disorder",
+          "The process of strengthening and stabilizing memories"
+        ],
         "answer": 3,
         "explanation": "consolidation は記憶を定着・安定化させる過程という意味。語彙問題。"
       },
       {
         "question": "What can be inferred about adolescents and school start times?",
-        "choices": ["Early start times match their biological clocks perfectly", "Late internal clocks make early starts particularly difficult for them", "Adolescents need less sleep than adults", "Screens have no effect on their melatonin"],
+        "choices": [
+          "Early start times match their biological clocks perfectly",
+          "Late internal clocks make early starts particularly difficult for them",
+          "Adolescents need less sleep than adults",
+          "Screens have no effect on their melatonin"
+        ],
         "answer": 1,
         "explanation": "思春期で体内時計が後ろにずれるため早い始業と矛盾するとある。推論問題。"
       },
       {
         "question": "What is the author's purpose in the final paragraph?",
-        "choices": ["To argue that sleep problems cannot be solved", "To promote sales of sleeping pills", "To suggest practical measures and emphasize sleep as a necessity", "To criticize all schools and companies"],
+        "choices": [
+          "To argue that sleep problems cannot be solved",
+          "To promote sales of sleeping pills",
+          "To suggest practical measures and emphasize sleep as a necessity",
+          "To criticize all schools and companies"
+        ],
         "answer": 2,
         "explanation": "筆者は具体策を示し睡眠を必需品と捉えることを提案する。目的問題。"
       }
@@ -197,31 +322,56 @@ export const ARTICLES_B2 = [
     "questions": [
       {
         "question": "According to the text, how do high commissions affect small restaurants?",
-        "choices": ["They guarantee large profits for all owners", "They may erase profitability because margins are narrow", "They reduce the need for kitchen staff", "They improve food quality automatically"],
+        "choices": [
+          "They guarantee large profits for all owners",
+          "They may erase profitability because margins are narrow",
+          "They reduce the need for kitchen staff",
+          "They improve food quality automatically"
+        ],
         "answer": 1,
         "explanation": "利益率が低いため手数料で収益が消えるとある。事実問題。"
       },
       {
         "question": "Why is much delivery packaging difficult to recycle?",
-        "choices": ["Because customers reuse it too often", "Because it is made of glass", "Because recycling centers refuse all plastic", "Because of food contamination"],
+        "choices": [
+          "Because customers reuse it too often",
+          "Because it is made of glass",
+          "Because recycling centers refuse all plastic",
+          "Because of food contamination"
+        ],
         "answer": 3,
         "explanation": "食品汚染のためリサイクルが難しいとある。因果関係問題。"
       },
       {
         "question": "What does the word precarious in the second paragraph most nearly mean?",
-        "choices": ["Stable and well-paid", "Highly skilled", "Uncertain and insecure", "Legally prohibited"],
+        "choices": [
+          "Stable and well-paid",
+          "Highly skilled",
+          "Uncertain and insecure",
+          "Legally prohibited"
+        ],
         "answer": 2,
         "explanation": "precarious は不安定で保障がないという意味。語彙問題。"
       },
       {
         "question": "What does None of this in the final paragraph refer to?",
-        "choices": ["The convenience of tap screens", "The photographs on delivery apps", "The bundled orders in rural areas", "The economic, environmental, and behavioral problems just described"],
+        "choices": [
+          "The convenience of tap screens",
+          "The photographs on delivery apps",
+          "The bundled orders in rural areas",
+          "The economic, environmental, and behavioral problems just described"
+        ],
         "answer": 3,
         "explanation": "None of this は前述の問題点を指す。指示語問題。"
       },
       {
         "question": "What is the author's stance toward food delivery services?",
-        "choices": ["They should be abolished immediately", "They are convenient but need reforms to share costs fairly", "They have no environmental impact", "Small restaurants benefit most from current fees"],
+        "choices": [
+          "They should be abolished immediately",
+          "They are convenient but need reforms to share costs fairly",
+          "They have no environmental impact",
+          "Small restaurants benefit most from current fees"
+        ],
         "answer": 1,
         "explanation": "筆者は利便性を認めつつ公正な改革が必要とする立場。要旨・立場問題。"
       }
@@ -235,31 +385,56 @@ export const ARTICLES_B2 = [
     "questions": [
       {
         "question": "According to the text, what advantage do adults have over young children?",
-        "choices": ["They always achieve better pronunciation", "They do not need motivation", "They progress faster in grammar and vocabulary due to analytical skills", "They never make mistakes"],
+        "choices": [
+          "They always achieve better pronunciation",
+          "They do not need motivation",
+          "They progress faster in grammar and vocabulary due to analytical skills",
+          "They never make mistakes"
+        ],
         "answer": 2,
         "explanation": "大人は分析力などで文法や語彙の習得が速いとある。事実問題。"
       },
       {
         "question": "Why might learners abroad fail to improve?",
-        "choices": ["Because foreign countries have no native speakers", "Because immersion always guarantees fluency", "Because feedback harms their progress", "Because they avoid interaction and stay within native-speaker communities"],
+        "choices": [
+          "Because foreign countries have no native speakers",
+          "Because immersion always guarantees fluency",
+          "Because feedback harms their progress",
+          "Because they avoid interaction and stay within native-speaker communities"
+        ],
         "answer": 3,
         "explanation": "交流を避けると stagnate するとある。因果関係問題。"
       },
       {
         "question": "What does the word stagnate in the second paragraph most nearly mean?",
-        "choices": ["To stop progressing", "To travel rapidly", "To speak fluently", "To graduate early"],
+        "choices": [
+          "To stop progressing",
+          "To travel rapidly",
+          "To speak fluently",
+          "To graduate early"
+        ],
         "answer": 0,
         "explanation": "stagnate は停滞するという意味。語彙問題。"
       },
       {
         "question": "What can be inferred about language apps?",
-        "choices": ["They are useless for any learner", "They are helpful supplements but insufficient for conversational skills alone", "They can fully replace human conversation", "They increase anxiety more than classrooms"],
+        "choices": [
+          "They are useless for any learner",
+          "They are helpful supplements but insufficient for conversational skills alone",
+          "They can fully replace human conversation",
+          "They increase anxiety more than classrooms"
+        ],
         "answer": 1,
         "explanation": "アプリは有用だが本物の会話の代わりにならないと読み取れる。推論問題。"
       },
       {
         "question": "Which best summarizes the author's main message?",
-        "choices": ["Only talented children can learn languages", "Mistakes must always be punished", "Moving abroad is the only effective method", "Success depends on sustained strategic effort based on evidence, not myths"],
+        "choices": [
+          "Only talented children can learn languages",
+          "Mistakes must always be punished",
+          "Moving abroad is the only effective method",
+          "Success depends on sustained strategic effort based on evidence, not myths"
+        ],
         "answer": 3,
         "explanation": "才能や年齢より継続的で戦略的な努力が重要という要旨。要約問題。"
       }
@@ -273,34 +448,59 @@ export const ARTICLES_B2 = [
     "questions": [
       {
         "question": "According to the text, what characterizes fast fashion?",
-        "choices": ["Handmade luxury garments produced slowly", "Clothing designed to last for decades", "Uniforms supplied by governments", "Rapid production of cheap trend-following clothing"],
+        "choices": [
+          "Handmade luxury garments produced slowly",
+          "Clothing designed to last for decades",
+          "Uniforms supplied by governments",
+          "Rapid production of cheap trend-following clothing"
+        ],
         "answer": 3,
         "explanation": "流行に沿った安い服の急速生産と定義されている。事実問題。"
       },
       {
         "question": "Why is textile waste hard to recycle?",
-        "choices": ["Because consumers never throw away clothes", "Because landfills refuse all textiles", "Because low quality and blended fabrics make recycling technically difficult", "Because synthetic fibers dissolve in water"],
+        "choices": [
+          "Because consumers never throw away clothes",
+          "Because landfills refuse all textiles",
+          "Because low quality and blended fabrics make recycling technically difficult",
+          "Because synthetic fibers dissolve in water"
+        ],
         "answer": 2,
         "explanation": "低品質と混紡素材がリサイクルを難しくするとある。因果関係問題。"
       },
       {
         "question": "What does the word obscure in the fourth paragraph most nearly mean?",
-        "choices": ["To make unclear or hide responsibility", "To improve working conditions", "To increase wages", "To publish reports openly"],
+        "choices": [
+          "To make unclear or hide responsibility",
+          "To improve working conditions",
+          "To increase wages",
+          "To publish reports openly"
+        ],
         "answer": 0,
         "explanation": "obscure は不明瞭にする・隠すという意味。語彙問題。"
       },
       {
         "question": "What does such initiatives in the final paragraph refer to?",
-        "choices": ["Excessive working hours and unsafe buildings", "Rental services and take-back programs", "Pesticide use in cotton fields", "Global supply chains"],
+        "choices": [
+          "Excessive working hours and unsafe buildings",
+          "Rental services and take-back programs",
+          "Pesticide use in cotton fields",
+          "Global supply chains"
+        ],
         "answer": 1,
         "explanation": "such initiatives はレンタルや回収プログラムを指す。指示語問題。"
       },
       {
         "question": "What is the author's view on solving the fast fashion problem?",
-        "choices": ["Marketing alone is sufficient", "Consumers have no influence", "Coordinated changes in business, regulation, and culture are needed", "Production volumes should be increased"],
+        "choices": [
+          "Marketing alone is sufficient",
+          "Consumers have no influence",
+          "Coordinated changes in business, regulation, and culture are needed",
+          "Production volumes should be increased"
+        ],
         "answer": 2,
         "explanation": "ビジネス・規制・文化の協調的変化が必要という立場。要旨・立場問題。"
       }
     ]
   }
-];
+]

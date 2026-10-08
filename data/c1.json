@@ -1,4 +1,4 @@
-export const ARTICLES_C1 = [
+[
   {
     "id": "c1-001",
     "difficulty": "C1",
@@ -7,31 +7,56 @@ export const ARTICLES_C1 = [
     "questions": [
       {
         "question": "According to the second paragraph, how does literary history complicate the traditional idea of authorship?",
-        "choices": ["It shows that solitary creation was legally prohibited in earlier periods.", "It proves that copyright law was originally designed for machines.", "It shows that editors, translators, and storytellers have long shared creative roles.", "It suggests that readers have never cared about who wrote a text."],
+        "choices": [
+          "It shows that solitary creation was legally prohibited in earlier periods.",
+          "It proves that copyright law was originally designed for machines.",
+          "It shows that editors, translators, and storytellers have long shared creative roles.",
+          "It suggests that readers have never cared about who wrote a text."
+        ],
         "answer": 2,
         "explanation": "単なる個人創作という神話に対し、編集者や翻訳者などの関与が昔からあったと述べられています。第二段落の内容と一致します。"
       },
       {
         "question": "What does 'this tension' in the third paragraph refer to?",
-        "choices": ["The conflict between vivid scenes and literary prizes.", "The gap between authorship as an ideal of sole creation and its distributed reality.", "The rivalry between human novelists and software engineers.", "The legal dispute over who owns a language model."],
+        "choices": [
+          "The conflict between vivid scenes and literary prizes.",
+          "The gap between authorship as an ideal of sole creation and its distributed reality.",
+          "The rivalry between human novelists and software engineers.",
+          "The legal dispute over who owns a language model."
+        ],
         "answer": 1,
         "explanation": "this tensionは前段落の、作者＝単独の起源という建前と実際は分散的という現実の緊張を指します。前後段落をつなげて判断する照応問題です。"
       },
       {
         "question": "What does the author mean by calling photography's effect on painting a parallel case?",
-        "choices": ["Photography made painting commercially worthless for a time.", "New technology forces an older art to redefine its distinctive purpose.", "Writers should abandon prose and turn to visual arts.", "Machine text will soon become indistinguishable from photographs."],
+        "choices": [
+          "Photography made painting commercially worthless for a time.",
+          "New technology forces an older art to redefine its distinctive purpose.",
+          "Writers should abandon prose and turn to visual arts.",
+          "Machine text will soon become indistinguishable from photographs."
+        ],
         "answer": 1,
         "explanation": "写真が絵画を滅ぼさず目的の明確化を迫ったように、生成AIも開示と選択の質を問うという類推です。因果関係・論理構造を問う設問です。"
       },
       {
         "question": "In context, what does the word 'simulated' in the fourth paragraph most nearly mean?",
-        "choices": ["Faked or artificially produced without lived experience.", "Translated carefully into another language.", "Shortened for easier reading.", "Praised excessively by critics."],
+        "choices": [
+          "Faked or artificially produced without lived experience.",
+          "Translated carefully into another language.",
+          "Shortened for easier reading.",
+          "Praised excessively by critics."
+        ],
         "answer": 0,
         "explanation": "simulatedはlivedと対比され、体験に基づかない人工的なものを指します。前後関係からの語彙問題です。"
       },
       {
         "question": "What is the author's stance in the final two paragraphs?",
-        "choices": ["Authors should hide any use of AI to preserve mystique.", "Only texts written without machines deserve legal protection.", "Authors should disclose their process and take responsibility for the final choices.", "The concept of authorship should be abandoned entirely."],
+        "choices": [
+          "Authors should hide any use of AI to preserve mystique.",
+          "Only texts written without machines deserve legal protection.",
+          "Authors should disclose their process and take responsibility for the final choices.",
+          "The concept of authorship should be abandoned entirely."
+        ],
         "answer": 2,
         "explanation": "筆者は純粋な独創性の擁護ではなく、工程の開示と責任を重視する立場です。第五段落と第六段落を総合した要旨問題です。"
       }
@@ -45,31 +70,56 @@ export const ARTICLES_C1 = [
     "questions": [
       {
         "question": "According to the second paragraph, how does degrowth differ from a recession?",
-        "choices": ["It is an unplanned slump that increases unemployment.", "It is a planned reduction of resource use aimed at well-being.", "It is a faster form of growth led by green technology.", "It is a policy that only applies to developing countries."],
+        "choices": [
+          "It is an unplanned slump that increases unemployment.",
+          "It is a planned reduction of resource use aimed at well-being.",
+          "It is a faster form of growth led by green technology.",
+          "It is a policy that only applies to developing countries."
+        ],
         "answer": 1,
         "explanation": "不況は無計画な縮小、脱成長は意図的なスループット削減と区別されています。第二段落のdetail問題です。"
       },
       {
         "question": "What does 'this vision' in the third paragraph refer to?",
-        "choices": ["The degrowth proposal described in the previous paragraph.", "The critics' hope for unlimited renewable energy.", "The historical idea that growth lifts all boats.", "The survey finding about happiness and income."],
+        "choices": [
+          "The degrowth proposal described in the previous paragraph.",
+          "The critics' hope for unlimited renewable energy.",
+          "The historical idea that growth lifts all boats.",
+          "The survey finding about happiness and income."
+        ],
         "answer": 0,
         "explanation": "this visionは前段落の脱成長の構想を指します。段落をまたぐ照応解決の問題です。"
       },
       {
         "question": "In context, what does 'decouple' most nearly mean?",
-        "choices": ["To separate economic growth from environmental harm.", "To reduce GDP intentionally.", "To ban international trade.", "To delay technological change."],
+        "choices": [
+          "To separate economic growth from environmental harm.",
+          "To reduce GDP intentionally.",
+          "To ban international trade.",
+          "To delay technological change."
+        ],
         "answer": 0,
         "explanation": "decoupleは産出量の増加と排出・資源利用を切り離す意味で使われています。文脈からの語彙問題です。"
       },
       {
         "question": "Why does the author mention the fuel-efficient car in the fourth paragraph?",
-        "choices": ["To prove that cars are the main cause of unhappiness.", "To illustrate how efficiency gains can be offset by increased demand.", "To argue that surveys about happiness are unreliable.", "To show that relative decoupling has already solved climate change."],
+        "choices": [
+          "To prove that cars are the main cause of unhappiness.",
+          "To illustrate how efficiency gains can be offset by increased demand.",
+          "To argue that surveys about happiness are unreliable.",
+          "To show that relative decoupling has already solved climate change."
+        ],
         "answer": 1,
         "explanation": "リバウンド効果の具体例として挙げられています。因果関係を問う問題で、前後の実証的議論と結びつけて理解が必要です。"
       },
       {
         "question": "What is the author's overall purpose?",
-        "choices": ["To endorse degrowth as a complete policy blueprint.", "To dismiss environmental concerns as romantic illusions.", "To present both sides fairly and suggest the debate itself clarifies our goals.", "To prove that happiness always rises with income."],
+        "choices": [
+          "To endorse degrowth as a complete policy blueprint.",
+          "To dismiss environmental concerns as romantic illusions.",
+          "To present both sides fairly and suggest the debate itself clarifies our goals.",
+          "To prove that happiness always rises with income."
+        ],
         "answer": 2,
         "explanation": "筆者はどちらにも軍配を上げず、鏡としての価値を評価する中立的立場です。第五・第六段落を含む筆者見解の問題です。"
       }
@@ -83,31 +133,56 @@ export const ARTICLES_C1 = [
     "questions": [
       {
         "question": "According to the second paragraph, why is discarding details useful?",
-        "choices": ["It increases the total storage capacity of the brain like a hard drive.", "It helps form general concepts by letting patterns stand out.", "It prevents children from learning the word dog.", "It allows people to replay memories like video."],
+        "choices": [
+          "It increases the total storage capacity of the brain like a hard drive.",
+          "It helps form general concepts by letting patterns stand out.",
+          "It prevents children from learning the word dog.",
+          "It allows people to replay memories like video."
+        ],
         "answer": 1,
         "explanation": "細部を捨てることで一般化と概念形成が可能になると述べられています。第二段落のdetail問題です。"
       },
       {
         "question": "What does 'this sorting' in the third paragraph refer to?",
-        "choices": ["The division between deep sleep and dreaming.", "The brain's process of strengthening some memories and pruning others.", "The classification of students by test scores.", "The separation of gist from irrelevant specifics in textbooks."],
+        "choices": [
+          "The division between deep sleep and dreaming.",
+          "The brain's process of strengthening some memories and pruning others.",
+          "The classification of students by test scores.",
+          "The separation of gist from irrelevant specifics in textbooks."
+        ],
         "answer": 1,
         "explanation": "this sortingは睡眠中の再生・強化・剪定の選別過程を指します。前段落のreconstructiveという特徴と結びつく照応問題です。"
       },
       {
         "question": "In context, what does 'benign' in the fourth paragraph most nearly mean?",
-        "choices": ["Harmless or beneficial.", "Deliberate and strategic.", "Rare and mysterious.", "Painful and permanent."],
+        "choices": [
+          "Harmless or beneficial.",
+          "Deliberate and strategic.",
+          "Rare and mysterious.",
+          "Painful and permanent."
+        ],
         "answer": 0,
         "explanation": "benignは適応的な剪定と対比される肯定的意味で、無害・良性を表します。文脈からの語彙問題です。"
       },
       {
         "question": "Why does spaced retrieval work, according to the fifth paragraph combined with earlier paragraphs?",
-        "choices": ["Because it prevents sleep from pruning any memories.", "Because delay lets trivia fade, forcing reconstruction of the core idea.", "Because it allows multitasking while studying.", "Because verbatim transcription strengthens gist."],
+        "choices": [
+          "Because it prevents sleep from pruning any memories.",
+          "Because delay lets trivia fade, forcing reconstruction of the core idea.",
+          "Because it allows multitasking while studying.",
+          "Because verbatim transcription strengthens gist."
+        ],
         "answer": 1,
         "explanation": "間隔を置くことで細部が弱まり中核の再構築が促されるという因果関係です。第二段落の一般化の議論と結びつく推論問題です。"
       },
       {
         "question": "What is the author's stance toward forgetting?",
-        "choices": ["All forgetting should be treated as a sign of cognitive decline.", "Students should aim for perfect verbatim retention.", "Sleep has no significant effect on memory.", "Forgetting is mainly valuable when it is adaptive and supports organization."],
+        "choices": [
+          "All forgetting should be treated as a sign of cognitive decline.",
+          "Students should aim for perfect verbatim retention.",
+          "Sleep has no significant effect on memory.",
+          "Forgetting is mainly valuable when it is adaptive and supports organization."
+        ],
         "answer": 3,
         "explanation": "筆者は適応的な忘却を評価しつつ、ストレスや注意分散による忘却は区別する立場です。全体の要旨・立場を問う問題です。"
       }
@@ -121,31 +196,56 @@ export const ARTICLES_C1 = [
     "questions": [
       {
         "question": "According to the first paragraph, what happens where trust as infrastructure is absent?",
-        "choices": ["People lend tools more freely.", "Everyday transactions require more contracts and suspicion.", "Neighborhoods need fewer negotiations.", "Goodwill becomes automatically stronger."],
+        "choices": [
+          "People lend tools more freely.",
+          "Everyday transactions require more contracts and suspicion.",
+          "Neighborhoods need fewer negotiations.",
+          "Goodwill becomes automatically stronger."
+        ],
         "answer": 1,
         "explanation": "信頼が欠けると契約や監視が必要になると述べられています。第一段落のdetail問題です。"
       },
       {
         "question": "What does 'both kinds of ties' in the fourth paragraph refer to?",
-        "choices": ["Online interaction and remote work.", "Bonding ties and bridging ties introduced earlier.", "Family relationships and distant friendships.", "Outrage and understanding on social media."],
+        "choices": [
+          "Online interaction and remote work.",
+          "Bonding ties and bridging ties introduced earlier.",
+          "Family relationships and distant friendships.",
+          "Outrage and understanding on social media."
+        ],
         "answer": 1,
         "explanation": "both kindsは第三段落のbondingとbridgingを指します。段落をまたぐ照応問題です。"
       },
       {
         "question": "In context, what does 'shades into' in the third paragraph most nearly mean?",
-        "choices": ["Gradually turns into something less desirable.", "Protects against sunlight.", "Differs completely from.", "Explains in detail."],
+        "choices": [
+          "Gradually turns into something less desirable.",
+          "Protects against sunlight.",
+          "Differs completely from.",
+          "Explains in detail."
+        ],
         "answer": 0,
         "explanation": "shades intoは忠誠心が排除へと徐々に変わる意味です。慣用表現の文脈推測問題です。"
       },
       {
         "question": "Why does the author mention benches facing each other and shared tables in the fifth paragraph?",
-        "choices": ["To prove that moral lectures are the best way to build trust.", "To show that physical design can create repeated contact that fosters familiarity.", "To argue that public transport should be privatized.", "To suggest that cities need more surveillance."],
+        "choices": [
+          "To prove that moral lectures are the best way to build trust.",
+          "To show that physical design can create repeated contact that fosters familiarity.",
+          "To argue that public transport should be privatized.",
+          "To suggest that cities need more surveillance."
+        ],
         "answer": 1,
         "explanation": "ささいな接触の反復が親しみを生む設計例として挙げられています。因果関係・論理構造を問う問題です。"
       },
       {
         "question": "Which statement best summarizes the author's view in the final paragraph?",
-        "choices": ["Trust means believing others are always right.", "Trust eliminates the need for disagreement.", "Trust is a practical achievement enabling conflict without deception or violence.", "Trust can be built quickly through slogans."],
+        "choices": [
+          "Trust means believing others are always right.",
+          "Trust eliminates the need for disagreement.",
+          "Trust is a practical achievement enabling conflict without deception or violence.",
+          "Trust can be built quickly through slogans."
+        ],
         "answer": 2,
         "explanation": "信頼は楽観ではなく対立を公正に扱う実践的達成とまとめられています。全体の要旨パラフレーズ問題です。"
       }
@@ -159,31 +259,56 @@ export const ARTICLES_C1 = [
     "questions": [
       {
         "question": "Why does the author compare news to a map rather than a mirror?",
-        "choices": ["Because maps are more decorative than mirrors.", "Because mirrors are no longer used in journalism.", "Because news simplifies reality and should not be mistaken for reality itself.", "Because maps never involve selection."],
+        "choices": [
+          "Because maps are more decorative than mirrors.",
+          "Because mirrors are no longer used in journalism.",
+          "Because news simplifies reality and should not be mistaken for reality itself.",
+          "Because maps never involve selection."
+        ],
         "answer": 2,
         "explanation": "地図の比喩は単純化ゆえに有用だが現実そのものではない点を表します。第一段落の推論問題です。"
       },
       {
         "question": "What does 'This' in 'This can surface valuable niche reporting' in the third paragraph refer to?",
-        "choices": ["The machinery of daily production in newspapers.", "Personalized ranking by platforms based on predicted engagement.", "Groundwater depletion as a slow-moving trend.", "The shared agenda of broadcasters."],
+        "choices": [
+          "The machinery of daily production in newspapers.",
+          "Personalized ranking by platforms based on predicted engagement.",
+          "Groundwater depletion as a slow-moving trend.",
+          "The shared agenda of broadcasters."
+        ],
         "answer": 1,
         "explanation": "Thisはプラットフォームによる個別化された順位付けを指します。直前文との照応解決の問題です。"
       },
       {
         "question": "In context, what does 'foreground' in the fourth paragraph most nearly mean?",
-        "choices": ["To ignore completely.", "To emphasize or give prominence to.", "To prove false.", "To translate into another language."],
+        "choices": [
+          "To ignore completely.",
+          "To emphasize or give prominence to.",
+          "To prove false.",
+          "To translate into another language."
+        ],
         "answer": 1,
         "explanation": "foregroundは統計などを前面に出し強調する意味です。文脈からの語彙問題です。"
       },
       {
         "question": "According to the fifth and sixth paragraphs, what is a risk of placing responsibility solely on individual readers?",
-        "choices": ["It may lead to blanket cynicism where all reporting is distrusted.", "It always increases trust in professional reporters.", "It eliminates selective exposure completely.", "It guarantees that whistleblowers will be protected."],
+        "choices": [
+          "It may lead to blanket cynicism where all reporting is distrusted.",
+          "It always increases trust in professional reporters.",
+          "It eliminates selective exposure completely.",
+          "It guarantees that whistleblowers will be protected."
+        ],
         "answer": 0,
         "explanation": "個人への負担が全面懐疑に陥る危険が指摘されています。二段落をつなげる因果関係の問題です。"
       },
       {
         "question": "What is the author's main conclusion?",
-        "choices": ["Selection in news can be eliminated with better technology.", "News selection should be made accountable and open to public scrutiny.", "Audiences should avoid all mainstream outlets.", "Objectivity means having no perspective at all."],
+        "choices": [
+          "Selection in news can be eliminated with better technology.",
+          "News selection should be made accountable and open to public scrutiny.",
+          "Audiences should avoid all mainstream outlets.",
+          "Objectivity means having no perspective at all."
+        ],
         "answer": 1,
         "explanation": "選択の排除ではなく説明責任と公開の検証が結論です。筆者の立場・要旨を問う問題です。"
       }
@@ -197,31 +322,56 @@ export const ARTICLES_C1 = [
     "questions": [
       {
         "question": "According to the second paragraph, what is a physiological effect of chronic noise?",
-        "choices": ["It permanently improves concentration through habituation.", "It raises stress hormones and impairs sleep and complex thinking.", "It has no measurable effect on hospitals or offices.", "It only affects people who complain about sound."],
+        "choices": [
+          "It permanently improves concentration through habituation.",
+          "It raises stress hormones and impairs sleep and complex thinking.",
+          "It has no measurable effect on hospitals or offices.",
+          "It only affects people who complain about sound."
+        ],
         "answer": 1,
         "explanation": "ストレスホルモン上昇、睡眠妨害、問題解決低下などが挙げられています。第二段落のdetail問題です。"
       },
       {
         "question": "What does 'that concern' in the fifth paragraph refer to?",
-        "choices": ["The idea that silence is a luxury good distributed unequally.", "The physiological cost of traffic noise.", "The popularity of lively public squares.", "The mapping of soundscapes in some cities."],
+        "choices": [
+          "The idea that silence is a luxury good distributed unequally.",
+          "The physiological cost of traffic noise.",
+          "The popularity of lively public squares.",
+          "The mapping of soundscapes in some cities."
+        ],
         "answer": 0,
         "explanation": "that concernは前段落の沈黙が富裕層の贅沢品になりかねない不平等への懸念を指します。段落間の照応問題です。"
       },
       {
         "question": "In context, what does 'frays' in the first paragraph most nearly mean?",
-        "choices": ["Gradually weakens or wears out.", "Becomes louder.", "Is legally protected.", "Is celebrated publicly."],
+        "choices": [
+          "Gradually weakens or wears out.",
+          "Becomes louder.",
+          "Is legally protected.",
+          "Is celebrated publicly."
+        ],
         "answer": 0,
         "explanation": "fraysは集中力がほつれ弱まる意味です。文脈からの語彙問題です。"
       },
       {
         "question": "How do the third and fourth paragraphs work together logically?",
-        "choices": ["The third praises silence culturally, while the fourth warns its benefits are unequally distributed.", "Both argue that silence is unnecessary in cities.", "The third rejects science, while the fourth endorses it.", "Both claim that only affluent residents need quiet."],
+        "choices": [
+          "The third praises silence culturally, while the fourth warns its benefits are unequally distributed.",
+          "Both argue that silence is unnecessary in cities.",
+          "The third rejects science, while the fourth endorses it.",
+          "Both claim that only affluent residents need quiet."
+        ],
         "answer": 0,
         "explanation": "文化的価値の主張と不平等という留保の関係です。二段落の論理構造を問う問題です。"
       },
       {
         "question": "What tone best describes the final paragraph?",
-        "choices": ["Dismissive and ironic toward any praise of silence.", " purely technical and statistical without evaluation.", "Appreciative and reflective, presenting silence as hospitality.", "Angry and accusatory toward urban planners."],
+        "choices": [
+          "Dismissive and ironic toward any praise of silence.",
+          " purely technical and statistical without evaluation.",
+          "Appreciative and reflective, presenting silence as hospitality.",
+          "Angry and accusatory toward urban planners."
+        ],
         "answer": 2,
         "explanation": "最終段落は沈黙をもてなしとして称える思索的な調子です。トーンを問う問題で、全体の筆者姿勢とも関わります。"
       }
@@ -235,34 +385,59 @@ export const ARTICLES_C1 = [
     "questions": [
       {
         "question": "According to the first paragraph, why do translators say faithful rendering often requires slight betrayal?",
-        "choices": ["Because readers prefer inaccurate stories.", "Because histories and rhythms attached to words rarely align across languages.", "Because dictionaries forbid paraphrase.", "Because parallel codes always match perfectly."],
+        "choices": [
+          "Because readers prefer inaccurate stories.",
+          "Because histories and rhythms attached to words rarely align across languages.",
+          "Because dictionaries forbid paraphrase.",
+          "Because parallel codes always match perfectly."
+        ],
         "answer": 1,
         "explanation": "語の歴史や響きが一致しないためと説明されています。第一段落のdetail問題です。"
       },
       {
         "question": "What does 'which loss is least damaging' in the second paragraph imply when read with the third paragraph?",
-        "choices": ["Translators must choose among precision, fluency, and atmosphere, including tone and style.", "Translators can avoid all losses with footnotes.", "Machine translation has solved all trade-offs.", "Puns and meters are always easy to transfer."],
+        "choices": [
+          "Translators must choose among precision, fluency, and atmosphere, including tone and style.",
+          "Translators can avoid all losses with footnotes.",
+          "Machine translation has solved all trade-offs.",
+          "Puns and meters are always easy to transfer."
+        ],
         "answer": 0,
         "explanation": "第二段落の選択と第三段落の文体・丁寧さの問題をつなげる推論問題です。二段落の情報統合が必要です。"
       },
       {
         "question": "In context, what does 'deadpan' most nearly mean?",
-        "choices": ["Deliberately expressionless or understated.", "Extremely polite and warm.", "Loud and exaggerated.", "Accidentally rude."],
+        "choices": [
+          "Deliberately expressionless or understated.",
+          "Extremely polite and warm.",
+          "Loud and exaggerated.",
+          "Accidentally rude."
+        ],
         "answer": 0,
         "explanation": "deadpan understatementは無表情で控えめな皮肉を指します。文脈からの語彙・イディオム問題です。"
       },
       {
         "question": "What does 'They' in 'They may render grammar correctly' in the fourth paragraph refer to?",
-        "choices": ["Human readers.", "Sensitive texts.", "Algorithms for machine translation.", "Subtly rude characters."],
+        "choices": [
+          "Human readers.",
+          "Sensitive texts.",
+          "Algorithms for machine translation.",
+          "Subtly rude characters."
+        ],
         "answer": 2,
         "explanation": "Theyは機械翻訳のアルゴリズムを指します。照応解決の問題です。"
       },
       {
         "question": "What is the author's stance in the final two paragraphs?",
-        "choices": ["Untranslatability makes translation pointless and should be hidden.", "Differences should be preserved honestly, making translation an ethical effort.", "Translators should eliminate all foreign terms for fluency.", "Machine translation alone is sufficient for literature."],
+        "choices": [
+          "Untranslatability makes translation pointless and should be hidden.",
+          "Differences should be preserved honestly, making translation an ethical effort.",
+          "Translators should eliminate all foreign terms for fluency.",
+          "Machine translation alone is sufficient for literature."
+        ],
         "answer": 1,
         "explanation": "残余を認めつつ差異を保持する倫理的営みとして翻訳を評価しています。筆者見解・要旨の問題です。"
       }
     ]
   }
-];
+]

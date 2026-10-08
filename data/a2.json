@@ -1,4 +1,4 @@
-export const ARTICLES_A2 = [
+[
   {
     "id": "a2-001",
     "difficulty": "A2",
@@ -7,31 +7,56 @@ export const ARTICLES_A2 = [
     "questions": [
       {
         "question": "What do most people do every morning?",
-        "choices": ["They wake up, wash, and eat breakfast.", "They go shopping and clean the house.", "They play sports and watch TV.", "They visit friends and drink tea."],
+        "choices": [
+          "They wake up, wash, and eat breakfast.",
+          "They go shopping and clean the house.",
+          "They play sports and watch TV.",
+          "They visit friends and drink tea."
+        ],
         "answer": 0,
         "explanation": "本文の第1段落に wake up, wash, eat breakfast の3点が明記されています。"
       },
       {
         "question": "What does the word full mean in Trains are very full at that time?",
-        "choices": ["Empty and quiet.", "Fast and late.", "With many people inside.", "Clean and new."],
+        "choices": [
+          "Empty and quiet.",
+          "Fast and late.",
+          "With many people inside.",
+          "Clean and new."
+        ],
         "answer": 2,
         "explanation": "full はここでは電車に人がたくさんいるという意味です。前後の混雑の文脈から判断できます。"
       },
       {
         "question": "What does They refer to in They sometimes eat bread with butter or jam?",
-        "choices": ["Shops in Spain.", "People in Spain.", "Children in Japan.", "Parents in Brazil."],
+        "choices": [
+          "Shops in Spain.",
+          "People in Spain.",
+          "Children in Japan.",
+          "Parents in Brazil."
+        ],
         "answer": 1,
         "explanation": "They は直前の People drink coffee with milk の People、つまりスペインの人々を指します。"
       },
       {
         "question": "Why is breakfast small in Spain?",
-        "choices": ["Because people do not like bread.", "Because lunch is the biggest meal.", "Because shops open late.", "Because children go to school late."],
+        "choices": [
+          "Because people do not like bread.",
+          "Because lunch is the biggest meal.",
+          "Because shops open late.",
+          "Because children go to school late."
+        ],
         "answer": 1,
         "explanation": "本文では lunch is the biggest meal だから breakfast is small と因果関係が説明されています。"
       },
       {
         "question": "What is the main idea of this article?",
-        "choices": ["Trains in Japan are always late.", "Morning habits are different in each country but important everywhere.", "Football is popular in Brazil.", "Coffee with milk is the best breakfast."],
+        "choices": [
+          "Trains in Japan are always late.",
+          "Morning habits are different in each country but important everywhere.",
+          "Football is popular in Brazil.",
+          "Coffee with milk is the best breakfast."
+        ],
         "answer": 1,
         "explanation": "各国の朝の違いを紹介しつつ朝が大切という全体のまとめが主旨です。"
       }
@@ -45,31 +70,56 @@ export const ARTICLES_A2 = [
     "questions": [
       {
         "question": "When was the summer festival?",
-        "choices": ["On Monday and Tuesday.", "Last month on Saturday and Sunday.", "Every morning in summer.", "Next year in winter."],
+        "choices": [
+          "On Monday and Tuesday.",
+          "Last month on Saturday and Sunday.",
+          "Every morning in summer.",
+          "Next year in winter."
+        ],
         "answer": 1,
         "explanation": "第1段落に Last month, on Saturday and Sunday と明記されています。"
       },
       {
         "question": "What does the word parade mean in this story?",
-        "choices": ["A quiet meeting at home.", "People walking together in the street for fun.", "A cooking class in the park.", "A train ride through town."],
+        "choices": [
+          "A quiet meeting at home.",
+          "People walking together in the street for fun.",
+          "A cooking class in the park.",
+          "A train ride through town."
+        ],
         "answer": 1,
         "explanation": "parade は楽器や踊りで通りを行進する行列のことで、文脈から意味が推測できます。"
       },
       {
         "question": "What does It refer to in It was hot and very good?",
-        "choices": ["The orange juice.", "The big tree.", "The fried chicken.", "The ice cream."],
+        "choices": [
+          "The orange juice.",
+          "The big tree.",
+          "The fried chicken.",
+          "The ice cream."
+        ],
         "answer": 2,
         "explanation": "It は直前の My mother bought fried chicken for us を受け、fried chicken を指します。"
       },
       {
         "question": "Why did people say wow and clap?",
-        "choices": ["Because the fireworks were beautiful.", "Because the parade was long.", "Because the food was hot.", "Because the town was quiet."],
+        "choices": [
+          "Because the fireworks were beautiful.",
+          "Because the parade was long.",
+          "Because the food was hot.",
+          "Because the town was quiet."
+        ],
         "answer": 0,
         "explanation": "花火が美しかったから人々が感動したという因果関係が本文に書かれています。"
       },
       {
         "question": "How does the writer feel about the festival?",
-        "choices": ["He was tired but happy and wants to go again.", "He was bored and left early.", "He was angry about the food.", "He was sad about the weather."],
+        "choices": [
+          "He was tired but happy and wants to go again.",
+          "He was bored and left early.",
+          "He was angry about the food.",
+          "He was sad about the weather."
+        ],
         "answer": 0,
         "explanation": "最終文の tired but happy と cannot wait for next year から筆者の楽しんだ気持ちが読み取れます。"
       }
@@ -83,31 +133,56 @@ export const ARTICLES_A2 = [
     "questions": [
       {
         "question": "What could the writer do before learning to cook?",
-        "choices": ["Make birthday cakes.", "Cook fish and pasta.", "Only make instant noodles.", "Make vegetable soup well."],
+        "choices": [
+          "Make birthday cakes.",
+          "Cook fish and pasta.",
+          "Only make instant noodles.",
+          "Make vegetable soup well."
+        ],
         "answer": 2,
         "explanation": "第1段落に I could only make instant noodles と明記されています。"
       },
       {
         "question": "What does the word proud mean in I was proud of myself?",
-        "choices": ["Feeling happy about what you did.", "Feeling afraid of fire.", "Feeling tired after work.", "Feeling sorry for a mistake."],
+        "choices": [
+          "Feeling happy about what you did.",
+          "Feeling afraid of fire.",
+          "Feeling tired after work.",
+          "Feeling sorry for a mistake."
+        ],
         "answer": 0,
         "explanation": "proud は自分がしたことを誇りに思う気持ちで、褒められた文脈から判断できます。"
       },
       {
         "question": "What does It refer to in It was easy?",
-        "choices": ["Helping the mother.", "Using a knife.", "Cooking rice.", "Making soup."],
+        "choices": [
+          "Helping the mother.",
+          "Using a knife.",
+          "Cooking rice.",
+          "Making soup."
+        ],
         "answer": 2,
         "explanation": "It は直前の I learned to cook rice を受け、ご飯を炊くことを指します。"
       },
       {
         "question": "Why did the writer start to learn cooking?",
-        "choices": ["Because school homework was difficult.", "Because he wanted to help his mother.", "Because his father asked for cake.", "Because instant noodles were expensive."],
+        "choices": [
+          "Because school homework was difficult.",
+          "Because he wanted to help his mother.",
+          "Because his father asked for cake.",
+          "Because instant noodles were expensive."
+        ],
         "answer": 1,
         "explanation": "本文に I wanted to help my mother と理由がはっきり書かれています。"
       },
       {
         "question": "What can you learn from this story?",
-        "choices": ["Cooking is dangerous and boring.", "You should only eat instant noodles.", "Trying new things can be fun and useful.", "Mothers should always cook alone."],
+        "choices": [
+          "Cooking is dangerous and boring.",
+          "You should only eat instant noodles.",
+          "Trying new things can be fun and useful.",
+          "Mothers should always cook alone."
+        ],
         "answer": 2,
         "explanation": "失敗しながらも楽しく上達する流れが全体の教訓で、筆者の意図をまとめた選択肢です。"
       }
@@ -121,31 +196,56 @@ export const ARTICLES_A2 = [
     "questions": [
       {
         "question": "How did the class go to the aquarium?",
-        "choices": ["By train.", "By bus.", "By boat.", "On foot."],
+        "choices": [
+          "By train.",
+          "By bus.",
+          "By boat.",
+          "On foot."
+        ],
         "answer": 1,
         "explanation": "第1段落に We went by bus と明記されています。"
       },
       {
         "question": "What does the word fins mean in a blue fish with long fins?",
-        "choices": ["Flat parts that help a fish swim.", "Sharp teeth for eating.", "Round eyes for seeing.", "Long legs for walking."],
+        "choices": [
+          "Flat parts that help a fish swim.",
+          "Sharp teeth for eating.",
+          "Round eyes for seeing.",
+          "Long legs for walking."
+        ],
         "answer": 0,
         "explanation": "fins は魚が泳ぐためのひれのことで、fish と swim の文脈から推測できます。"
       },
       {
         "question": "What does They refer to in They moved very slowly?",
-        "choices": ["The small colorful fish.", "The sea horses.", "The dolphins.", "The sharks."],
+        "choices": [
+          "The small colorful fish.",
+          "The sea horses.",
+          "The dolphins.",
+          "The sharks."
+        ],
         "answer": 1,
         "explanation": "They は直前の sea horses を指し、ゆっくり動く説明と一致します。"
       },
       {
         "question": "Why did the trainer give fish to the dolphins?",
-        "choices": ["Because the dolphins were hungry in the sea.", "Because it was lunch time for students.", "Because the dolphins did good jumps.", "Because the water was too cold."],
+        "choices": [
+          "Because the dolphins were hungry in the sea.",
+          "Because it was lunch time for students.",
+          "Because the dolphins did good jumps.",
+          "Because the water was too cold."
+        ],
         "answer": 2,
         "explanation": "本文の after each jump から、良い演技へのごほうびという因果関係が読み取れます。"
       },
       {
         "question": "What is the main idea of this article?",
-        "choices": ["A fun school trip to the aquarium and what they saw.", "How to buy cheap bus tickets.", "Why sharks are dangerous animals.", "How to take good photos of fish."],
+        "choices": [
+          "A fun school trip to the aquarium and what they saw.",
+          "How to buy cheap bus tickets.",
+          "Why sharks are dangerous animals.",
+          "How to take good photos of fish."
+        ],
         "answer": 0,
         "explanation": "水族館見学の一日の流れと見たものを紹介する全体の要旨に合います。"
       }
@@ -159,31 +259,56 @@ export const ARTICLES_A2 = [
     "questions": [
       {
         "question": "Where is Mrs. Green's garden?",
-        "choices": ["On the balcony.", "In the park.", "Behind her small blue house.", "Near the school."],
+        "choices": [
+          "On the balcony.",
+          "In the park.",
+          "Behind her small blue house.",
+          "Near the school."
+        ],
         "answer": 2,
         "explanation": "第1段落に behind her small blue house と場所が明記されています。"
       },
       {
         "question": "What can you infer about Mrs. Green?",
-        "choices": ["She hates talking to people.", "She loves plants and is kind.", "She never works in the morning.", "She wants to sell her house."],
+        "choices": [
+          "She hates talking to people.",
+          "She loves plants and is kind.",
+          "She never works in the morning.",
+          "She wants to sell her house."
+        ],
         "answer": 1,
         "explanation": "毎朝働き野菜を分けたり教えたりする様子から、植物好きで親切だと推測できます。"
       },
       {
         "question": "What does it refer to in Many people stop to look at it?",
-        "choices": ["The street.", "The big hat.", "The garden.", "The house."],
+        "choices": [
+          "The street.",
+          "The big hat.",
+          "The garden.",
+          "The house."
+        ],
         "answer": 2,
         "explanation": "it は Her garden is famous の garden を指し、人々が眺める対象と一致します。"
       },
       {
         "question": "Why did the writer start a balcony garden?",
-        "choices": ["Because Mrs. Green taught and inspired him.", "Because tomatoes were expensive.", "Because school gave homework.", "Because bees came to the house."],
+        "choices": [
+          "Because Mrs. Green taught and inspired him.",
+          "Because tomatoes were expensive.",
+          "Because school gave homework.",
+          "Because bees came to the house."
+        ],
         "answer": 0,
         "explanation": "Greenさんに教わり影響を受けた流れから、きっかけという因果関係が読み取れます。"
       },
       {
         "question": "What does the word pots mean in I have three pots now?",
-        "choices": ["Large trees in a park.", "Containers for growing plants.", "Tools for cutting flowers.", "Bags of seeds."],
+        "choices": [
+          "Large trees in a park.",
+          "Containers for growing plants.",
+          "Tools for cutting flowers.",
+          "Bags of seeds."
+        ],
         "answer": 1,
         "explanation": "pots は植物を育てる植木鉢のことで、plant seeds の文脈から意味が推測できます。"
       }
@@ -197,31 +322,56 @@ export const ARTICLES_A2 = [
     "questions": [
       {
         "question": "Why was the writer bored at first?",
-        "choices": ["Because he could not play outside in the rain.", "Because he did not like cookies.", "Because his father was at work.", "Because the room was dirty."],
+        "choices": [
+          "Because he could not play outside in the rain.",
+          "Because he did not like cookies.",
+          "Because his father was at work.",
+          "Because the room was dirty."
+        ],
         "answer": 0,
         "explanation": "雨で外で遊べなかったことが理由で、第1段落の内容と一致します。"
       },
       {
         "question": "What does the word empty mean in The street was empty and quiet?",
-        "choices": ["With many cars and people.", "With no people or cars.", "With loud sounds.", "With bright lights."],
+        "choices": [
+          "With many cars and people.",
+          "With no people or cars.",
+          "With loud sounds.",
+          "With bright lights."
+        ],
         "answer": 1,
         "explanation": "empty は誰もいない状態で、quiet と並列されている文脈から推測できます。"
       },
       {
         "question": "What does Them refer to in We ate them with hot milk?",
-        "choices": ["The eggs.", "The chocolate chips.", "The cookies.", "The clothes."],
+        "choices": [
+          "The eggs.",
+          "The chocolate chips.",
+          "The cookies.",
+          "The clothes."
+        ],
         "answer": 2,
         "explanation": "them は直前に焼いた The cookies を指します。"
       },
       {
         "question": "How did the family feel in the evening?",
-        "choices": ["Tired and angry.", "Sad and quiet.", "Warm and happy.", "Cold and bored."],
+        "choices": [
+          "Tired and angry.",
+          "Sad and quiet.",
+          "Warm and happy.",
+          "Cold and bored."
+        ],
         "answer": 2,
         "explanation": "最終段落に warm and happy と明記されています。"
       },
       {
         "question": "What does the writer want to tell us?",
-        "choices": ["Rainy days are always boring.", "Cleaning rooms is difficult.", "You can enjoy a rainy day at home with family.", "Card games are better than cookies."],
+        "choices": [
+          "Rainy days are always boring.",
+          "Cleaning rooms is difficult.",
+          "You can enjoy a rainy day at home with family.",
+          "Card games are better than cookies."
+        ],
         "answer": 2,
         "explanation": "家での家族時間を楽しんだ経験が筆者の意図で、最終文とも一致します。"
       }
@@ -235,34 +385,59 @@ export const ARTICLES_A2 = [
     "questions": [
       {
         "question": "How did the writer get money for the bicycle?",
-        "choices": ["He borrowed it from friends.", "He saved it by doing small jobs.", "He won it in a game.", "He got it from school."],
+        "choices": [
+          "He borrowed it from friends.",
+          "He saved it by doing small jobs.",
+          "He won it in a game.",
+          "He got it from school."
+        ],
         "answer": 1,
         "explanation": "洗車や犬の散歩などの手伝いで貯めたと第1段落に明記されています。"
       },
       {
         "question": "What does the word brakes mean in I check the tires and the brakes?",
-        "choices": ["Parts that stop the bicycle.", "Lights that shine at night.", "Bags that hold water.", "Seats that feel soft."],
+        "choices": [
+          "Parts that stop the bicycle.",
+          "Lights that shine at night.",
+          "Bags that hold water.",
+          "Seats that feel soft."
+        ],
         "answer": 0,
         "explanation": "brakes は自転車を止める装置で、tires と並ぶ点検の文脈から推測できます。"
       },
       {
         "question": "What does It refer to in It also had a basket in front?",
-        "choices": ["The shop.", "The school bag.", "The blue bicycle.", "The right size."],
+        "choices": [
+          "The shop.",
+          "The school bag.",
+          "The blue bicycle.",
+          "The right size."
+        ],
         "answer": 2,
         "explanation": "It は I chose a blue one の青い自転車を指します。"
       },
       {
         "question": "Why is the writer happy with the bicycle?",
-        "choices": ["Because it is red and heavy.", "Because it saves time and is fun.", "Because the shop was large.", "Because his legs are tired."],
+        "choices": [
+          "Because it is red and heavy.",
+          "Because it saves time and is fun.",
+          "Because the shop was large.",
+          "Because his legs are tired."
+        ],
         "answer": 1,
         "explanation": "通学時間が短くなり週末も楽しめるという効果が理由として読み取れます。"
       },
       {
         "question": "What is the main idea of this article?",
-        "choices": ["How to wash cars and walk dogs.", "A boy who got a bicycle and enjoys his new life.", "The best color for bicycles.", "Why walking to school is better."],
+        "choices": [
+          "How to wash cars and walk dogs.",
+          "A boy who got a bicycle and enjoys his new life.",
+          "The best color for bicycles.",
+          "Why walking to school is better."
+        ],
         "answer": 1,
         "explanation": "自転車を買うまでの努力と買った後の生活を描く全体の要旨に合います。"
       }
     ]
   }
-];
+]

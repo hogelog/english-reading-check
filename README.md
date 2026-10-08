@@ -20,7 +20,7 @@ Push to `main` to deploy to GitHub Pages (source: GitHub Actions — enable it i
 
 ## Add a passage
 
-Append to `articles-a2.js` / `articles-b1.js` / `articles-b2.js` / `articles-c1.js`:
+Append an object to `data/a2.json` / `data/b1.json` / `data/b2.json` / `data/c1.json` (plain JSON arrays):
 
 ```js
 {
