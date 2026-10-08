@@ -1,21 +1,6 @@
 // Service worker: cache-first app shell for offline use. No external requests.
-const CACHE = "derc-v1";
-const ASSETS = [
-  "./",
-  "./index.html",
-  "./styles.css",
-  "./app.js",
-  "./articles.js",
-  "./data/a1.json",
-  "./data/a2.json",
-  "./data/b1.json",
-  "./data/b2.json",
-  "./data/c1.json",
-  "./storage.js",
-  "./chart.js",
-  "./manifest.json",
-  "./icon.svg",
-];
+const CACHE = "__CACHE__";
+const ASSETS = __ASSETS__;
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

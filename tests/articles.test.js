@@ -1,10 +1,10 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { pickArticle, wordCount } from "../articles.js";
+import { pickArticle, wordCount } from "../src/articles.js";
 
 const ALL_ARTICLES = ["a1", "a2", "b1", "b2", "c1"].flatMap((level) =>
-  JSON.parse(readFileSync(new URL(`../data/${level}.json`, import.meta.url))),
+  JSON.parse(readFileSync(new URL(`../public/data/${level}.json`, import.meta.url))),
 );
 
 describe("article dataset", () => {

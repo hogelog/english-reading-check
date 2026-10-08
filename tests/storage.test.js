@@ -15,7 +15,7 @@ beforeEach(() => {
   globalThis.localStorage = makeLocalStorage();
 });
 
-const storage = await import("../storage.js");
+const storage = await import("../src/storage.js");
 
 describe("storage", () => {
   it("saves and loads history, surviving reload", async () => {

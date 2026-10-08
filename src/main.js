@@ -1,3 +1,4 @@
+import "./styles.css";
 import { pickArticle } from "./articles.js";
 import {
   loadHistory,
@@ -23,7 +24,7 @@ async function loadArticles() {
   const levels = ["a1", "a2", "b1", "b2", "c1"];
   const parts = await Promise.all(
     levels.map(async (level) => {
-      const res = await fetch(`./data/${level}.json`);
+      const res = await fetch(`./data/${level}.json?v=${__DATA_VERSION__}`);
       if (!res.ok) throw new Error(`failed to load ${level}.json`);
       return res.json();
     }),

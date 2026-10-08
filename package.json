@@ -4,12 +4,18 @@
   "description": "Daily English Reading Check - 5-minute daily reading comprehension check (static site for GitHub Pages)",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/dev.js",
+    "dev": "vite",
     "build": "node scripts/build.js",
-    "preview": "node scripts/dev.js --dist",
+    "preview": "vite preview",
     "test": "node --test tests/*.test.js"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20.19.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
   }
 }

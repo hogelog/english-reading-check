@@ -11,16 +11,16 @@ Zero dependencies, no backend, no tracking. History lives in the browser's Local
 ## Dev
 
 ```bash
-npm run dev      # http://localhost:8080/
-npm test         # node --test, no deps
-npm run build    # validates data + outputs dist/
+npm run dev      # Vite dev server with HMR
+npm test         # node --test, no test deps
+npm run build    # validate data -> Vite build (hashed assets) -> dist/
 ```
 
 Push to `main` to deploy to GitHub Pages (source: GitHub Actions — enable it in Settings → Pages on first setup).
 
 ## Add a passage
 
-Append an object to `data/a1.json` / `data/a2.json` / `data/b1.json` / `data/b2.json` / `data/c1.json` (plain JSON arrays):
+Append an object to `public/data/a1.json` / `a2.json` / `b1.json` / `b2.json` / `c1.json` (plain JSON arrays):
 
 ```js
 {
