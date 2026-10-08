@@ -225,22 +225,6 @@ main {
 }
 .quiz-passage-body p { margin: 0 0 0.8em; }
 #quiz-passage-toggle { width: 100%; min-height: 44px; }
-@media (min-width: 900px) {
-  #view-quiz { max-width: 960px; }
-  #quiz-main, #quiz-passage { grid-column: auto; }
-  #view-quiz.quiz-split {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    align-items: start;
-  }
-  #view-quiz.quiz-split #quiz-progress,
-  #view-quiz.quiz-split .progress,
-  #view-quiz.quiz-split #quiz-passage-toggle {
-    grid-column: 1 / -1;
-  }
-  #view-quiz.quiz-split .quiz-passage-body { max-height: 60vh; }
-}
 .progress { height: 6px; background: var(--card); border: 1px solid var(--border); border-radius: 999px; overflow: hidden; margin-bottom: 12px; }
 .progress-bar { height: 100%; width: 0; background: var(--accent); }
 .result-hero { text-align: center; }
