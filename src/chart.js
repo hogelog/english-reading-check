@@ -34,7 +34,7 @@ export function buildLineChart(values, options = {}) {
     svg += `<path d="${esc(d)}" fill="none" stroke="currentColor" stroke-width="2"/>`;
   }
   for (const p of pts) {
-    svg += `<circle cx="${p.x}" cy="${p.y}" r="4" fill="currentColor"><title>${Math.round(p.v)}%</title></circle>`;
+    svg += `<circle cx="${p.x}" cy="${p.y}" r="4" fill="currentColor"><title>${Math.round(p.v)}${suffix}</title></circle>`;
   }
   // x labels: 1, middle, last
   const labels = new Set([0, Math.floor((pts.length - 1) / 2), pts.length - 1]);
