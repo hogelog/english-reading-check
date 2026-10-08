@@ -468,8 +468,28 @@ async function init() {
   $("start-btn").addEventListener("click", startSession);
   $("to-questions-btn").addEventListener("click", () => {
     state.readingEnd = Date.now();
+    $("quiz-passage-title").textContent = state.article.title;
+    const body = $("quiz-passage-body");
+    body.innerHTML = "";
+    for (const para of state.article.text.split(/\n\n+/)) {
+      const p = document.createElement("p");
+      p.textContent = para.trim();
+      body.appendChild(p);
+    }
+    const passage = $("quiz-passage");
+    const toggle = $("quiz-passage-toggle");
+    passage.hidden = false;
+    toggle.setAttribute("aria-expanded", "true");
+    toggle.textContent = "本文を隠す";
     state.qIndex = 0;
     renderQuiz();
+  });
+  $("quiz-passage-toggle").addEventListener("click", () => {
+    const passage = $("quiz-passage");
+    const toggle = $("quiz-passage-toggle");
+    passage.hidden = !passage.hidden;
+    toggle.setAttribute("aria-expanded", String(!passage.hidden));
+    toggle.textContent = passage.hidden ? "本文を見る" : "本文を隠す";
   });
   $("quiz-next-btn").addEventListener("click", nextQuestion);
   $("history-btn").addEventListener("click", () => {
