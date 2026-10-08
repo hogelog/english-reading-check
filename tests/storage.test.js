@@ -124,4 +124,21 @@ describe("storage", () => {
     assert.ok(text.includes("Q3 ✕"));
     assert.ok(text.endsWith("https://example.test/"));
   });
+
+  it("omits the marks line when answers are unknown", () => {
+    const text = storage.buildShareText({
+      date: "2026-10-08",
+      title: "My Family",
+      difficulty: "A1",
+      score: 4,
+      total: 5,
+      durationSeconds: 272,
+      words: 168,
+      wpm: 37,
+      marks: null,
+      url: "https://example.test/",
+    });
+    assert.ok(!text.includes("Q1"));
+    assert.ok(text.endsWith("https://example.test/"));
+  });
 });

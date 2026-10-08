@@ -66,8 +66,8 @@ export function buildShareText({ date, title, difficulty, score, total, duration
     `📖 Daily English Reading Check (${date})`,
     `${title} [${difficulty}]`,
     `${score}/${total} (${pct}%) · ${formatDuration(durationSeconds)} · ${words} words · ${wpm} wpm`,
-    marks.map((ok, i) => `Q${i + 1} ${ok ? "✓" : "✕"}`).join(" "),
   ];
+  if (marks) lines.push(marks.map((ok, i) => `Q${i + 1} ${ok ? "✓" : "✕"}`).join(" "));
   if (url) lines.push(url);
   return lines.join("\n");
 }

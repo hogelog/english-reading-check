@@ -104,6 +104,43 @@ function accuracyOf(h) {
   return h.total > 0 ? (h.score / h.total) * 100 : 0;
 }
 
+function shareTextFor(h, lookup) {
+  const article = lookup[h.articleId];
+  const marks =
+    article && Array.isArray(h.answers)
+      ? article.questions.map((q, i) => h.answers[i] === q.answer)
+      : null;
+  return buildShareText({
+    date: h.date,
+    title: article ? article.title : "(unknown article)",
+    difficulty: h.difficulty,
+    score: h.score,
+    total: h.total,
+    durationSeconds: h.durationSeconds || 0,
+    words: entryWords(h, lookup),
+    wpm: entryWpm(h, lookup),
+    marks,
+    url: "https://hogelog.github.io/english-reading-check/",
+  });
+}
+
+function appendCopyButton(li, text) {
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "btn btn-ghost copy-btn";
+  btn.textContent = "コピー";
+  btn.setAttribute("aria-label", "この結果をコピー");
+  btn.addEventListener("click", async () => {
+    if (await copyText(text)) {
+      btn.textContent = "✓";
+      setTimeout(() => (btn.textContent = "コピー"), 2000);
+    } else {
+      window.alert(text);
+    }
+  });
+  li.appendChild(btn);
+}
+
 function renderHome() {
   const history = loadHistory();
   document.querySelectorAll(".chip").forEach((chip) => {
@@ -141,6 +178,7 @@ function renderHome() {
     const val = document.createElement("span");
     val.textContent = rowValue(h, articlesById());
     li.append(label, val);
+    appendCopyButton(li, shareTextFor(h, articlesById()));
     ul.appendChild(li);
   }
 }
@@ -245,6 +283,7 @@ function finishSession() {
     difficulty: article.difficulty,
     articleId: article.id,
     words: wordCount(article.text),
+    answers: [...state.answers],
   };
   saveResult(entry);
 
@@ -255,18 +294,7 @@ function finishSession() {
   $("result-prev").textContent = prevAvg;
   $("result-words").textContent = `${entry.words} words`;
   $("result-wpm").textContent = `${entryWpm(entry)} wpm`;
-  lastShareText = buildShareText({
-    date: entry.date,
-    title: article.title,
-    difficulty: article.difficulty,
-    score,
-    total: article.questions.length,
-    durationSeconds,
-    words: entry.words,
-    wpm: entryWpm(entry),
-    marks: article.questions.map((q, i) => state.answers[i] === q.answer),
-    url: "https://hogelog.github.io/english-reading-check/",
-  });
+  lastShareText = shareTextFor(entry, articlesById());
   $("result-copy-btn").textContent = "結果をコピー";
 
   const list = $("result-list");
@@ -336,6 +364,7 @@ function renderHistory() {
       const val = document.createElement("span");
       val.textContent = rowValue(h, lookup);
       li.append(label, val);
+      appendCopyButton(li, shareTextFor(h, lookup));
       ul.appendChild(li);
     }
   };
