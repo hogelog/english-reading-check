@@ -46,6 +46,7 @@
       <div class="stat"><span class="stat-value" id="stat-acc">—</span><span class="stat-label" id="stat-acc-label">7-day accuracy</span></div>
       <div class="stat"><span class="stat-value" id="stat-time">—</span><span class="stat-label" id="stat-time-label">Avg reading time</span></div>
       <div class="stat"><span class="stat-value" id="stat-count">0</span><span class="stat-label" id="stat-count-label">Tests completed</span></div>
+      <div class="stat"><span class="stat-value" id="stat-wpm">—</span><span class="stat-label" id="stat-wpm-label">Avg wpm</span></div>
     </div>
 
     <div id="chart-card" class="card" hidden>
@@ -110,6 +111,10 @@
       <div class="stat"><span class="stat-value" id="hist-time">—</span><span class="stat-label">平均読了時間</span></div>
       <div class="stat"><span class="stat-value" id="hist-count">0</span><span class="stat-label">実施回数</span></div>
       <div class="stat"><span class="stat-value" id="hist-words">—</span><span class="stat-label">総ワード数</span></div>
+    </div>
+    <div class="card" id="hist-wpm-card" hidden>
+      <p class="card-label">読む速さの推移（直近30回・wpm）</p>
+      <div id="hist-wpm-chart" role="img" aria-label="直近30回のwpmグラフ"></div>
     </div>
     <div class="card" id="hist-diff-card" hidden>
       <p class="card-label">難易度別の平均</p>

@@ -18,4 +18,11 @@ describe("buildLineChart", () => {
     const svg = buildLineChart([73]);
     assert.equal((svg.match(/<circle/g) || []).length, 1);
   });
+
+  it("supports custom scale for wpm", () => {
+    const svg = buildLineChart([90, 120], { max: 160, ticks: [160, 120, 80, 40], suffix: "" });
+    assert.equal((svg.match(/<circle/g) || []).length, 2);
+    assert.ok(svg.includes(">160<"));
+    assert.ok(!svg.includes("%"));
+  });
 });

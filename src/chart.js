@@ -1,6 +1,6 @@
 // Pure SVG line chart builder (no dependencies, testable in Node).
 export function buildLineChart(values, options = {}) {
-  const { width = 300, height = 120, min = 0, max = 100 } = options;
+  const { width = 300, height = 120, min = 0, max = 100, ticks = [100, 80, 60, 40], suffix = "%" } = options;
   const padL = 34;
   const padB = 16;
   const padT = 8;
@@ -12,12 +12,11 @@ export function buildLineChart(values, options = {}) {
   const esc = (s) =>
     String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-  const ticks = [100, 80, 60, 40];
   let svg = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="presentation">`;
   for (const t of ticks) {
     const y = padT + ih - ((t - min) / (max - min)) * ih;
     svg += `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"/>`;
-    svg += `<text x="${padL - 4}" y="${y + 4}" font-size="10" text-anchor="end" fill="currentColor" opacity="0.7">${t}%</text>`;
+    svg += `<text x="${padL - 4}" y="${y + 4}" font-size="10" text-anchor="end" fill="currentColor" opacity="0.7">${t}${suffix}</text>`;
   }
   if (values.length === 0) {
     svg += `<text x="${padL + 8}" y="${padT + 20}" font-size="12" fill="currentColor" opacity="0.7">no data</text>`;

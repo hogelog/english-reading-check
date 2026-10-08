@@ -158,6 +158,11 @@ function renderHome() {
   $("stat-acc").textContent = last7.length ? `${Math.round(stats7.avgAccuracy)}%` : "—";
   $("stat-time").textContent = last7.length ? formatDuration(stats7.avgSeconds) : "—";
   $("stat-count").textContent = String(levelHistory.length);
+  $("stat-wpm-label").textContent = `${state.difficulty} · avg wpm`;
+  const lookupHome = articlesById();
+  $("stat-wpm").textContent = last7.length
+    ? `${Math.round(last7.reduce((s, h) => s + entryWpm(h, lookupHome), 0) / last7.length)}`
+    : "—";
 
   const chartCard = $("chart-card");
   if (last7.length >= 2) {
@@ -301,7 +306,16 @@ function finishSession() {
   $("result-prev").textContent = prevAvg;
   $("result-prev-label").textContent = `Previous avg (${article.difficulty})`;
   $("result-words").textContent = `${entry.words} words`;
-  $("result-wpm").textContent = `${entryWpm(entry)} wpm`;
+  const wpm = entryWpm(entry);
+  let wpmText = `${wpm} wpm`;
+  if (prevSameLevel.length > 0) {
+    const prevWpm = Math.round(
+      prevSameLevel.reduce((s, h) => s + entryWpm(h), 0) / prevSameLevel.length,
+    );
+    const dw = wpm - prevWpm;
+    wpmText += ` (${dw >= 0 ? "+" : ""}${dw} vs avg)`;
+  }
+  $("result-wpm").textContent = wpmText;
   lastShareText = shareTextFor(entry, articlesById());
   $("result-copy-btn").textContent = "結果をコピー";
 
@@ -358,11 +372,12 @@ function renderHistory() {
     diffCard.hidden = false;
     for (const { d, items } of diffRows) {
       const s = computeStats(items);
+      const avgWpm = Math.round(items.reduce((sum, h) => sum + entryWpm(h, lookup), 0) / items.length);
       const li = document.createElement("li");
       const label = document.createElement("span");
       label.textContent = d;
       const val = document.createElement("span");
-      val.textContent = `${items.length}回 ${Math.round(s.avgAccuracy)}% ${formatDuration(s.avgSeconds)}`;
+      val.textContent = `${items.length}回 ${Math.round(s.avgAccuracy)}% ${formatDuration(s.avgSeconds)} ${avgWpm}wpm`;
       li.append(label, val);
       byDiff.appendChild(li);
     }
@@ -377,6 +392,17 @@ function renderHistory() {
     $("hist-chart").innerHTML = buildLineChart(last30.map(accuracyOf));
   } else {
     card.hidden = true;
+  }
+
+  const wpmCard = $("hist-wpm-card");
+  const wpmValues = last30.map((h) => entryWpm(h, lookup));
+  if (wpmValues.length >= 2) {
+    wpmCard.hidden = false;
+    const top = Math.max(50, Math.ceil(Math.max(...wpmValues) / 40) * 40);
+    const ticks = [top, Math.round(top * 0.75), Math.round(top / 2), Math.round(top / 4)];
+    $("hist-wpm-chart").innerHTML = buildLineChart(wpmValues, { max: top, ticks, suffix: "" });
+  } else {
+    wpmCard.hidden = true;
   }
 
   const fill = (elId, items) => {
