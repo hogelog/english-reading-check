@@ -239,21 +239,21 @@ function renderQuiz() {
 }
 
 function answerQuestion(choiceIdx) {
+  // Free to change until Next is pressed. Correctness is revealed only on the
+  // result screen, so changing your mind doesn't give away the answer.
   const article = state.article;
   const i = state.qIndex;
-  if (state.answers[i] !== undefined) return; // locked: cannot change
   state.answers[i] = choiceIdx;
-  const q = article.questions[i];
   const btns = [...document.querySelectorAll("#quiz-choices .choice")];
   btns.forEach((btn, bi) => {
-    btn.disabled = true;
     btn.setAttribute("aria-checked", String(bi === choiceIdx));
-    if (bi === q.answer) btn.classList.add("is-correct");
-    else if (bi === choiceIdx) btn.classList.add("is-wrong");
   });
   $("quiz-bar").style.width = `${((i + 1) / article.questions.length) * 100}%`;
-  $("quiz-next-btn").disabled = false;
-  $("quiz-next-btn").focus();
+  const next = $("quiz-next-btn");
+  if (next.disabled) {
+    next.disabled = false;
+    next.focus();
+  }
 }
 
 function nextQuestion() {
@@ -445,14 +445,14 @@ async function init() {
     }
   });
 
-  // Keyboard: 1-4 to answer, Enter for next
+  // Keyboard: 1-4 to (re)select, Enter for next
   document.addEventListener("keydown", (e) => {
-    if (!$("view-quiz").hidden && state.answers[state.qIndex] === undefined) {
+    if (!$("view-quiz").hidden) {
       if (["1", "2", "3", "4"].includes(e.key)) {
         answerQuestion(Number(e.key) - 1);
+      } else if (e.key === "Enter" && !$("quiz-next-btn").disabled) {
+        nextQuestion();
       }
-    } else if (!$("view-quiz").hidden && e.key === "Enter" && !$("quiz-next-btn").disabled) {
-      nextQuestion();
     }
   });
 
