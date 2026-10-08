@@ -33,6 +33,19 @@ describe("storage", () => {
     assert.equal(storage.loadHistory().length, 1);
   });
 
+  it("supports per-difficulty stats via filtering", () => {
+    const history = [
+      { score: 5, total: 5, durationSeconds: 100, difficulty: "A1" },
+      { score: 4, total: 5, durationSeconds: 200, difficulty: "A1" },
+      { score: 2, total: 5, durationSeconds: 300, difficulty: "B1" },
+    ];
+    const a1 = storage.computeStats(history.filter((h) => h.difficulty === "A1"));
+    const b1 = storage.computeStats(history.filter((h) => h.difficulty === "B1"));
+    assert.equal(Math.round(a1.avgAccuracy), 90);
+    assert.equal(Math.round(b1.avgAccuracy), 40);
+    assert.equal(a1.count, 2);
+  });
+
   it("computes accuracy correctly", () => {
     const stats = storage.computeStats([
       { score: 4, total: 5, durationSeconds: 272 },

@@ -43,13 +43,13 @@
     </div>
 
     <div class="stats-grid" aria-label="学習統計">
-      <div class="stat"><span class="stat-value" id="stat-acc">—</span><span class="stat-label">7-day accuracy</span></div>
-      <div class="stat"><span class="stat-value" id="stat-time">—</span><span class="stat-label">Avg reading time</span></div>
-      <div class="stat"><span class="stat-value" id="stat-count">0</span><span class="stat-label">Tests completed</span></div>
+      <div class="stat"><span class="stat-value" id="stat-acc">—</span><span class="stat-label" id="stat-acc-label">7-day accuracy</span></div>
+      <div class="stat"><span class="stat-value" id="stat-time">—</span><span class="stat-label" id="stat-time-label">Avg reading time</span></div>
+      <div class="stat"><span class="stat-value" id="stat-count">0</span><span class="stat-label" id="stat-count-label">Tests completed</span></div>
     </div>
 
     <div id="chart-card" class="card" hidden>
-      <p class="card-label">Accuracy（直近7回）</p>
+      <p class="card-label" id="mini-chart-label">Accuracy（直近7回）</p>
       <div id="mini-chart" role="img" aria-label="直近7回の正答率グラフ"></div>
     </div>
 
@@ -87,7 +87,7 @@
         <div><dt>Words</dt><dd id="result-words">—</dd></div>
         <div><dt>Speed</dt><dd id="result-wpm">—</dd></div>
         <div><dt>Difficulty</dt><dd id="result-diff">—</dd></div>
-        <div><dt>Previous average</dt><dd id="result-prev">—</dd></div>
+        <div><dt id="result-prev-label">Previous average</dt><dd id="result-prev">—</dd></div>
       </dl>
     </div>
     <div class="card">
@@ -110,6 +110,10 @@
       <div class="stat"><span class="stat-value" id="hist-time">—</span><span class="stat-label">平均読了時間</span></div>
       <div class="stat"><span class="stat-value" id="hist-count">0</span><span class="stat-label">実施回数</span></div>
       <div class="stat"><span class="stat-value" id="hist-words">—</span><span class="stat-label">総ワード数</span></div>
+    </div>
+    <div class="card" id="hist-diff-card" hidden>
+      <p class="card-label">難易度別の平均</p>
+      <ul id="hist-by-diff" class="result-list"></ul>
     </div>
     <div class="card" id="hist-chart-card" hidden>
       <p class="card-label">正答率の推移（直近30回）</p>

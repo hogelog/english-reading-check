@@ -149,21 +149,26 @@ function renderHome() {
   });
   $("home-count").textContent = `${ALL_ARTICLES.length} articles`;
   $("est-time").textContent = `推定所要時間: ${state.difficulty === "Pre-A1" || state.difficulty === "A1" ? 3 : 5} min`;
-  const last7 = history.slice(-7);
+  $("stat-acc-label").textContent = `${state.difficulty} · 7-day accuracy`;
+  $("stat-time-label").textContent = `${state.difficulty} · avg time`;
+  $("stat-count-label").textContent = `${state.difficulty} · tests`;
+  const levelHistory = history.filter((h) => h.difficulty === state.difficulty);
+  const last7 = levelHistory.slice(-7);
   const stats7 = computeStats(last7);
   $("stat-acc").textContent = last7.length ? `${Math.round(stats7.avgAccuracy)}%` : "—";
   $("stat-time").textContent = last7.length ? formatDuration(stats7.avgSeconds) : "—";
-  $("stat-count").textContent = String(history.length);
+  $("stat-count").textContent = String(levelHistory.length);
 
   const chartCard = $("chart-card");
   if (last7.length >= 2) {
     chartCard.hidden = false;
+    $("mini-chart-label").textContent = `${state.difficulty} · Accuracy（直近7回）`;
     $("mini-chart").innerHTML = buildLineChart(last7.map(accuracyOf));
   } else {
     chartCard.hidden = true;
   }
 
-  const recent = history.slice(-3).reverse();
+  const recent = levelHistory.slice(-3).reverse();
   const ul = $("recent-list");
   ul.innerHTML = "";
   if (recent.length === 0) {
@@ -274,8 +279,9 @@ function finishSession() {
     if (state.answers[i] === q.answer) score += 1;
   });
   const prevHistory = loadHistory();
+  const prevSameLevel = prevHistory.filter((h) => h.difficulty === article.difficulty);
   const prevAvg =
-    prevHistory.length > 0 ? Math.round(computeStats(prevHistory).avgAccuracy) + "%" : "—";
+    prevSameLevel.length > 0 ? Math.round(computeStats(prevSameLevel).avgAccuracy) + "%" : "—";
   const entry = {
     date: todayKey(),
     score,
@@ -293,6 +299,7 @@ function finishSession() {
   $("result-time").textContent = formatDuration(durationSeconds);
   $("result-diff").textContent = article.difficulty;
   $("result-prev").textContent = prevAvg;
+  $("result-prev-label").textContent = `Previous avg (${article.difficulty})`;
   $("result-words").textContent = `${entry.words} words`;
   $("result-wpm").textContent = `${entryWpm(entry)} wpm`;
   lastShareText = shareTextFor(entry, articlesById());
@@ -339,6 +346,29 @@ function renderHistory() {
   const lookup = articlesById();
   const totalWords = history.reduce((sum, h) => sum + entryWords(h, lookup), 0);
   $("hist-words").textContent = history.length ? totalWords.toLocaleString("en-US") : "—";
+
+  const diffCard = $("hist-diff-card");
+  const byDiff = $("hist-by-diff");
+  byDiff.innerHTML = "";
+  const levels = ["Pre-A1", "A1", "A2", "B1", "B2", "C1"];
+  const diffRows = levels
+    .map((d) => ({ d, items: history.filter((h) => h.difficulty === d) }))
+    .filter(({ items }) => items.length > 0);
+  if (diffRows.length > 0) {
+    diffCard.hidden = false;
+    for (const { d, items } of diffRows) {
+      const s = computeStats(items);
+      const li = document.createElement("li");
+      const label = document.createElement("span");
+      label.textContent = d;
+      const val = document.createElement("span");
+      val.textContent = `${items.length}回 ${Math.round(s.avgAccuracy)}% ${formatDuration(s.avgSeconds)}`;
+      li.append(label, val);
+      byDiff.appendChild(li);
+    }
+  } else {
+    diffCard.hidden = true;
+  }
 
   const last30 = history.slice(-30);
   const card = $("hist-chart-card");
