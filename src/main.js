@@ -490,7 +490,7 @@ async function init() {
     const btn = $("recent-copy-btn");
     if (await copyText(recentResultsCopyText)) {
       btn.textContent = "コピー済み ✓";
-      setTimeout(() => (btn.textContent = "まとめてコピー"), 2000);
+      setTimeout(() => (btn.textContent = "コピー"), 2000);
     } else {
       window.alert(recentResultsCopyText);
     }
