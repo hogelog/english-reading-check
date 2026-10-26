@@ -52,6 +52,10 @@
 
     <div id="chart-card" class="card" hidden>
       <p class="card-label" id="mini-chart-label">Accuracy（直近7回）</p>
+      <div class="btn-row chart-toggle" role="group" aria-label="グラフの項目">
+        <button id="chart-accuracy-btn" class="btn btn-ghost" type="button" aria-pressed="true">正答率</button>
+        <button id="chart-wpm-btn" class="btn btn-ghost" type="button" aria-pressed="false">WPM</button>
+      </div>
       <div id="mini-chart" role="img" aria-label="直近7回の正答率グラフ"></div>
     </div>
 

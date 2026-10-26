@@ -25,6 +25,7 @@ const views = ["view-home", "view-reading", "view-quiz", "view-result", "view-hi
 
 let ALL_ARTICLES = [];
 let lastShareText = "";
+let homeChartMetric = "accuracy";
 
 async function copyText(text) {
   try {
@@ -99,7 +100,7 @@ function applyTheme(theme) {
 // ---------- Home ----------
 function rowValue(h, lookup) {
   const pct = Math.round(accuracyOf(h));
-  return `${h.score}/${h.total} ${pct}% ${formatDuration(entrySeconds(h))} ${entryWords(h, lookup)}w ${h.difficulty}`;
+  return `${h.score}/${h.total} ${pct}% ${formatDuration(entrySeconds(h))} ${entryWords(h, lookup)}w ${entryWpm(h, lookup)}wpm ${h.difficulty}`;
 }
 
 function accuracyOf(h) {
@@ -171,8 +172,19 @@ function renderHome() {
   const chartCard = $("chart-card");
   if (last7.length >= 2) {
     chartCard.hidden = false;
-    $("mini-chart-label").textContent = `${state.difficulty} · Accuracy（直近7回）`;
-    $("mini-chart").innerHTML = buildLineChart(last7.map(accuracyOf));
+    const isWpm = homeChartMetric === "wpm";
+    const values = isWpm ? last7.map((h) => entryWpm(h, lookupHome)) : last7.map(accuracyOf);
+    if (isWpm) {
+      const top = Math.max(50, Math.ceil(Math.max(...values) / 40) * 40);
+      const ticks = [top, Math.round(top * 0.75), Math.round(top / 2), Math.round(top / 4)];
+      $("mini-chart").innerHTML = buildLineChart(values, { max: top, ticks, suffix: "" });
+    } else {
+      $("mini-chart").innerHTML = buildLineChart(values);
+    }
+    $("mini-chart-label").textContent = `${state.difficulty} · ${isWpm ? "WPM" : "Accuracy"}（直近7回）`;
+    $("mini-chart").setAttribute("aria-label", `直近7回の${isWpm ? "WPM" : "正答率"}グラフ`);
+    $("chart-accuracy-btn").setAttribute("aria-pressed", String(!isWpm));
+    $("chart-wpm-btn").setAttribute("aria-pressed", String(isWpm));
   } else {
     chartCard.hidden = true;
   }
@@ -464,6 +476,14 @@ async function init() {
       saveDifficulty(state.difficulty);
       renderHome();
     });
+  });
+  $("chart-accuracy-btn").addEventListener("click", () => {
+    homeChartMetric = "accuracy";
+    renderHome();
+  });
+  $("chart-wpm-btn").addEventListener("click", () => {
+    homeChartMetric = "wpm";
+    renderHome();
   });
   $("start-btn").addEventListener("click", startSession);
   $("to-questions-btn").addEventListener("click", () => {
