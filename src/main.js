@@ -26,6 +26,7 @@ const views = ["view-home", "view-reading", "view-quiz", "view-result", "view-hi
 let ALL_ARTICLES = [];
 let lastShareText = "";
 let homeChartMetric = "accuracy";
+let recentResultsCopyText = "";
 
 async function copyText(text) {
   try {
@@ -198,6 +199,7 @@ function renderHome() {
     ul.appendChild(li);
     return;
   }
+  recentResultsCopyText = recent.map((h) => `${lastNDaysLabel(h.date)} ${rowValue(h, articlesById())}`).join("\n");
   for (const h of recent) {
     const li = document.createElement("li");
     const label = document.createElement("span");
@@ -205,7 +207,6 @@ function renderHome() {
     const val = document.createElement("span");
     val.textContent = rowValue(h, articlesById());
     li.append(label, val);
-    appendCopyButton(li, shareTextFor(h, articlesById()));
     ul.appendChild(li);
   }
 }
@@ -484,6 +485,15 @@ async function init() {
   $("chart-wpm-btn").addEventListener("click", () => {
     homeChartMetric = "wpm";
     renderHome();
+  });
+  $("recent-copy-btn").addEventListener("click", async () => {
+    const btn = $("recent-copy-btn");
+    if (await copyText(recentResultsCopyText)) {
+      btn.textContent = "コピー済み ✓";
+      setTimeout(() => (btn.textContent = "まとめてコピー"), 2000);
+    } else {
+      window.alert(recentResultsCopyText);
+    }
   });
   $("start-btn").addEventListener("click", startSession);
   $("to-questions-btn").addEventListener("click", () => {

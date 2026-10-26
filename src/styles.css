@@ -172,6 +172,8 @@ main {
 }
 .stat-value { font-size: 1.25rem; font-weight: 800; }
 .stat-label { font-size: 0.7rem; color: var(--muted); }
+.recent-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.recent-heading .card-label { margin-bottom: 8px; }
 .result-list { list-style: none; margin: 0; padding: 0; }
 .result-list li {
   display: flex;
